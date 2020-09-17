@@ -89,6 +89,12 @@ a {
     color: black;
 }
 
+div.btn {
+    position: absolute;
+    width: 50%;
+    bottom: 10%;
+}
+
 @keyframes mymove {
     from {
         left: 0%;
