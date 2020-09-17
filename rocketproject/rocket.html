@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Making a div horizontally scrollable using CSS
+    </title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            <div class="slide one" id="slide one">
+                <dir class="header">1</dir>
+                <dir class="boxshowspeed">
+                    <button onclick="playbtn()">play</button>
+                    <button onclick="pausedbtn()">reset</button>
+                    <button onclick="nextbtn()"><a href="#slide two">next</a></button>
+                    <div class="box" id="play">linear</div>
+
+                </dir>
+
+            </div>
+            <div class="slide two" id="slide two">
+                <dir class="header">2</dir>
+                <dir class="boxshowspeed">
+                    <div class="next"><a href="#slide three">next</a></div>
+                    <div class="prev"><a href="#slide one">previous</a></div>
+                    <div class="box" id="div1">linear</div>
+                </dir>
+            </div>
+            <div class="slide three" id="slide three">
+                <dir class="header">3</dir>
+                <dir class="boxshowspeed">
+                    <div class="next"><a href="#slide four">next</a></div>
+                    <div class="prev"><a href="#slide two">previous</a></div>
+                    <div class="box" id="div1">linear</div>
+                </dir>
+            </div>
+            <div class="slide four" id="slide three"></div>
+        </div>
+    </div>
+</body>
+<script>
+    function playbtn() {
+        var x = document.getElementById("paused");
+        x.id = "play"
+
+
+    }
+
+    function pausedbtn() {
+        var x = document.getElementById("play");
+        x.id = "paused"
+
+
+    }
+</script>
+
+</html>
