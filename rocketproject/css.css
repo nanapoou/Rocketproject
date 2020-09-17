@@ -60,12 +60,8 @@ body {
 /***************************************************************/
 
 .box {
-    width: 100px;
-    height: 50px;
-    background-color: red;
-    font-weight: bold;
     position: relative;
-    animation: mymove 5s ease;
+    animation: mymove 695s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 25%;
@@ -82,6 +78,7 @@ body {
 
 .header {
     height: 5vw;
+    
 }
 
 .boxshowspeed {
