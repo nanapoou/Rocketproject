@@ -61,6 +61,14 @@ body {
 
 .box {
     position: relative;
+    animation: mymove 5s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 25%;
+}
+
+.first {
+    position: relative;
     animation: mymove 695s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;

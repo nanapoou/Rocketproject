@@ -20,7 +20,7 @@
                         <button onclick="pausedbtn()">reset</button>
                         <button onclick="nextbtn()">next</button>
                     </div>
-                    <div class="box" id="play"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    <div class="first" id="play"><img src="Snail.png" alt="" width="80px" height="80px"></img>
                     </div>
                     <div>Snail</div>
                 </dir>
@@ -29,10 +29,14 @@
             <div class="slide two" id="slide two">
                 <dir class="header">2</dir>
                 <dir class="boxshowspeed">
-                    <div class="next"><a href="#slide three">next</a></div>
-                    <div class="prev"><a href="#slide one">previous</a></div>
-                    <div class="box" id="div1">linear</div>
-                </dir>
+                    <div class="btn">
+                        <button onclick="playbtn()">play</button>
+                        <button onclick="pausedbtn()">reset</button>
+                        <button onclick="nextbtn()">next</button>
+                    </div>
+                    <div class="box" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                    <div>Name</div>
             </div>
             <div class="slide three" id="slide three">
                 <dir class="header">3</dir>
@@ -62,7 +66,14 @@
     }
 
     function nextbtn() {
-        location.replace("#slide two")
+        var check = 1;
+        if (check == 1) {
+            location.replace("#slide two");
+            check += 1;
+
+        }
+        var x = document.getElementsByClassName("box").getElementById("paused");
+        x.id = "play"
 
 
     }
