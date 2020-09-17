@@ -18,7 +18,7 @@
                     <div class="btn">
                         <button onclick="playbtn()">play</button>
                         <button onclick="pausedbtn()">reset</button>
-                        <button onclick="nextbtn()">next</button>
+                        <button onclick="nextbtntwo()">next</button>
                     </div>
                     <div class="first" id="play"><img src="Snail.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -32,19 +32,23 @@
                     <div class="btn">
                         <button onclick="playbtn()">play</button>
                         <button onclick="pausedbtn()">reset</button>
-                        <button onclick="nextbtn()">next</button>
+                        <button onclick="nextbtn3()">next</button>
                     </div>
-                    <div class="box" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    <div class="box2" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
                     </div>
                     <div>Name</div>
             </div>
             <div class="slide three" id="slide three">
                 <dir class="header">3</dir>
                 <dir class="boxshowspeed">
-                    <div class="next"><a href="#slide four">next</a></div>
-                    <div class="prev"><a href="#slide two">previous</a></div>
-                    <div class="box" id="div1">linear</div>
-                </dir>
+                    <div class="btn">
+                        <button onclick="playbtn()">play</button>
+                        <button onclick="pausedbtn()">reset</button>
+                        <button onclick="nextbtn3()">next</button>
+                    </div>
+                    <div class="box3" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                    <div>Name</div>
             </div>
             <div class="slide four" id="slide three"></div>
         </div>
@@ -65,17 +69,14 @@
 
     }
 
-    function nextbtn() {
-        var check = 1;
-        if (check == 1) {
-            location.replace("#slide two");
-            check += 1;
+    function nextbtntwo() {
+        location.replace("#slide two");
+        document.getElementsByClassName("box2").id = "play";
+    }
 
-        }
-        var x = document.getElementsByClassName("box").getElementById("paused");
-        x.id = "play"
-
-
+    function nextbtn3() {
+        location.replace("#slide three");
+        document.getElementsByClassName("box3").id = "play";
     }
 </script>
 
