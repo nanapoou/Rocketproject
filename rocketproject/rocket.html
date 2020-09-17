@@ -17,8 +17,9 @@
                 <dir class="boxshowspeed">
                     <button onclick="playbtn()">play</button>
                     <button onclick="pausedbtn()">reset</button>
-                    <button onclick="nextbtn()"><a href="#slide two">next</a></button>
-                    <div class="box" id="play"><img src="Snail.png" alt="" width="80px" height="80px"></img></div>
+                    <button onclick="nextbtn()">next</button>
+                    <div class="box" id="play"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
                     <div>Snail</div>
                 </dir>
 
@@ -54,6 +55,12 @@
     function pausedbtn() {
         var x = document.getElementById("play");
         x.id = "paused"
+
+
+    }
+
+    function nextbtn() {
+        location.replace("#slide two")
 
 
     }
