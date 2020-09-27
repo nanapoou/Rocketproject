@@ -12,13 +12,41 @@
 <body>
     <div class="outer-wrapper">
         <div class="wrapper">
+<<<<<<< Updated upstream
             <div class="slide one" id="slide one">
                 <dir class="header">Animals</dir>
                 <dir class="boxshowspeed">
+=======
+<<<<<<< HEAD
+            <div class="slide intro" id="slide intro">
+                <div class="btn">
+                    <button onclick="nextbtnone()">next</button>
+                </div>
+            </div>
+            <div class="slide one" id="slide one">
+                <dir class="header">Animals</dir>
+                <dir class="boxshowspeed">
+                    <div class="btn">
+                        <button onclick="playbtn()">play</button>
+                        <button onclick="pausedbtn()">reset</button>
+                        <button onclick="nextbtntwo()">next</button>
+                        <button onclick="prevbtnintro()">previous</button>
+                    </div>
+                    <div class="first" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
+=======
+            <div class="slide one" id="slide one">
+                <dir class="header">Animals</dir>
+                <dir class="boxshowspeed">
+>>>>>>> Stashed changes
                     <button onclick="playbtn()">play</button>
                     <button onclick="pausedbtn()">reset</button>
                     <button onclick="nextbtn()"><a href="#slide two">next</a></button>
                     <div class="box" id="play"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img></div>
+<<<<<<< Updated upstream
+=======
+>>>>>>> 57f2b507579006ffdd9485b2669101e48b9f967d
+>>>>>>> Stashed changes
                     <div>Snail</div>
                 </dir>
 
@@ -55,6 +83,16 @@
         var x = document.getElementById("play");
         x.id = "paused"
 
+<<<<<<< Updated upstream
+=======
+
+    }
+
+    function prevbtnintro() {
+        var x = document.getElementById("play");
+        x.id = "paused";
+        location.replace("#slide intro");
+>>>>>>> Stashed changes
 
     }
 </script>
