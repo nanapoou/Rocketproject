@@ -12,9 +12,9 @@
 <body>
     <div class="outer-wrapper">
         <div class="wrapper">
-            <div class="slide intro">
+            <div class="slide intro" id="slide intro">
                 <div class="btn">
-                    <button onclick="nextbtnone()">next</button>
+                    <a href="#slide one" class="next" onclick="nextbtn()">next</a>
                 </div>
             </div>
             <div class="slide one" id="slide one">
@@ -23,7 +23,8 @@
                     <div class="btn">
                         <button onclick="playbtn()">play</button>
                         <button onclick="pausedbtn()">reset</button>
-                        <button onclick="nextbtntwo()">next</button>
+                        <a href="#slide two" class="next" onclick="nextbtn()">next</a>
+                        <a href="#slide intro" class="previous" onclick="prevbtn()">previous</a>
                     </div>
                     <div class="first" id="paused"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -37,7 +38,8 @@
                     <div class="btn">
                         <button onclick="playbtn()">play</button>
                         <button onclick="pausedbtn()">reset</button>
-                        <button onclick="nextbtn3()">next</button>
+                        <a href="#slide three" class="next" onclick="nextbtn()">next</a>
+                        <a href="#slide one" class="previous" onclick="prevbtn()">previous</a>
                     </div>
                     <div class="box2" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -74,23 +76,16 @@
 
     }
 
-    function nextbtnone() {
+    function nextbtn() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("first");
+            x.id = "play";
+            console.log(i);
+        }
         var x = document.getElementById("paused");
         x.id = "play";
-        location.replace("#slide one");
 
-    }
-
-    function nextbtntwo() {
-        var x = document.getElementById("paused");
-        x.id = "play";
-        location.replace("#slide two");
-
-    }
-
-    function nextbtn3() {
-        location.replace("#slide three");
-        document.getElementsByClassName("box3").id = "play";
     }
 </script>
 
