@@ -12,6 +12,11 @@
 <body>
     <div class="outer-wrapper">
         <div class="wrapper">
+            <div class="slide intro">
+                <div class="btn">
+                    <button onclick="nextbtnone()">next</button>
+                </div>
+            </div>
             <div class="slide one" id="slide one">
                 <dir class="header">Animals</dir>
                 <dir class="boxshowspeed">
@@ -20,7 +25,7 @@
                         <button onclick="pausedbtn()">reset</button>
                         <button onclick="nextbtntwo()">next</button>
                     </div>
-                    <div class="first" id="play"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    <div class="first" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
                     </div>
                     <div>Snail</div>
                 </dir>
@@ -57,21 +62,30 @@
 <script>
     function playbtn() {
         var x = document.getElementById("paused");
-        x.id = "play"
+        x.id = "play";
 
 
     }
 
     function pausedbtn() {
         var x = document.getElementById("play");
-        x.id = "paused"
+        x.id = "paused";
 
 
     }
 
+    function nextbtnone() {
+        var x = document.getElementById("paused");
+        x.id = "play";
+        location.replace("#slide one");
+
+    }
+
     function nextbtntwo() {
+        var x = document.getElementById("paused");
+        x.id = "play";
         location.replace("#slide two");
-        document.getElementsByClassName("box2").id = "play";
+
     }
 
     function nextbtn3() {
