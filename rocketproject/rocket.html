@@ -3,7 +3,6 @@
 
 <head>
     <title>
-        Making a div horizontally scrollable using CSS
     </title>
     <link rel="stylesheet" href="css.css">
 
@@ -12,64 +11,61 @@
 <body>
     <div class="outer-wrapper">
         <div class="wrapper">
-<<<<<<< Updated upstream
-            <div class="slide one" id="slide one">
-                <dir class="header">Animals</dir>
-                <dir class="boxshowspeed">
-=======
-<<<<<<< HEAD
-            <div class="slide intro" id="slide intro">
-                <div class="btn">
-                    <button onclick="nextbtnone()">next</button>
-                </div>
-            </div>
-            <div class="slide one" id="slide one">
-                <dir class="header">Animals</dir>
-                <dir class="boxshowspeed">
-                    <div class="btn">
-                        <button onclick="playbtn()">play</button>
-                        <button onclick="pausedbtn()">reset</button>
-                        <button onclick="nextbtntwo()">next</button>
-                        <button onclick="prevbtnintro()">previous</button>
-                    </div>
-                    <div class="first" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
-                    </div>
-=======
-            <div class="slide one" id="slide one">
-                <dir class="header">Animals</dir>
-                <dir class="boxshowspeed">
->>>>>>> Stashed changes
-                    <button onclick="playbtn()">play</button>
-                    <button onclick="pausedbtn()">reset</button>
-                    <button onclick="nextbtn()"><a href="#slide two">next</a></button>
-                    <div class="box" id="play"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img></div>
-<<<<<<< Updated upstream
-=======
->>>>>>> 57f2b507579006ffdd9485b2669101e48b9f967d
->>>>>>> Stashed changes
-                    <div>Snail</div>
-                </dir>
 
-            </div>
-            <div class="slide two" id="slide two">
-                <dir class="header">2</dir>
+            <div class="slide one" id="slide one">
+                <dir class="header">Animals</dir>
                 <dir class="boxshowspeed">
-                    <div class="next"><a href="#slide three">next</a></div>
-                    <div class="prev"><a href="#slide one">previous</a></div>
-                    <div class="box" id="div1">linear</div>
-                </dir>
+
+                    <div class="slide intro" id="slide intro">
+                        <div class="btn">
+                            <button onclick="nextbtnone()">next</button>
+                        </div>
+                    </div>
+                    <div class="slide one" id="slide one">
+                        <dir class="header">Animals</dir>
+                        <dir class="boxshowspeed">
+                            <div class="btn">
+                                <button onclick="playbtn()">play</button>
+                                <button onclick="pausedbtn()">reset</button>
+                                <button onclick="nextbtntwo()">next</button>
+                                <button onclick="prevbtnintro()">previous</button>
+                            </div>
+                            <div class="first" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                            </div>
+
+                            <div class="slide one" id="slide one">
+                                <dir class="header">Animals</dir>
+                                <dir class="boxshowspeed">
+
+                                    <button onclick="playbtn()">play</button>
+                                    <button onclick="pausedbtn()">reset</button>
+                                    <button onclick="nextbtn()"><a href="#slide two">next</a></button>
+                                    <div class="box" id="play"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
+                                    </div>
+
+                                    <div>Snail</div>
+                                </dir>
+
+                            </div>
+                            <div class="slide two" id="slide two">
+                                <dir class="header">2</dir>
+                                <dir class="boxshowspeed">
+                                    <div class="next"><a href="#slide three">next</a></div>
+                                    <div class="prev"><a href="#slide one">previous</a></div>
+                                    <div class="box" id="div1">linear</div>
+                                </dir>
+                            </div>
+                            <div class="slide three" id="slide three">
+                                <dir class="header">3</dir>
+                                <dir class="boxshowspeed">
+                                    <div class="next"><a href="#slide four">next</a></div>
+                                    <div class="prev"><a href="#slide two">previous</a></div>
+                                    <div class="box" id="div1">linear</div>
+                                </dir>
+                            </div>
+                            <div class="slide four" id="slide three"></div>
+                    </div>
             </div>
-            <div class="slide three" id="slide three">
-                <dir class="header">3</dir>
-                <dir class="boxshowspeed">
-                    <div class="next"><a href="#slide four">next</a></div>
-                    <div class="prev"><a href="#slide two">previous</a></div>
-                    <div class="box" id="div1">linear</div>
-                </dir>
-            </div>
-            <div class="slide four" id="slide three"></div>
-        </div>
-    </div>
 </body>
 <script>
     function playbtn() {
@@ -83,8 +79,6 @@
         var x = document.getElementById("play");
         x.id = "paused"
 
-<<<<<<< Updated upstream
-=======
 
     }
 
@@ -92,7 +86,6 @@
         var x = document.getElementById("play");
         x.id = "paused";
         location.replace("#slide intro");
->>>>>>> Stashed changes
 
     }
 </script>
