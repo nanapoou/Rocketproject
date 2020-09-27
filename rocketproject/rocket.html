@@ -3,6 +3,7 @@
 
 <head>
     <title>
+        Making a div horizontally scrollable using CSS
     </title>
     <link rel="stylesheet" href="css.css">
 
@@ -11,82 +12,85 @@
 <body>
     <div class="outer-wrapper">
         <div class="wrapper">
-
+            <div class="slide intro">
+                <div class="btn">
+                    <button onclick="nextbtnone()">next</button>
+                </div>
+            </div>
             <div class="slide one" id="slide one">
                 <dir class="header">Animals</dir>
                 <dir class="boxshowspeed">
-
-                    <div class="slide intro" id="slide intro">
-                        <div class="btn">
-                            <button onclick="nextbtnone()">next</button>
-                        </div>
+                    <div class="btn">
+                        <button onclick="playbtn()">play</button>
+                        <button onclick="pausedbtn()">reset</button>
+                        <button onclick="nextbtntwo()">next</button>
                     </div>
-                    <div class="slide one" id="slide one">
-                        <dir class="header">Animals</dir>
-                        <dir class="boxshowspeed">
-                            <div class="btn">
-                                <button onclick="playbtn()">play</button>
-                                <button onclick="pausedbtn()">reset</button>
-                                <button onclick="nextbtntwo()">next</button>
-                                <button onclick="prevbtnintro()">previous</button>
-                            </div>
-                            <div class="first" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
-                            </div>
-
-                            <div class="slide one" id="slide one">
-                                <dir class="header">Animals</dir>
-                                <dir class="boxshowspeed">
-
-                                    <button onclick="playbtn()">play</button>
-                                    <button onclick="pausedbtn()">reset</button>
-                                    <button onclick="nextbtn()"><a href="#slide two">next</a></button>
-                                    <div class="box" id="play"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
-                                    </div>
-
-                                    <div>Snail</div>
-                                </dir>
-
-                            </div>
-                            <div class="slide two" id="slide two">
-                                <dir class="header">2</dir>
-                                <dir class="boxshowspeed">
-                                    <div class="next"><a href="#slide three">next</a></div>
-                                    <div class="prev"><a href="#slide one">previous</a></div>
-                                    <div class="box" id="div1">linear</div>
-                                </dir>
-                            </div>
-                            <div class="slide three" id="slide three">
-                                <dir class="header">3</dir>
-                                <dir class="boxshowspeed">
-                                    <div class="next"><a href="#slide four">next</a></div>
-                                    <div class="prev"><a href="#slide two">previous</a></div>
-                                    <div class="box" id="div1">linear</div>
-                                </dir>
-                            </div>
-                            <div class="slide four" id="slide three"></div>
+                    <div class="first" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
                     </div>
+                    <div>Snail</div>
+                </dir>
+
             </div>
+            <div class="slide two" id="slide two">
+                <dir class="header">2</dir>
+                <dir class="boxshowspeed">
+                    <div class="btn">
+                        <button onclick="playbtn()">play</button>
+                        <button onclick="pausedbtn()">reset</button>
+                        <button onclick="nextbtn3()">next</button>
+                    </div>
+                    <div class="box2" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                    <div>Name</div>
+            </div>
+            <div class="slide three" id="slide three">
+                <dir class="header">3</dir>
+                <dir class="boxshowspeed">
+                    <div class="btn">
+                        <button onclick="playbtn()">play</button>
+                        <button onclick="pausedbtn()">reset</button>
+                        <button onclick="nextbtn3()">next</button>
+                    </div>
+                    <div class="box3" id="paused"><img src="Snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                    <div>Name</div>
+            </div>
+            <div class="slide four" id="slide three"></div>
+        </div>
+    </div>
 </body>
 <script>
     function playbtn() {
         var x = document.getElementById("paused");
-        x.id = "play"
+        x.id = "play";
 
 
     }
 
     function pausedbtn() {
         var x = document.getElementById("play");
-        x.id = "paused"
+        x.id = "paused";
 
 
     }
 
-    function prevbtnintro() {
-        var x = document.getElementById("play");
-        x.id = "paused";
-        location.replace("#slide intro");
+    function nextbtnone() {
+        var x = document.getElementById("paused");
+        x.id = "play";
+        location.replace("#slide one");
 
+    }
+
+    function nextbtntwo() {
+        var x = document.getElementById("paused");
+        x.id = "play";
+        location.replace("#slide two");
+
+    }
+
+    function nextbtn3() {
+        location.replace("#slide three");
+        document.getElementsByClassName("box3").id = "play";
     }
 </script>
 
