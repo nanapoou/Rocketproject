@@ -213,7 +213,7 @@ a:hover {
     top: 15%;
 }
 
-.run_submarine {
+.run_car {
     position: relative;
     animation: mymove 27s ease;
     animation-fill-mode: forwards;
