@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>
         How fast thing can move
     </title>
     <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
     <div class="outer-wrapper">
         <div class="wrapper">
@@ -23,24 +25,26 @@
                 <div class="sub_header">Snail</div>
                 <div class="boxshowspeed">
                     <div class="bottom_panel"></div>
-                    <div class="run_snail" id="paused"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img></div>
+                    <div class="run_snail" id="paused"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
                     <div class="timer" id="snail_countdown">6945 seconds remaining</div>
                     <a href="#slide intro" class="previous" onclick="prevbtn()">previous</a>
-                    <button onclick="pausedbtn()" id="reset">reset</button>
+                    <button onclick="resetbtnsnail()" id="reset">reset</button>
                     <a href="#slide bg2" class="next" onclick="next_human()">next</a>
                 </div>
             </div>
 
-             <!-- ************************* HUMAN PAGE ************************* -->
+            <!-- ************************* HUMAN PAGE ************************* -->
             <div class="slide bg2" id="slide bg2">
                 <dir class="header">Animals</dir>
                 <div class="sub_header">Human</div>
                 <div class="boxshowspeed">
                     <div class="bottom_panel"></div>
-                    <div class="run_human" id="paused"><img src="Icon/human.png" alt="" width="80px" height="80px"></img></div>
+                    <div tag class="run_human" id="paused"><img src="Icon/human.png" alt="" width="80px" height="80px"></img>
+                    </div>
                     <div class="timer" id="human_countdown">42 seconds remaining</div>
                     <a href="#slide bg1" class="previous" onclick="prevbtn()">previous</a>
-                    <button onclick="pausedbtn()" id="reset">reset</button>
+                    <button onclick="resetbtnhuman()" id="reset">reset</button>
                     <a href="#slide bg3" class="next" onclick="next_submarine()">next</a>
                 </div>
             </div>
@@ -51,10 +55,11 @@
                 <div class="sub_header">Submarine</div>
                 <div class="boxshowspeed">
                     <div class="bottom_panel"></div>
-                    <div class="run_submarine" id="paused"><img src="Icon/submarine.png" alt="" width="80px" height="80px"></img></div>
+                    <div class="run_submarine" id="paused"><img src="Icon/submarine.png" alt="" width="80px" height="80px"></img>
+                    </div>
                     <div class="timer" id="submarine_countdown">27 seconds remaining</div>
                     <a href="#slide bg2" class="previous" onclick="prevbtn()">previous</a>
-                    <button onclick="pausedbtn()" id="reset">reset</button>
+                    <button class="reset" onclick="resetbtn()" id="reset">reset</button>
                     <a href="#slide bg4" class="next" onclick="next_submarine()">next</a>
                 </div>
             </div>
@@ -74,13 +79,36 @@
 
     }
 
-    function pausedbtn() {
-        var x = document.getElementById("play");
-        x.id = "paused";
+    function resetbtnsnail() {
+        var element = document.getElementsByClassName("run_snail")[0];
+        element.classList.remove("run_snail");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_snail");
 
 
     }
-    
+
+    function resetbtnhuman() {
+        var element = document.getElementsByClassName("run_human")[0];
+        element.classList.remove("run_human");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_human");
+
+    }
     /************************ CLICK BUTTON TO MOVE ************************/
     /* Intro Button */
     function next_intro() {
@@ -134,7 +162,7 @@
 
     /* Snail Countdown */
     var snail_timeleft = 6944;
-    var downloadTimer = setInterval(function () {
+    var downloadTimer = setInterval(function() {
         if (snail_timeleft <= 0) {
             clearInterval(downloadTimer);
             document.getElementById("snail_countdown").innerHTML = "Finished";
@@ -146,7 +174,7 @@
 
     /* Human Countdown*/
     var human_timeleft = 41;
-    var downloadTimer = setInterval(function () {
+    var downloadTimer = setInterval(function() {
         if (human_timeleft <= 0) {
             clearInterval(downloadTimer);
             document.getElementById("human_countdown").innerHTML = "Finished";
@@ -158,7 +186,7 @@
 
     /* Submarine Countdown*/
     var submarine_timeleft = 26;
-    var downloadTimer = setInterval(function () {
+    var downloadTimer = setInterval(function() {
         if (submarine_timeleft <= 0) {
             clearInterval(downloadTimer);
             document.getElementById("submarine_countdown").innerHTML = "Finished";
