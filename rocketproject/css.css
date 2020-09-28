@@ -34,7 +34,15 @@ body {
 /*********************** BACKGROUND IMAGE *******************/
 
 .intro {
-    background: red;
+    background-image: url(Bg/light-burst-texture-free-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.logo{
+    display: block;
+    margin-left: 190px;
+    margin-right: auto;
 }
 
 .bg1 {
