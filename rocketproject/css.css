@@ -18,6 +18,7 @@ body {
 /*********************** HEADER & SUBHEADER *******************/
 
 .header {
+    padding-right: 25px;
     text-align: center;
     font-size: 50px;
     background: #00dfdf;
@@ -25,9 +26,9 @@ body {
 }
 
 .sub_header {
+    padding-left: 10px;
     text-align: center;
     font-size: 40px;
-    background: lightgreen;
 }
 
 
@@ -98,16 +99,20 @@ body {
 
 /************************* Button Controller ***************************/
 
-a {
+a { 
+    /*Tag Name*/
     padding: 10px 20px;
     text-decoration: none;
 }
 
-a.intro_next {
-    background: #00dfdf;
+a.intro_next { 
+    /*Tag Name for Intro Button*/
     padding: 10px 20px;
-    margin-left: 5vw;
+    margin-left: 45vw;
+    background: #00dfdf;
     text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .bottom_panel {
@@ -127,26 +132,30 @@ a.intro_next {
     position: relative;
     display: inline-block;
     color: black;
+    font-weight: bold;
 }
 
 #reset {
     /*Reset Button*/
-    margin-left: 42%;
+    margin-left: 39%;
     margin-top: 3%;
     background-color: #4CAF50;
     position: relative;
     display: inline-block;
     color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .next {
     /*Next Button*/
-    margin-left: 44%;
+    margin-left: 41%;
     margin-top: 3%;
-    background-color: #4CAF50;
+    background-color:#f1f1f1;
     position: relative;
     display: inline-block;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 .timer {
@@ -204,7 +213,7 @@ a:hover {
     top: 15%;
 }
 
-.run_submarine {
+.run_car {
     position: relative;
     animation: mymove 27s ease;
     animation-fill-mode: forwards;

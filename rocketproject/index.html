@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        How fast thing can move
+    </title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+
+            <!-- ************************* INTRO PAGE ************************* -->
+            <div class="slide intro" id="slide intro">
+                <div class="a">
+                    <img src="Bg/How Fast.png" alt="how fast" class="logo" width="70%" height="70%">
+                    <a href="#slide bg1" class="intro_next" onclick="next_intro()">Start</a>
+                </div>
+            </div>
+
+            <!-- ************************* SNAIL PAGE ************************* -->
+            <div class="slide bg1" id="slide bg1">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Snail</div>
+                <div class="boxshowspeed">
+                    <div class="bottom_panel"></div>
+                    <div class="run_snail" id="paused"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                    <div class="timer" id="snail_countdown">6945 seconds remaining</div>
+                    <a href="#slide intro" class="previous" onclick="prevbtn()">previous</a>
+                    <button onclick="resetbtnsnail()" id="reset">reset</button>
+                    <a href="#slide bg2" class="next" onclick="next_human()">next</a>
+                </div>
+            </div>
+
+            <!-- ************************* HUMAN PAGE ************************* -->
+            <div class="slide bg2" id="slide bg2">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Human</div>
+                <div class="boxshowspeed">
+                    <div class="bottom_panel"></div>
+                    <div tag class="run_human" id="paused"><img src="Icon/human.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                    <div class="timer" id="human_countdown">42 seconds remaining</div>
+                    <a href="#slide bg1" class="previous" onclick="prevbtn()">previous</a>
+                    <button onclick="resetbtnhuman()" id="reset">reset</button>
+                    <a href="#slide bg3" class="next" onclick="next_car()">next</a>
+                </div>
+            </div>
+
+            <!-- ************************* CAR PAGE ************************* -->
+            <div class="slide bg3" id="slide bg3">
+                <dir class="header">Vehicle</dir>
+                <div class="sub_header">Car</div>
+                <div class="boxshowspeed">
+                    <div class="bottom_panel"></div>
+                    <div class="run_car" id="paused"><img src="Icon/car.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                    <div class="timer" id="car_countdown">27 seconds remaining</div>
+                    <a href="#slide bg2" class="previous" onclick="prevbtn()">previous</a>
+                    <button class="reset" onclick="resetbtn()" id="reset">reset</button>
+                    <a href="#slide bg4" class="next" onclick="next_usian_bolt()">next</a>
+                </div>
+            </div>
+
+            <!-- ************************* USIAN BOLT PAGE ************************* -->
+            <div class="slide four" id="slide bg4"></div>
+
+            <!-- ************************* END END END END END ************************* -->
+        </div>
+    </div>
+</body>
+<script>
+    function playbtn() {
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+
+    }
+
+    function resetbtnsnail() {
+        var element = document.getElementsByClassName("run_snail")[0];
+        element.classList.remove("run_snail");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_snail");
+
+
+    }
+
+    function resetbtnhuman() {
+        var element = document.getElementsByClassName("run_human")[0];
+        element.classList.remove("run_human");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_human");
+
+    }
+    /************************ CLICK BUTTON TO MOVE ************************/
+    /* Intro Button */
+    function next_intro() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_snail");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+    }
+
+    /* Snail Button */
+    function next_human() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_human");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+    }
+
+    /*Human Button */
+    function next_car() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_car");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+    }
+
+    /*Car Button */
+    function next_usian_bolt() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_usian_bolt");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+    }
+
+    /************************ COUNTDOOWN TIMER ************************/
+
+    /* Snail Countdown */
+    var snail_timeleft = 6944;
+    var downloadTimer = setInterval(function() {
+        if (snail_timeleft <= 0) {
+            clearInterval(downloadTimer);
+            document.getElementById("snail_countdown").innerHTML = "Finished";
+        } else {
+            document.getElementById("snail_countdown").innerHTML = snail_timeleft + " seconds remaining";
+        }
+        snail_timeleft -= 1;
+    }, 1000);
+
+    /* Human Countdown*/
+    var human_timeleft = 41;
+    var downloadTimer = setInterval(function() {
+        if (human_timeleft <= 0) {
+            clearInterval(downloadTimer);
+            document.getElementById("human_countdown").innerHTML = "Finished";
+        } else {
+            document.getElementById("human_countdown").innerHTML = human_timeleft + " seconds remaining";
+        }
+        human_timeleft -= 1;
+    }, 1000);
+
+    /* Car Countdown*/
+    var car_timeleft = 26;
+    var downloadTimer = setInterval(function() {
+        if (car_timeleft <= 0) {
+            clearInterval(downloadTimer);
+            document.getElementById("car_countdown").innerHTML = "Finished";
+        } else {
+            document.getElementById("car_countdown").innerHTML = car_timeleft + " seconds remaining";
+        }
+        car_timeleft -= 1;
+    }, 1000);
+</script>
+
+</html>
