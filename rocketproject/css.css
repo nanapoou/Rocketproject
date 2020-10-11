@@ -89,13 +89,20 @@ body {
     -ms-overflow-style: none;
 }
 
-.container-fluid.container-xl {
-    display: block;
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
     width: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
 }
 
 
@@ -128,29 +135,44 @@ a.intro_next {
     /*Buttom Panel*/
     background: lightyellow;
     position: absolute;
-    width: 100%;
+    /*important*/
+    width: 20%;
     height: 30%;
     bottom: 0%;
 }
 
+
+/*
+.bottom_button {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+*/
+
 .previous {
     /*Previous Button*/
-    margin-left: 2%;
-    margin-top: 3%;
+    /*margin-left: 0;
+    margin-top: 0;*/
+    margin: 0;
     background-color: #f1f1f1;
     position: relative;
-    display: inline-block;
     color: black;
     font-weight: bold;
 }
 
 #reset {
     /*Reset Button*/
-    margin-left: 39%;
-    margin-top: 3%;
+    /*margin-top: 0;
+    margin-left: 50%;*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: #4CAF50;
-    position: relative;
-    display: inline-block;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -158,19 +180,20 @@ a.intro_next {
 
 .next {
     /*Next Button*/
-    margin-left: 41%;
-    margin-top: 3%;
+    /*margin-top: 0;
+    margin-right: 0;*/
+    margin: 0;
+    float: right;
     background-color: #f1f1f1;
     position: relative;
-    display: inline-block;
     color: black;
     font-weight: bold;
 }
 
 .timer {
     /*Countdown Timer Text*/
+    margin: 5px;
     font-size: 40px;
-    margin-top: 22%;
     position: relative;
     text-align: center;
 }

@@ -10,69 +10,105 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="outer-wrapper">
-            <div class="wrapper">
 
-                <!-- ************************* INTRO PAGE ************************* -->
-                <div class="slide intro" id="slide intro">
-                    <div class="a">
-                        <img src="Bg/How Fast.png" alt="how fast" class="logo" width="70%" height="70%">
-                        <a href="#slide bg1" class="intro_next" onclick="next_intro()">Start</a>
-                    </div>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+
+            <!-- ************************* INTRO PAGE ************************* -->
+            <div class="slide intro" id="slide intro">
+                <div class="a">
+                    <img src="Bg/How Fast.png" alt="how fast" class="logo" width="70%" height="70%">
+                    <a href="#slide bg1" class="intro_next" onclick="next_intro()">Start</a>
                 </div>
-
-                <!-- ************************* SNAIL PAGE ************************* -->
-                <div class="slide bg1" id="slide bg1">
-                    <dir class="header">Animals</dir>
-                    <div class="sub_header">Snail</div>
-                    <div class="boxshowspeed">
-                        <div class="bottom_panel"></div>
-                        <div class="run_snail" id="paused"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
-                        </div>
-                        <div class="timer" id="snail_countdown">6945 seconds remaining</div>
-                        <a href="#slide intro" class="previous" onclick="prevbtn()">previous</a>
-                        <button onclick="resetbtnsnail()" id="reset">reset</button>
-                        <a href="#slide bg2" class="next" onclick="next_human()">next</a>
-                    </div>
-                </div>
-
-                <!-- ************************* HUMAN PAGE ************************* -->
-                <div class="slide bg2" id="slide bg2">
-                    <dir class="header">Animals</dir>
-                    <div class="sub_header">Human</div>
-                    <div class="boxshowspeed">
-                        <div class="bottom_panel"></div>
-                        <div tag class="run_human" id="paused"><img src="Icon/human.png" alt="" width="80px" height="80px"></img>
-                        </div>
-                        <div class="timer" id="human_countdown">42 seconds remaining</div>
-                        <a href="#slide bg1" class="previous" onclick="prevbtn()">previous</a>
-                        <button onclick="resetbtnhuman()" id="reset">reset</button>
-                        <a href="#slide bg3" class="next" onclick="next_car()">next</a>
-                    </div>
-                </div>
-
-                <!-- ************************* CAR PAGE ************************* -->
-                <div class="slide bg3" id="slide bg3">
-                    <dir class="header">Vehicle</dir>
-                    <div class="sub_header">Car</div>
-                    <div class="boxshowspeed">
-                        <div class="bottom_panel"></div>
-                        <div class="run_car" id="paused"><img src="Icon/car.png" alt="" width="80px" height="80px"></img>
-                        </div>
-                        <div class="timer" id="car_countdown">27 seconds remaining</div>
-                        <a href="#slide bg2" class="previous" onclick="prevbtn()">previous</a>
-                        <button class="reset" onclick="resetbtn()" id="reset">reset</button>
-                        <a href="#slide bg4" class="next" onclick="next_usian_bolt()">next</a>
-                    </div>
-                </div>
-
-                <!-- ************************* USIAN BOLT PAGE ************************* -->
-                <div class="slide four" id="slide bg4"></div>
-
-                <!-- ************************* END END END END END ************************* -->
             </div>
+
+            <!-- ************************* SNAIL PAGE ************************* -->
+            <div class="slide bg1" id="slide bg1">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Snail</div>
+                <div class="boxshowspeed">
+
+                    <div class="run_snail" id="paused"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
+                    </div>
+
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="snail_countdown">6945 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide intro" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnsnail()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg2" class="next" onclick="next_human()">next</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ************************* HUMAN PAGE ************************* -->
+            <div class="slide bg2" id="slide bg2">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Human</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_human" id="paused"><img src="Icon/human.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="human_countdown">42 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg1" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnhuman()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg3" class="next" onclick="next_car()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ************************* CAR PAGE ************************* -->
+            <div class="slide bg3" id="slide bg3">
+                <dir class="header">Vehicle</dir>
+                <div class="sub_header">Car</div>
+                <div class="boxshowspeed">
+                    <div class="run_car" id="paused"><img src="Icon/car.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="car_countdown">27 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg2" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button class="reset" onclick="resetbtn()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg4" class="next" onclick="next_usian_bolt()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ************************* USIAN BOLT PAGE ************************* -->
+            <div class="slide four" id="slide bg4"></div>
+
+            <!-- ************************* END END END END END ************************* -->
         </div>
+    </div>
     </div>
 </body>
 <script>
