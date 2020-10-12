@@ -93,7 +93,7 @@
                                 <a href="#slide bg2" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
-                                <button class="reset" onclick="resetbtn()" id="reset">reset</button>
+                                <button class="reset" onclick="resetbtncar()" id="reset">reset</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg4" class="next" onclick="next_usian_bolt()">next</a>
@@ -112,14 +112,22 @@
     </div>
 </body>
 <script>
+    /* Define a Variable for Countdown Timer Loop */
+    var snail_timeleft = 0;
+    var human_timeleft = 0;
+    var car_timeleft = 0;
+    /**********************************************/
+
     function playbtn() {
         var x = document.getElementById("paused");
         x.id = "play";
-
-
     }
 
+    /************************* Resetting Button ************************/
+
+    /********** Snail Resetting **********/
     function resetbtnsnail() {
+        /** Image **/
         var element = document.getElementsByClassName("run_snail")[0];
         element.classList.remove("run_snail");
 
@@ -132,10 +140,33 @@
 
         element.classList.add("run_snail");
 
-
+        /** Timer **/
+        if (snail_timeleft == -1){
+            snail_timeleft = 6943;
+            var downloadTimer = setInterval(function() {
+            if (snail_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("snail_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("snail_countdown").innerHTML = snail_timeleft + " seconds remaining";
+            }
+            snail_timeleft -= 1;
+            }, 1000);
+        } else {
+            snail_timeleft = 6945;
+            var downloadTimer = setInterval(function() {
+            if (snail_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("snail_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("snail_countdown").innerHTML = snail_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
     }
 
     function resetbtnhuman() {
+        /** Image **/
         var element = document.getElementsByClassName("run_human")[0];
         element.classList.remove("run_human");
 
@@ -148,8 +179,71 @@
 
         element.classList.add("run_human");
 
+        /** Timer **/
+        if (human_timeleft == -1){
+            human_timeleft = 41;
+            var downloadTimer = setInterval(function() {
+            if (human_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("human_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("human_countdown").innerHTML = human_timeleft + " seconds remaining";
+            }
+            human_timeleft -= 1;
+            }, 1000);
+        } else {
+            human_timeleft = 42;
+            var downloadTimer = setInterval(function() {
+            if (human_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("human_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("human_countdown").innerHTML = human_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
     }
-    /************************ CLICK BUTTON TO MOVE ************************/
+
+    function resetbtncar() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_car")[0];
+        element.classList.remove("run_car");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_car");
+
+        /** Timer **/
+        if (car_timeleft == -1){
+            car_timeleft = 26;
+            var downloadTimer = setInterval(function() {
+            if (car_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("car_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("car_countdown").innerHTML = car_timeleft + " seconds remaining";
+            }
+            car_timeleft -= 1;
+            }, 1000);
+        } else {
+            car_timeleft = 27;
+            var downloadTimer = setInterval(function() {
+            if (car_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("car_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("car_countdown").innerHTML = car_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+    /************************ CLICK BUTTON TO MOVE & COUNTDOWN TIMER ************************/
+
     /* Intro Button */
     function next_intro() {
         var i = 0;
@@ -160,6 +254,20 @@
         }
         var x = document.getElementById("paused");
         x.id = "play";
+
+        /* Snail Countdown */
+        if (snail_timeleft == 0){
+            snail_timeleft = 6944;
+            var downloadTimer = setInterval(function() {
+            if (snail_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("snail_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("snail_countdown").innerHTML = snail_timeleft + " seconds remaining";
+            }
+            snail_timeleft -= 1;
+            }, 1000);
+        }
     }
 
     /* Snail Button */
@@ -172,6 +280,18 @@
         }
         var x = document.getElementById("paused");
         x.id = "play";
+
+        /* Human Countdown*/
+        human_timeleft = 41;
+        var downloadTimer = setInterval(function() {
+            if (human_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("human_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("human_countdown").innerHTML = human_timeleft + " seconds remaining";
+            }
+            human_timeleft -= 1;
+        }, 1000);
     }
 
     /*Human Button */
@@ -184,6 +304,18 @@
         }
         var x = document.getElementById("paused");
         x.id = "play";
+
+        /* Car Countdown*/
+        car_timeleft = 26;
+        var downloadTimer = setInterval(function() {
+            if (car_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("car_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("car_countdown").innerHTML = car_timeleft + " seconds remaining";
+            }
+            car_timeleft -= 1;
+        }, 1000);
     }
 
     /*Car Button */
@@ -197,44 +329,6 @@
         var x = document.getElementById("paused");
         x.id = "play";
     }
-
-    /************************ COUNTDOOWN TIMER ************************/
-
-    /* Snail Countdown */
-    var snail_timeleft = 6944;
-    var downloadTimer = setInterval(function() {
-        if (snail_timeleft <= 0) {
-            clearInterval(downloadTimer);
-            document.getElementById("snail_countdown").innerHTML = "Finished";
-        } else {
-            document.getElementById("snail_countdown").innerHTML = snail_timeleft + " seconds remaining";
-        }
-        snail_timeleft -= 1;
-    }, 1000);
-
-    /* Human Countdown*/
-    var human_timeleft = 41;
-    var downloadTimer = setInterval(function() {
-        if (human_timeleft <= 0) {
-            clearInterval(downloadTimer);
-            document.getElementById("human_countdown").innerHTML = "Finished";
-        } else {
-            document.getElementById("human_countdown").innerHTML = human_timeleft + " seconds remaining";
-        }
-        human_timeleft -= 1;
-    }, 1000);
-
-    /* Car Countdown*/
-    var car_timeleft = 26;
-    var downloadTimer = setInterval(function() {
-        if (car_timeleft <= 0) {
-            clearInterval(downloadTimer);
-            document.getElementById("car_countdown").innerHTML = "Finished";
-        } else {
-            document.getElementById("car_countdown").innerHTML = car_timeleft + " seconds remaining";
-        }
-        car_timeleft -= 1;
-    }, 1000);
 </script>
 
 </html>
