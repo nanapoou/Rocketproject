@@ -46,63 +46,78 @@ body {
     margin-right: auto;
 }
 
-.bg1 { /* Snail */
+.bg1 {
+    /* Snail */
     background: #efdefe;
 }
 
-.bg2 {/* Human */
+.bg2 {
+    /* Human */
     background: #a3f3d3;
 }
 
-.bg3 { /* Usian Bolt */
+.bg3 {
+    /* Usian Bolt */
     background: #0bbaa0;
 }
 
-.bg4 { /* Zebra */
+.bg4 {
+    /* Zebra */
     background: #00dfdf;
 }
 
-.bg5 { /* Tank */
+.bg5 {
+    /* Tank */
     background: #00dfdf;
 }
 
-.bg6 { /* Skytrain */
+.bg6 {
+    /* Skytrain */
     background: #00dfdf;
 }
 
-.bg7 { /* Lion */
+.bg7 {
+    /* Lion */
     background: #00dfdf;
 }
 
-.bg8 { /* Motorcycle */
+.bg8 {
+    /* Motorcycle */
     background: #00dfdf;
 }
 
-.bg9 { /* Cheetah */
+.bg9 {
+    /* Cheetah */
     background: #00dfdf;
 }
 
-.bg10 { /* Eagle */
+.bg10 {
+    /* Eagle */
     background: #00dfdf;
 }
 
-.bg11 { /* Helicopter */
+.bg11 {
+    /* Helicopter */
     background: #00dfdf;
 }
 
-.bg12 { /* Car */
+.bg12 {
+    /* Car */
     background: #00dfdf;
 }
 
-.bg13 { /* Airplane */
+.bg13 {
+    /* Airplane */
     background: #00dfdf;
 }
 
-.bg14 { /* Jet */
+.bg14 {
+    /* Jet */
     background: #00dfdf;
 }
 
-.bg15 { /* Scecraft */
+.bg15 {
+    /* Scecraft */
     background: #00dfdf;
 }
 
@@ -114,7 +129,7 @@ body {
     transform-origin: top left;
     display: flex;
     flex-direction: row;
-    width: 500vw;
+    width: 1600vw;
 }
 
 .outer-wrapper {
@@ -180,7 +195,7 @@ a.intro_next {
     background: lightyellow;
     position: absolute;
     /*important*/
-    width: 20%;
+    width: 6.25%;
     height: 30%;
     bottom: 0%;
 }
