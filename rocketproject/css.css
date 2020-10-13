@@ -46,19 +46,63 @@ body {
     margin-right: auto;
 }
 
-.bg1 {
+.bg1 { /* Snail */
     background: #efdefe;
 }
 
-.bg2 {
+.bg2 {/* Human */
     background: #a3f3d3;
 }
 
-.bg3 {
+.bg3 { /* Usian Bolt */
     background: #0bbaa0;
 }
 
-.bg4 {
+.bg4 { /* Zebra */
+    background: #00dfdf;
+}
+
+.bg5 { /* Tank */
+    background: #00dfdf;
+}
+
+.bg6 { /* Skytrain */
+    background: #00dfdf;
+}
+
+.bg7 { /* Lion */
+    background: #00dfdf;
+}
+
+.bg8 { /* Motorcycle */
+    background: #00dfdf;
+}
+
+.bg9 { /* Cheetah */
+    background: #00dfdf;
+}
+
+.bg10 { /* Eagle */
+    background: #00dfdf;
+}
+
+.bg11 { /* Helicopter */
+    background: #00dfdf;
+}
+
+.bg12 { /* Car */
+    background: #00dfdf;
+}
+
+.bg13 { /* Airplane */
+    background: #00dfdf;
+}
+
+.bg14 { /* Jet */
+    background: #00dfdf;
+}
+
+.bg15 { /* Scecraft */
     background: #00dfdf;
 }
 
@@ -231,7 +275,7 @@ a:hover {
 
 .run_snail {
     position: relative;
-    animation: mymove 695s ease;
+    animation: mymove 69445s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
@@ -239,7 +283,79 @@ a:hover {
 
 .run_human {
     position: relative;
-    animation: mymove 42s ease;
+    animation: mymove 417s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_usian_bolt {
+    position: relative;
+    animation: mymove 225s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_zebra {
+    position: relative;
+    animation: mymove 157s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_tank {
+    position: relative;
+    animation: mymove 139s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_skytrain {
+    position: relative;
+    animation: mymove 125s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_lion {
+    position: relative;
+    animation: mymove 125s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_motorcycle {
+    position: relative;
+    animation: mymove 100s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_cheetah {
+    position: relative;
+    animation: mymove 84s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_eagle {
+    position: relative;
+    animation: mymove 63s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_helicopter {
+    position: relative;
+    animation: mymove 40s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
@@ -247,7 +363,31 @@ a:hover {
 
 .run_car {
     position: relative;
-    animation: mymove 27s ease;
+    animation: mymove 32s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_airplane {
+    position: relative;
+    animation: mymove 14s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_jet {
+    position: relative;
+    animation: mymove 11s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_spacecraft {
+    position: relative;
+    animation: mymove 1s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;

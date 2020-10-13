@@ -33,7 +33,7 @@
 
                 </div>
                 <div class="bottom_panel">
-                    <div class="timer" id="snail_countdown">6945 seconds remaining</div>
+                    <div class="timer" id="snail_countdown">69445 seconds remaining</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="bottom_panel">
-                    <div class="timer" id="human_countdown">42 seconds remaining</div>
+                    <div class="timer" id="human_countdown">417 seconds remaining</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
@@ -70,33 +70,7 @@
                                 <button onclick="resetbtnhuman()" id="reset">reset</button>
                             </div>
                             <div class="col-4">
-                                <a href="#slide bg3" class="next" onclick="next_car()">next</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ************************* CAR PAGE ************************* -->
-            <div class="slide bg3" id="slide bg3">
-                <dir class="header">Vehicle</dir>
-                <div class="sub_header">Car</div>
-                <div class="boxshowspeed">
-                    <div class="run_car" id="paused"><img src="Icon/car.png" alt="" width="80px" height="80px"></img>
-                    </div>
-                </div>
-                <div class="bottom_panel">
-                    <div class="timer" id="car_countdown">27 seconds remaining</div>
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-4">
-                                <a href="#slide bg2" class="previous" onclick="prevbtn()">previous</a>
-                            </div>
-                            <div class="col-4">
-                                <button class="reset" onclick="resetbtncar()" id="reset">reset</button>
-                            </div>
-                            <div class="col-4">
-                                <a href="#slide bg4" class="next" onclick="next_usian_bolt()">next</a>
+                                <a href="#slide bg3" class="next" onclick="next_usian_bolt()">next</a>
                             </div>
                         </div>
                     </div>
@@ -104,18 +78,82 @@
             </div>
 
             <!-- ************************* USIAN BOLT PAGE ************************* -->
-            <div class="slide four" id="slide bg4"></div>
+            <div class="slide bg3" id="slide bg3">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Usian Bolt</div>
+                <div class="boxshowspeed">
 
+                    <div class="run_usian_bolt" id="paused"><img src="Icon/usianbolt.png" alt="" width="80px" height="80px"></img>
+                    </div>
+
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="usian_bolt_countdown">225 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg2" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnusianbolt()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg4" class="next" onclick="next_tank()">next</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ************************* ZEBRA PAGE ************************* -->
+            <div class="slide bg4" id="slide bg4">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Zebra</div>
+                <div class="boxshowspeed">
+                    <div class="run_zebra" id="paused"><img src="Icon/zebra.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="tank_countdown">157 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide b3" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button class="reset" onclick="resetbtnzebra()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg5" class="next" onclick="next_tank()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
             <!-- ************************* END END END END END ************************* -->
         </div>
     </div>
     </div>
 </body>
 <script>
-    /* Define a Variable for Countdown Timer Loop */
+    /****** Define a Variable for Countdown Timer Loop ******/
     var snail_timeleft = 0;
     var human_timeleft = 0;
+    var usian_bolt_timeleft = 0;
+    var zebra_timeleft = 0;
+    var tank_timeleft = 0;
+    var skytrain_timeleft = 0;
+    var lion_timeleft = 0;
+    var motorcycle_timeleft = 0;
+    var cheetah_timeleft = 0;
+    var eagle_timeleft = 0;
+    var helicopter_timeleft = 0;
     var car_timeleft = 0;
+    var airplane_timeleft = 0;
+    var jet_timeleft = 0;
+    var spacecraft_timeleft = 0;
     /**********************************************/
 
     function playbtn() {
@@ -123,7 +161,7 @@
         x.id = "play";
     }
 
-    /************************* Resetting Button ************************/
+    /******************************************************* Resetting Button *****************************************************/
 
     /********** Snail Resetting **********/
     function resetbtnsnail() {
@@ -142,7 +180,7 @@
 
         /** Timer **/
         if (snail_timeleft == -1){
-            snail_timeleft = 6943;
+            snail_timeleft = 69444;
             var downloadTimer = setInterval(function() {
             if (snail_timeleft <= 0) {
                 clearInterval(downloadTimer);
@@ -153,7 +191,7 @@
             snail_timeleft -= 1;
             }, 1000);
         } else {
-            snail_timeleft = 6945;
+            snail_timeleft = 69445;
             var downloadTimer = setInterval(function() {
             if (snail_timeleft <= 0) {
                 clearInterval(downloadTimer);
@@ -165,6 +203,7 @@
         }
     }
 
+    /********** Human Resetting **********/
     function resetbtnhuman() {
         /** Image **/
         var element = document.getElementsByClassName("run_human")[0];
@@ -181,7 +220,7 @@
 
         /** Timer **/
         if (human_timeleft == -1){
-            human_timeleft = 41;
+            human_timeleft = 416;
             var downloadTimer = setInterval(function() {
             if (human_timeleft <= 0) {
                 clearInterval(downloadTimer);
@@ -192,7 +231,7 @@
             human_timeleft -= 1;
             }, 1000);
         } else {
-            human_timeleft = 42;
+            human_timeleft = 417;
             var downloadTimer = setInterval(function() {
             if (human_timeleft <= 0) {
                 clearInterval(downloadTimer);
@@ -204,6 +243,367 @@
         }
     }
 
+    /********** Usian Bolt Resetting **********/
+    function resetbtnusianbolt() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_usian_bolt")[0];
+        element.classList.remove("run_usian_bolt");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_usian_bolt");
+
+        /** Timer **/
+        if (usian_bolt_timeleft == -1){
+            usian_bolt_timeleft = 224;
+            var downloadTimer = setInterval(function() {
+            if (usian_bolt_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("usian_bolt_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("usian_bolt_countdown").innerHTML = usian_bolt_timeleft + " seconds remaining";
+            }
+            usian_bolt_timeleft -= 1;
+            }, 1000);
+        } else {
+            usian_bolt_timeleft = 225;
+            var downloadTimer = setInterval(function() {
+            if (usian_bolt_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("usian_bolt_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("usian_bolt_countdown").innerHTML = usian_bolt_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Zebra Resetting **********/
+    function resetbtnzebra() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_zebra")[0];
+        element.classList.remove("run_zebra");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_zebra");
+
+        /** Timer **/
+        if (zebra_timeleft == -1){
+            zebra_timeleft = 156;
+            var downloadTimer = setInterval(function() {
+            if (zebra_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("zebra_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("zebra_countdown").innerHTML = zebra_timeleft + " seconds remaining";
+            }
+            zebra_timeleft -= 1;
+            }, 1000);
+        } else {
+            zebra_timeleft = 157;
+            var downloadTimer = setInterval(function() {
+            if (zebra_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("zebra_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("zebra_countdown").innerHTML = zebra_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Tank Resetting **********/
+    function resetbtntank() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_tank")[0];
+        element.classList.remove("run_tank");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_tank");
+
+        /** Timer **/
+        if (tank_timeleft == -1){
+            tank_timeleft = 138;
+            var downloadTimer = setInterval(function() {
+            if (tank_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("tank_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("tank_countdown").innerHTML = tank_timeleft + " seconds remaining";
+            }
+            tank_timeleft -= 1;
+            }, 1000);
+        } else {
+            tank_timeleft = 139;
+            var downloadTimer = setInterval(function() {
+            if (tank_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("tank_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("tank_countdown").innerHTML = tank_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Skytrain Resetting **********/
+    function resetbtnskytrain() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_skytrain")[0];
+        element.classList.remove("run_skytrain");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_skytrain");
+
+        /** Timer **/
+        if (skytrain_timeleft == -1){
+            skytrain_timeleft = 124;
+            var downloadTimer = setInterval(function() {
+            if (skytrain_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("skytrain_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("skytrain_countdown").innerHTML = skytrain_timeleft + " seconds remaining";
+            }
+            skytrain_timeleft -= 1;
+            }, 1000);
+        } else {
+            skytrain_timeleft = 125;
+            var downloadTimer = setInterval(function() {
+            if (skytrain_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("skytrain_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("skytrain_countdown").innerHTML = skytrain_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Lion Resetting **********/
+    function resetbtnlion() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_lion")[0];
+        element.classList.remove("run_lion");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_lion");
+
+        /** Timer **/
+        if (lion_timeleft == -1){
+            lion_timeleft = 124;
+            var downloadTimer = setInterval(function() {
+            if (lion_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("lion_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("lion_countdown").innerHTML = lion_timeleft + " seconds remaining";
+            }
+            lion_timeleft -= 1;
+            }, 1000);
+        } else {
+            lion_timeleft = 125;
+            var downloadTimer = setInterval(function() {
+            if (lion_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("lion_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("lion_countdown").innerHTML = lion_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Motorcycle Resetting **********/
+    function resetbtnmotorcycle() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_motorcycle")[0];
+        element.classList.remove("run_motorcycle");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_motorcycle");
+
+        /** Timer **/
+        if (motorcycle_timeleft == -1){
+            motorcycle_timeleft = 99;
+            var downloadTimer = setInterval(function() {
+            if (motorcycle_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("motorcycle_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("motorcycle_countdown").innerHTML = motorcycle_timeleft + " seconds remaining";
+            }
+            motorcycle_timeleft -= 1;
+            }, 1000);
+        } else {
+            motorcycle_timeleft = 100;
+            var downloadTimer = setInterval(function() {
+            if (motorcycle_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("motorcycle_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("motorcycle_countdown").innerHTML = motorcycle_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Cheetah Resetting **********/
+    function resetbtncheetah() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_cheetah")[0];
+        element.classList.remove("run_cheetah");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_cheetah");
+
+        /** Timer **/
+        if (cheetah_timeleft == -1){
+            cheetah_timeleft = 83;
+            var downloadTimer = setInterval(function() {
+            if (cheetah_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("cheetah_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("cheetah_countdown").innerHTML = cheetah_timeleft + " seconds remaining";
+            }
+            cheetah_timeleft -= 1;
+            }, 1000);
+        } else {
+            cheetah_timeleft = 84;
+            var downloadTimer = setInterval(function() {
+            if (cheetah_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("cheetah_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("cheetah_countdown").innerHTML = cheetah_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Eagle Resetting **********/
+    function resetbtneagle() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_eagle")[0];
+        element.classList.remove("run_eagle");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_eagle");
+
+        /** Timer **/
+        if (eagle_timeleft == -1){
+            eagle_timeleft = 62;
+            var downloadTimer = setInterval(function() {
+            if (eagle_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("eagle_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("eagle_countdown").innerHTML = eagle_timeleft + " seconds remaining";
+            }
+            eagle_timeleft -= 1;
+            }, 1000);
+        } else {
+            eagle_timeleft = 63;
+            var downloadTimer = setInterval(function() {
+            if (eagle_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("eagle_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("eagle_countdown").innerHTML = eagle_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Helicopter Resetting **********/
+    function resetbtnhelicopter() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_helicopter")[0];
+        element.classList.remove("run_helicopter");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_helicopter");
+
+        /** Timer **/
+        if (helicopter_timeleft == -1){
+            helicopter_timeleft = 39;
+            var downloadTimer = setInterval(function() {
+            if (helicopter_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("helicopter_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("helicopter_countdown").innerHTML = helicopter_timeleft + " seconds remaining";
+            }
+            helicopter_timeleft -= 1;
+            }, 1000);
+        } else {
+            helicopter_timeleft = 40;
+            var downloadTimer = setInterval(function() {
+            if (helicopter_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("helicopter_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("helicopter_countdown").innerHTML = helicopter_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Car Resetting **********/
     function resetbtncar() {
         /** Image **/
         var element = document.getElementsByClassName("run_car")[0];
@@ -220,7 +620,7 @@
 
         /** Timer **/
         if (car_timeleft == -1){
-            car_timeleft = 26;
+            car_timeleft = 31;
             var downloadTimer = setInterval(function() {
             if (car_timeleft <= 0) {
                 clearInterval(downloadTimer);
@@ -231,7 +631,7 @@
             car_timeleft -= 1;
             }, 1000);
         } else {
-            car_timeleft = 27;
+            car_timeleft = 32;
             var downloadTimer = setInterval(function() {
             if (car_timeleft <= 0) {
                 clearInterval(downloadTimer);
@@ -242,8 +642,128 @@
             }, 1000);
         }
     }
-    /************************ CLICK BUTTON TO MOVE & COUNTDOWN TIMER ************************/
 
+    /********** Airplane Resetting **********/
+    function resetbtnairplane() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_airplane")[0];
+        element.classList.remove("run_airplane");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_airplane");
+
+        /** Timer **/
+        if (airplane_timeleft == -1){
+            airplane_timeleft = 13;
+            var downloadTimer = setInterval(function() {
+            if (airplane_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("airplane_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("airplane_countdown").innerHTML = airplane_timeleft + " seconds remaining";
+            }
+            airplane_timeleft -= 1;
+            }, 1000);
+        } else {
+            airplane_timeleft = 14;
+            var downloadTimer = setInterval(function() {
+            if (airplane_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("airplane_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("airplane_countdown").innerHTML = airplane_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Jet Resetting **********/
+    function resetbtnjet() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_jet")[0];
+        element.classList.remove("run_jet");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_jet");
+
+        /** Timer **/
+        if (jet_timeleft == -1){
+            jet_timeleft = 10;
+            var downloadTimer = setInterval(function() {
+            if (jet_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("jet_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("jet_countdown").innerHTML = jet_timeleft + " seconds remaining";
+            }
+            jet_timeleft -= 1;
+            }, 1000);
+        } else {
+            jet_timeleft = 11;
+            var downloadTimer = setInterval(function() {
+            if (jet_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("jet_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("jet_countdown").innerHTML = jet_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+
+    /********** Spacecraft Resetting **********/
+    function resetbtnspacecraft() {
+        /** Image **/
+        var element = document.getElementsByClassName("run_spacecraft")[0];
+        element.classList.remove("run_spacecraft");
+
+        void element.offsetWidth;
+
+        element.classList.add("reset");
+        element.classList.remove("reset");
+
+        void element.offsetWidth;
+
+        element.classList.add("run_spacecraft");
+
+        /** Timer **/
+        if (spacecraft_timeleft == -1){
+            spacecraft_timeleft = 1;
+            var downloadTimer = setInterval(function() {
+            if (spacecraft_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("spacecraft_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("spacecraft_countdown").innerHTML = spacecraft_timeleft + " seconds remaining";
+            }
+            spacecraft_timeleft -= 1;
+            }, 1000);
+        } else {
+            spacecraft_timeleft = 1;
+            var downloadTimer = setInterval(function() {
+            if (spacecraft_timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("spacecraft_countdown").innerHTML = "Finished";
+            } else {
+                document.getElementById("spacecraft_countdown").innerHTML = spacecraft_timeleft + " seconds remaining";
+                }
+            }, 1000);
+        }
+    }
+    
+    /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
     /* Intro Button */
     function next_intro() {
         var i = 0;
@@ -257,7 +777,7 @@
 
         /* Snail Countdown */
         if (snail_timeleft == 0){
-            snail_timeleft = 6944;
+            snail_timeleft = 69444;
             var downloadTimer = setInterval(function() {
             if (snail_timeleft <= 0) {
                 clearInterval(downloadTimer);
@@ -282,19 +802,245 @@
         x.id = "play";
 
         /* Human Countdown*/
-        human_timeleft = 41;
-        var downloadTimer = setInterval(function() {
-            if (human_timeleft <= 0) {
-                clearInterval(downloadTimer);
-                document.getElementById("human_countdown").innerHTML = "Finished";
-            } else {
-                document.getElementById("human_countdown").innerHTML = human_timeleft + " seconds remaining";
-            }
-            human_timeleft -= 1;
-        }, 1000);
+        if (human_timeleft == 0){
+            human_timeleft = 416;
+            var downloadTimer = setInterval(function() {
+                if (human_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("human_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("human_countdown").innerHTML = human_timeleft + " seconds remaining";
+                }
+                human_timeleft -= 1;
+            }, 1000);
+        }
     }
+    /* Human Button */
+    function next_usian_bolt() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_usian_bolt");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
 
-    /*Human Button */
+        /* usian_bolt Countdown*/
+        if (usian_bolt_timeleft == 0){
+            usian_bolt_timeleft = 224;
+            var downloadTimer = setInterval(function() {
+                if (usian_bolt_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("usian_bolt_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("usian_bolt_countdown").innerHTML = usian_bolt_timeleft + " seconds remaining";
+                }
+                usian_bolt_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Usian Bolt Button */
+    function next_zebra() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_zebra");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* Zebra Countdown*/
+        if (zebra_timeleft == 0){
+            zebra_timeleft = 156;
+            var downloadTimer = setInterval(function() {
+                if (zebra_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("zebra_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("zebra_countdown").innerHTML = zebra_timeleft + " seconds remaining";
+                }
+                zebra_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /*Zebra Button */
+    function next_tank() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_tank");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* Tank Countdown*/
+        if (tank_timeleft == 0){
+            tank_timeleft = 138;
+            var downloadTimer = setInterval(function() {
+                if (tank_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("tank_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("tank_countdown").innerHTML = tank_timeleft + " seconds remaining";
+                }
+                tank_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Tank Button */
+    function next_skytrain() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_skytrain");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* Skytrain Countdown*/
+        if (skytrain_timeleft == 0){
+            skytrain_timeleft = 124;
+            var downloadTimer = setInterval(function() {
+                if (skytrain_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("skytrain_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("skytrain_countdown").innerHTML = skytrain_timeleft + " seconds remaining";
+                }
+                skytrain_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Skytrain Button */
+    function next_lion() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_lion");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* lion Countdown*/
+        if (lion_timeleft == 0){
+            lion_timeleft = 124;
+            var downloadTimer = setInterval(function() {
+                if (lion_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("lion_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("lion_countdown").innerHTML = lion_timeleft + " seconds remaining";
+                }
+                lion_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Lion Button */
+    function next_motorcycle() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_motorcycle");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* motorcycle Countdown*/
+        if (motorcycle_timeleft == 0){
+            motorcycle_timeleft = 99;
+            var downloadTimer = setInterval(function() {
+                if (motorcycle_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("motorcycle_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("motorcycle_countdown").innerHTML = motorcycle_timeleft + " seconds remaining";
+                }
+                motorcycle_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Motorcycle Button */
+    function next_cheetah() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_cheetah");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* cheetah Countdown*/
+        if (cheetah_timeleft == 0){
+            cheetah_timeleft = 83;
+            var downloadTimer = setInterval(function() {
+                if (cheetah_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("cheetah_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("cheetah_countdown").innerHTML = cheetah_timeleft + " seconds remaining";
+                }
+                cheetah_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Cheetah Button */
+    function next_eagle() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_eagle");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* eagle Countdown*/
+        if (eagle_timeleft == 0){
+            eagle_timeleft = 62;
+            var downloadTimer = setInterval(function() {
+                if (eagle_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("eagle_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("eagle_countdown").innerHTML = eagle_timeleft + " seconds remaining";
+                }
+                eagle_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Eagle Button */
+    function next_helicopter() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_helicopter");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* helicopter Countdown*/
+        if (helicopter_timeleft == 0){
+            helicopter_timeleft = 39;
+            var downloadTimer = setInterval(function() {
+                if (helicopter_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("helicopter_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("helicopter_countdown").innerHTML = helicopter_timeleft + " seconds remaining";
+                }
+                helicopter_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Helicopter Button */
     function next_car() {
         var i = 0;
         for (; i < 5; i++) {
@@ -305,29 +1051,94 @@
         var x = document.getElementById("paused");
         x.id = "play";
 
-        /* Car Countdown*/
-        car_timeleft = 26;
-        var downloadTimer = setInterval(function() {
-            if (car_timeleft <= 0) {
-                clearInterval(downloadTimer);
-                document.getElementById("car_countdown").innerHTML = "Finished";
-            } else {
-                document.getElementById("car_countdown").innerHTML = car_timeleft + " seconds remaining";
-            }
-            car_timeleft -= 1;
-        }, 1000);
+        /* car Countdown*/
+        if (car_timeleft == 0){
+            car_timeleft = 31;
+            var downloadTimer = setInterval(function() {
+                if (car_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("car_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("car_countdown").innerHTML = car_timeleft + " seconds remaining";
+                }
+                car_timeleft -= 1;
+            }, 1000);
+        }
     }
-
-    /*Car Button */
-    function next_usian_bolt() {
+    /* Car Button */
+    function next_airplane() {
         var i = 0;
         for (; i < 5; i++) {
-            var x = document.getElementById("paused").getElementsByClassName("run_usian_bolt");
+            var x = document.getElementById("paused").getElementsByClassName("run_airplane");
             x.id = "play";
             console.log(i);
         }
         var x = document.getElementById("paused");
         x.id = "play";
+
+        /* airplane Countdown*/
+        if (airplane_timeleft == 0){
+            airplane_timeleft = 13;
+            var downloadTimer = setInterval(function() {
+                if (airplane_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("airplane_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("airplane_countdown").innerHTML = airplane_timeleft + " seconds remaining";
+                }
+                airplane_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Airplane Button */
+    function next_jet() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_jet");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* jet Countdown*/
+        if (jet_timeleft == 0){
+            jet_timeleft = 10;
+            var downloadTimer = setInterval(function() {
+                if (jet_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("jet_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("jet_countdown").innerHTML = jet_timeleft + " seconds remaining";
+                }
+                jet_timeleft -= 1;
+            }, 1000);
+        }
+    }
+    /* Jet Button */
+    function next_spacecraft() {
+        var i = 0;
+        for (; i < 5; i++) {
+            var x = document.getElementById("paused").getElementsByClassName("run_spacecraft");
+            x.id = "play";
+            console.log(i);
+        }
+        var x = document.getElementById("paused");
+        x.id = "play";
+
+        /* spacecraft Countdown*/
+        if (spacecraft_timeleft == 0){
+            spacecraft_timeleft = 1;
+            var downloadTimer = setInterval(function() {
+                if (spacecraft_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("spacecraft_countdown").innerHTML = "Finished";
+                } else {
+                    document.getElementById("spacecraft_countdown").innerHTML = spacecraft_timeleft + " seconds remaining";
+                }
+                spacecraft_timeleft -= 1;
+            }, 1000);
+        }
     }
 </script>
 
