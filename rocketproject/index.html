@@ -115,7 +115,7 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
-                                <a href="#slide b3" class="previous" onclick="prevbtn()">previous</a>
+                                <a href="#slide bg3" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
                                 <button class="reset" onclick="resetbtnzebra()" id="reset">reset</button>
@@ -127,28 +127,280 @@
                     </div>
                 </div>
             </div>
+            <!-- ************************* TANK PAGE ************************* -->
             <div class="slide bg5" id="slide bg5">
+                <dir class="header">Vehicles</dir>
+                <div class="sub_header">Tank</div>
+                <div class="boxshowspeed">
 
+                    <div class="run_tank" id="paused"><img src="Icon/tank.png" alt="" width="80px" height="80px"></img>
+                    </div>
+
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="tank_countdown">139 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg4" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtntank()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg6" class="next" onclick="next_skytrain()">next</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* SKYTRAIN PAGE ************************* -->
             <div class="slide bg6" id="slide bg6">
+                <dir class="header">Vehicles</dir>
+                <div class="sub_header">Skytrain</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_skytrain" id="paused"><img src="Icon/train.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="skytrain_countdown">125 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg5" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnskytrain()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg7" class="next" onclick="next_lion()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* LION PAGE ************************* -->
             <div class="slide bg7" id="slide bg7">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Lion</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_lion" id="paused"><img src="Icon/lion.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="lion_countdown">125 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg6" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnlion()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg8" class="next" onclick="next_motorcycle()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* MOTORCYCLE PAGE ************************* -->
             <div class="slide bg8" id="slide bg8">
+                <dir class="header">Vehicles</dir>
+                <div class="sub_header">Motorcycle</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_motorcycle" id="paused"><img src="Icon/motorcycle.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="motorcycle_countdown">100 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg7" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnmotorcycle()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg9" class="next" onclick="next_cheetah()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+             <!-- ************************* CHEETAH PAGE ************************* -->
             <div class="slide bg9" id="slide bg9">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Cheetah</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_cheetah" id="paused"><img src="Icon/cheetah.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="cheetah_countdown">84 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg8" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtncheetah()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg10" class="next" onclick="next_eagle()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* EAGLE PAGE ************************* -->
             <div class="slide bg10" id="slide bg10">
+                <dir class="header">Animals</dir>
+                <div class="sub_header">Eagle</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_eagle" id="paused"><img src="Icon/eagle.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="eagle_countdown">63 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg9" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtneagle()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg11" class="next" onclick="next_helicopter()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* HELICOPTER PAGE ************************* -->
             <div class="slide bg11" id="slide bg11">
+                <dir class="header">Vehicles</dir>
+                <div class="sub_header">Helicopter</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_helicopter" id="paused"><img src="Icon/helicopter.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="helicopter_countdown">40 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg10" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnhelicopter()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg12" class="next" onclick="next_car()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* CAR PAGE ************************* -->
             <div class="slide bg12" id="slide bg12">
+                <dir class="header">Vehicles</dir>
+                <div class="sub_header">Car</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_car" id="paused"><img src="Icon/car.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="car_countdown">32 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg11" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtncar()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg13" class="next" onclick="next_airplane()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* AIRPLANE PAGE ************************* -->
             <div class="slide bg13" id="slide bg13">
+                <dir class="header">Vehicles</dir>
+                <div class="sub_header">Airplane</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_airplane" id="paused"><img src="Icon/airplane.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="airplane_countdown">14 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg12" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnairplane()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg14" class="next" onclick="next_jet()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* JET PAGE ************************* -->
             <div class="slide bg14" id="slide bg14">
+                <dir class="header">Vehicles</dir>
+                <div class="sub_header">Jet</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_jet" id="paused"><img src="Icon/jet.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="jet_countdown">11 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg13" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnjet()" id="reset">reset</button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#slide bg15" class="next" onclick="next_spacecraft()">next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ************************* SPACECRAFT PAGE ************************* -->
             <div class="slide bg15" id="slide bg15">
+                <dir class="header">Vehicles</dir>
+                <div class="sub_header">Spacecraft</div>
+                <div class="boxshowspeed">
+                    <div tag class="run_spacecraft" id="paused"><img src="Icon/spacecraft.png" alt="" width="80px" height="80px"></img>
+                    </div>
+                </div>
+                <div class="bottom_panel">
+                    <div class="timer" id="spacecraft_countdown">1 seconds remaining</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <a href="#slide bg14" class="previous" onclick="prevbtn()">previous</a>
+                            </div>
+                            <div class="col-4">
+                                <button onclick="resetbtnspacecraft()" id="reset">reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
