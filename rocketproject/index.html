@@ -25,20 +25,21 @@
                 <dir class="header">Animals</dir>
                 <div class="sub_header">Snail</div>
                 <div class="boxshowspeed">
-
                     <div class="run_snail" id="paused"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
                     </div>
-
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="snail_countdown">69445 seconds remaining</div>
+                    <div class="accelerator" id="snail_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide intro" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowersnailbtn()" id="slower">slower</button>
                                 <button onclick="resetbtnsnail()" id="reset">reset</button>
+                                <button onclick="fastersnailbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg2" class="next" onclick="next_human()">next</a>
@@ -58,13 +59,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="human_countdown">417 seconds remaining</div>
+                    <div class="accelerator" id="human_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg1" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerhumanbtn()" id="slower">slower</button>
                                 <button onclick="resetbtnhuman()" id="reset">reset</button>
+                                <button onclick="fasterhumanbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg3" class="next" onclick="next_usian_bolt()">next</a>
@@ -86,13 +90,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="usian_bolt_countdown">225 seconds remaining</div>
+                    <div class="accelerator" id="usian_bolt_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg2" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerusianboltbtn()" id="slower">slower</button>
                                 <button onclick="resetbtnusianbolt()" id="reset">reset</button>
+                                <button onclick="fasterusianboltbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg4" class="next" onclick="next_zebra()">next</a>
@@ -112,13 +119,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="zebra_countdown">157 seconds remaining</div>
+                    <div class="accelerator" id="zebra_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg3" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerzebrabtn()" id="slower">slower</button>
                                 <button class="reset" onclick="resetbtnzebra()" id="reset">reset</button>
+                                <button onclick="fasterzebrabtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg5" class="next" onclick="next_tank()">next</a>
@@ -139,13 +149,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="tank_countdown">139 seconds remaining</div>
+                    <div class="accelerator" id="tank_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg4" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowertankbtn()" id="slower">slower</button>
                                 <button onclick="resetbtntank()" id="reset">reset</button>
+                                <button onclick="fastertankbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg6" class="next" onclick="next_skytrain()">next</a>
@@ -165,13 +178,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="skytrain_countdown">125 seconds remaining</div>
+                    <div class="accelerator" id="skytrain_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg5" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerskytrainbtn()" id="slower">slower</button>
                                 <button onclick="resetbtnskytrain()" id="reset">reset</button>
+                                <button onclick="fasterskytrainbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg7" class="next" onclick="next_lion()">next</a>
@@ -190,13 +206,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="lion_countdown">125 seconds remaining</div>
+                    <div class="accelerator" id="lion_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg6" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerlionbtn()" id="slower">slower</button>
                                 <button onclick="resetbtnlion()" id="reset">reset</button>
+                                <button onclick="fasterlionbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg8" class="next" onclick="next_motorcycle()">next</a>
@@ -215,13 +234,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="motorcycle_countdown">100 seconds remaining</div>
+                    <div class="accelerator" id="motorcycle_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg7" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowermotorcyclebtn()" id="slower">slower</button>
                                 <button onclick="resetbtnmotorcycle()" id="reset">reset</button>
+                                <button onclick="fastermotorcyclebtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg9" class="next" onclick="next_cheetah()">next</a>
@@ -240,13 +262,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="cheetah_countdown">84 seconds remaining</div>
+                    <div class="accelerator" id="cheetah_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg8" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowercheetahbtn()" id="slower">slower</button>
                                 <button onclick="resetbtncheetah()" id="reset">reset</button>
+                                <button onclick="fastercheetahbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg10" class="next" onclick="next_eagle()">next</a>
@@ -265,13 +290,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="eagle_countdown">63 seconds remaining</div>
+                    <div class="accelerator" id="eagle_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg9" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowereaglebtn()" id="slower">slower</button>
                                 <button onclick="resetbtneagle()" id="reset">reset</button>
+                                <button onclick="fastereaglebtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg11" class="next" onclick="next_helicopter()">next</a>
@@ -290,13 +318,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="helicopter_countdown">40 seconds remaining</div>
+                    <div class="accelerator" id="helicopter_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg10" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerhelicopterbtn()" id="slower">slower</button>
                                 <button onclick="resetbtnhelicopter()" id="reset">reset</button>
+                                <button onclick="fasterhelicopterbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg12" class="next" onclick="next_car()">next</a>
@@ -315,13 +346,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="car_countdown">32 seconds remaining</div>
+                    <div class="accelerator" id="car_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg11" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowercarbtn()" id="slower">slower</button>
                                 <button onclick="resetbtncar()" id="reset">reset</button>
+                                <button onclick="fastercarbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg13" class="next" onclick="next_airplane()">next</a>
@@ -340,13 +374,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="airplane_countdown">14 seconds remaining</div>
+                    <div class="accelerator" id="airplane_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg12" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerairplanebtn()" id="slower">slower</button>
                                 <button onclick="resetbtnairplane()" id="reset">reset</button>
+                                <button onclick="fasterairplanebtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg14" class="next" onclick="next_jet()">next</a>
@@ -365,13 +402,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="jet_countdown">11 seconds remaining</div>
+                    <div class="accelerator" id="jet_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg13" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerjetbtn()" id="slower">slower</button>
                                 <button onclick="resetbtnjet()" id="reset">reset</button>
+                                <button onclick="fasterjetbtn()" id="faster">faster</button>
                             </div>
                             <div class="col-4">
                                 <a href="#slide bg15" class="next" onclick="next_spacecraft()">next</a>
@@ -390,13 +430,16 @@
                 </div>
                 <div class="bottom_panel">
                     <div class="timer" id="spacecraft_countdown">1 seconds remaining</div>
+                    <div class="accelerator" id="spacecraft_acc">x1</div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <a href="#slide bg14" class="previous" onclick="prevbtn()">previous</a>
                             </div>
                             <div class="col-4">
+                                <button onclick="slowerspacecraftbtn()" id="slower">slower</button>
                                 <button onclick="resetbtnspacecraft()" id="reset">reset</button>
+                                <button onclick="fasterspacecraftbtn()" id="faster">faster</button>
                             </div>
                         </div>
                     </div>
@@ -411,6 +454,7 @@
     </div>
 </body>
 <script>
+
     /****** Define a Variable for Countdown Timer Loop ******/
     var snail_timeleft = 0;
     var human_timeleft = 0;
@@ -427,6 +471,24 @@
     var airplane_timeleft = 0;
     var jet_timeleft = 0;
     var spacecraft_timeleft = 0;
+
+    /***** Define Variable for Slower & Faster Function*****/
+    var snail_speed = 1;
+    var human_speed = 1;
+    var usian_bolt_speed = 1;
+    var zebra_speed = 1;
+    var tank_speed = 1;
+    var skytrain_speed = 1;
+    var lion_speed = 1;
+    var motorcycle_speed = 1;
+    var cheetah_speed = 1;
+    var eagle_speed = 1;
+    var helicopter_speed = 1;
+    var car_speed = 1;
+    var airplane_speed = 1;
+    var jet_speed = 1;
+    var spacecraft_speed = 1;
+
     /**********************************************/
 
     function playbtn() {
@@ -435,23 +497,60 @@
     }
 
     /******************************************************* Resetting Button *****************************************************/
+    /******************************************************* Resetting Button *****************************************************/
+    /******************************************************* Resetting Button *****************************************************/
+    /******************************************************* Resetting Button *****************************************************/
+    /******************************************************* Resetting Button *****************************************************/
+    /******************************************************* Resetting Button *****************************************************/
+    /******************************************************* Resetting Button *****************************************************/
+    /******************************************************* Resetting Button *****************************************************/
 
     /********** Snail Resetting **********/
     function resetbtnsnail() {
         /** Image **/
-        var element = document.getElementsByClassName("run_snail")[0];
-        element.classList.remove("run_snail");
+        if (snail_speed == 1){
+            var element = document.getElementsByClassName("run_snail")[0];
+            element.classList.remove("run_snail");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_snail");
+            element.classList.add("run_snail");
+        }
+        else if (snail_speed == 2){
+            var element = document.getElementsByClassName("run_snailx2")[0];
+            element.classList.remove("run_snailx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_snail");
+        }
+        else if (snail_speed == 3){
+            var element = document.getElementsByClassName("run_snailx3")[0];
+            element.classList.remove("run_snailx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_snail");
+        }
 
         /** Timer **/
+        snail_speed = 1;
+        document.getElementById("snail_acc").innerHTML = "x1";
         if (snail_timeleft == -1) {
             snail_timeleft = 69444;
             var downloadTimer = setInterval(function() {
@@ -479,19 +578,48 @@
     /********** Human Resetting **********/
     function resetbtnhuman() {
         /** Image **/
-        var element = document.getElementsByClassName("run_human")[0];
-        element.classList.remove("run_human");
+        if (human_speed == 1){
+            var element = document.getElementsByClassName("run_human")[0];
+            element.classList.remove("run_human");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_human");
+            element.classList.add("run_human");
+        }
+        else if (human_speed == 2){
+            var element = document.getElementsByClassName("run_humanx2")[0];
+            element.classList.remove("run_humanx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_human");
+        }
+        else if (human_speed == 3){
+            var element = document.getElementsByClassName("run_humanx3")[0];
+            element.classList.remove("run_humanx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_human");
+        }
         /** Timer **/
+        human_speed = 1;
+        document.getElementById("human_acc").innerHTML = "x1";
         if (human_timeleft == -1) {
             human_timeleft = 416;
             var downloadTimer = setInterval(function() {
@@ -519,19 +647,48 @@
     /********** Usian Bolt Resetting **********/
     function resetbtnusianbolt() {
         /** Image **/
-        var element = document.getElementsByClassName("run_usian_bolt")[0];
-        element.classList.remove("run_usian_bolt");
+        if (usian_bolt_speed == 1){
+            var element = document.getElementsByClassName("run_usian_bolt")[0];
+            element.classList.remove("run_usian_bolt");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_usian_bolt");
+            element.classList.add("run_usian_bolt");
+        }
+        else if (usian_bolt_speed == 2){
+            var element = document.getElementsByClassName("run_usian_boltx2")[0];
+            element.classList.remove("run_usian_boltx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_usian_bolt");
+        }
+        else if (usian_bolt_speed == 3){
+            var element = document.getElementsByClassName("run_usian_boltx3")[0];
+            element.classList.remove("run_usian_boltx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_usian_bolt");
+        }
         /** Timer **/
+        usian_bolt_speed = 1;
+        document.getElementById("usian_bolt_acc").innerHTML = "x1";
         if (usian_bolt_timeleft == -1) {
             usian_bolt_timeleft = 224;
             var downloadTimer = setInterval(function() {
@@ -559,19 +716,48 @@
     /********** Zebra Resetting **********/
     function resetbtnzebra() {
         /** Image **/
-        var element = document.getElementsByClassName("run_zebra")[0];
-        element.classList.remove("run_zebra");
+        if (zebra_speed == 1){
+            var element = document.getElementsByClassName("run_zebra")[0];
+            element.classList.remove("run_zebra");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_zebra");
+            element.classList.add("run_zebra");
+        }
+        else if (zebra_speed == 2){
+            var element = document.getElementsByClassName("run_zebrax2")[0];
+            element.classList.remove("run_zebrax2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_zebra");
+        }
+        else if (zebra_speed == 3){
+            var element = document.getElementsByClassName("run_zebrax3")[0];
+            element.classList.remove("run_zebrax3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_zebra");
+        }
         /** Timer **/
+        zebra_speed = 1;
+        document.getElementById("zebra_acc").innerHTML = "x1";
         if (zebra_timeleft == -1) {
             zebra_timeleft = 156;
             var downloadTimer = setInterval(function() {
@@ -599,19 +785,48 @@
     /********** Tank Resetting **********/
     function resetbtntank() {
         /** Image **/
-        var element = document.getElementsByClassName("run_tank")[0];
-        element.classList.remove("run_tank");
+        if (tank_speed == 1){
+            var element = document.getElementsByClassName("run_tank")[0];
+            element.classList.remove("run_tank");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_tank");
+            element.classList.add("run_tank");
+        }
+        else if (tank_speed == 2){
+            var element = document.getElementsByClassName("run_tankx2")[0];
+            element.classList.remove("run_tankx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_tank");
+        }
+        else if (tank_speed == 3){
+            var element = document.getElementsByClassName("run_tankx3")[0];
+            element.classList.remove("run_tankx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_tank");
+        }
         /** Timer **/
+        tank_speed = 1;
+        document.getElementById("tank_acc").innerHTML = "x1";
         if (tank_timeleft == -1) {
             tank_timeleft = 138;
             var downloadTimer = setInterval(function() {
@@ -639,19 +854,48 @@
     /********** Skytrain Resetting **********/
     function resetbtnskytrain() {
         /** Image **/
-        var element = document.getElementsByClassName("run_skytrain")[0];
-        element.classList.remove("run_skytrain");
+        if (skytrain_speed == 1){
+            var element = document.getElementsByClassName("run_skytrain")[0];
+            element.classList.remove("run_skytrain");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_skytrain");
+            element.classList.add("run_skytrain");
+        }
+        else if (skytrain_speed == 2){
+            var element = document.getElementsByClassName("run_skytrainx2")[0];
+            element.classList.remove("run_skytrainx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_skytrain");
+        }
+        else if (skytrain_speed == 3){
+            var element = document.getElementsByClassName("run_skytrainx3")[0];
+            element.classList.remove("run_skytrainx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_skytrain");
+        }
         /** Timer **/
+        skytrain_speed = 1;
+        document.getElementById("skytrain_acc").innerHTML = "x1";
         if (skytrain_timeleft == -1) {
             skytrain_timeleft = 124;
             var downloadTimer = setInterval(function() {
@@ -679,19 +923,48 @@
     /********** Lion Resetting **********/
     function resetbtnlion() {
         /** Image **/
-        var element = document.getElementsByClassName("run_lion")[0];
-        element.classList.remove("run_lion");
+        if (lion_speed == 1){
+            var element = document.getElementsByClassName("run_lion")[0];
+            element.classList.remove("run_lion");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_lion");
+            element.classList.add("run_lion");
+        }
+        else if (lion_speed == 2){
+            var element = document.getElementsByClassName("run_lionx2")[0];
+            element.classList.remove("run_lionx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_lion");
+        }
+        else if (lion_speed == 3){
+            var element = document.getElementsByClassName("run_lionx3")[0];
+            element.classList.remove("run_lionx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_lion");
+        }
         /** Timer **/
+        lion_speed = 1;
+        document.getElementById("lion_acc").innerHTML = "x1";
         if (lion_timeleft == -1) {
             lion_timeleft = 124;
             var downloadTimer = setInterval(function() {
@@ -719,19 +992,48 @@
     /********** Motorcycle Resetting **********/
     function resetbtnmotorcycle() {
         /** Image **/
-        var element = document.getElementsByClassName("run_motorcycle")[0];
-        element.classList.remove("run_motorcycle");
+        if (motorcycle_speed == 1){
+            var element = document.getElementsByClassName("run_motorcycle")[0];
+            element.classList.remove("run_motorcycle");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_motorcycle");
+            element.classList.add("run_motorcycle");
+        }
+        else if (motorcycle_speed == 2){
+            var element = document.getElementsByClassName("run_motorcyclex2")[0];
+            element.classList.remove("run_motorcyclex2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_motorcycle");
+        }
+        else if (motorcycle_speed == 3){
+            var element = document.getElementsByClassName("run_motorcyclex3")[0];
+            element.classList.remove("run_motorcyclex3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_motorcycle");
+        }
         /** Timer **/
+        motorcycle_speed = 1;
+        document.getElementById("motorcycle_acc").innerHTML = "x1";
         if (motorcycle_timeleft == -1) {
             motorcycle_timeleft = 99;
             var downloadTimer = setInterval(function() {
@@ -759,19 +1061,48 @@
     /********** Cheetah Resetting **********/
     function resetbtncheetah() {
         /** Image **/
-        var element = document.getElementsByClassName("run_cheetah")[0];
-        element.classList.remove("run_cheetah");
+        if (cheetah_speed == 1){
+            var element = document.getElementsByClassName("run_cheetah")[0];
+            element.classList.remove("run_cheetah");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_cheetah");
+            element.classList.add("run_cheetah");
+        }
+        else if (cheetah_speed == 2){
+            var element = document.getElementsByClassName("run_cheetahx2")[0];
+            element.classList.remove("run_cheetahx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_cheetah");
+        }
+        else if (cheetah_speed == 3){
+            var element = document.getElementsByClassName("run_cheetahx3")[0];
+            element.classList.remove("run_cheetahx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_cheetah");
+        }
         /** Timer **/
+        cheetah_speed = 1;
+        document.getElementById("cheetah_acc").innerHTML = "x1";
         if (cheetah_timeleft == -1) {
             cheetah_timeleft = 83;
             var downloadTimer = setInterval(function() {
@@ -799,19 +1130,48 @@
     /********** Eagle Resetting **********/
     function resetbtneagle() {
         /** Image **/
-        var element = document.getElementsByClassName("run_eagle")[0];
-        element.classList.remove("run_eagle");
+        if (eagle_speed == 1){
+            var element = document.getElementsByClassName("run_eagle")[0];
+            element.classList.remove("run_eagle");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_eagle");
+            element.classList.add("run_eagle");
+        }
+        else if (eagle_speed == 2){
+            var element = document.getElementsByClassName("run_eaglex2")[0];
+            element.classList.remove("run_eaglex2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_eagle");
+        }
+        else if (eagle_speed == 3){
+            var element = document.getElementsByClassName("run_eaglex3")[0];
+            element.classList.remove("run_eaglex3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_eagle");
+        }
         /** Timer **/
+        eagle_speed = 1;
+        document.getElementById("eagle_acc").innerHTML = "x1";
         if (eagle_timeleft == -1) {
             eagle_timeleft = 62;
             var downloadTimer = setInterval(function() {
@@ -839,19 +1199,48 @@
     /********** Helicopter Resetting **********/
     function resetbtnhelicopter() {
         /** Image **/
-        var element = document.getElementsByClassName("run_helicopter")[0];
-        element.classList.remove("run_helicopter");
+        if (helicopter_speed == 1){
+            var element = document.getElementsByClassName("run_helicopter")[0];
+            element.classList.remove("run_helicopter");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_helicopter");
+            element.classList.add("run_helicopter");
+        }
+        else if (helicopter_speed == 2){
+            var element = document.getElementsByClassName("run_helicopterx2")[0];
+            element.classList.remove("run_helicopterx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_helicopter");
+        }
+        else if (helicopter_speed == 3){
+            var element = document.getElementsByClassName("run_helicopterx3")[0];
+            element.classList.remove("run_helicopterx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_helicopter");
+        }
         /** Timer **/
+        helicopter_speed = 1;
+        document.getElementById("helicopter_acc").innerHTML = "x1";
         if (helicopter_timeleft == -1) {
             helicopter_timeleft = 39;
             var downloadTimer = setInterval(function() {
@@ -879,19 +1268,48 @@
     /********** Car Resetting **********/
     function resetbtncar() {
         /** Image **/
-        var element = document.getElementsByClassName("run_car")[0];
-        element.classList.remove("run_car");
+        if (car_speed == 1){
+            var element = document.getElementsByClassName("run_car")[0];
+            element.classList.remove("run_car");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_car");
+            element.classList.add("run_car");
+        }
+        else if (car_speed == 2){
+            var element = document.getElementsByClassName("run_carx2")[0];
+            element.classList.remove("run_carx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_car");
+        }
+        else if (car_speed == 3){
+            var element = document.getElementsByClassName("run_carx3")[0];
+            element.classList.remove("run_carx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_car");
+        }
         /** Timer **/
+        car_speed = 1;
+        document.getElementById("car_acc").innerHTML = "x1";
         if (car_timeleft == -1) {
             car_timeleft = 31;
             var downloadTimer = setInterval(function() {
@@ -919,19 +1337,48 @@
     /********** Airplane Resetting **********/
     function resetbtnairplane() {
         /** Image **/
-        var element = document.getElementsByClassName("run_airplane")[0];
-        element.classList.remove("run_airplane");
+        if (airplane_speed == 1){
+            var element = document.getElementsByClassName("run_airplane")[0];
+            element.classList.remove("run_airplane");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_airplane");
+            element.classList.add("run_airplane");
+        }
+        else if (airplane_speed == 2){
+            var element = document.getElementsByClassName("run_airplanex2")[0];
+            element.classList.remove("run_airplanex2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_airplane");
+        }
+        else if (airplane_speed == 3){
+            var element = document.getElementsByClassName("run_airplanex3")[0];
+            element.classList.remove("run_airplanex3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_airplane");
+        }
         /** Timer **/
+        airplane_speed = 1;
+        document.getElementById("airplane_acc").innerHTML = "x1";
         if (airplane_timeleft == -1) {
             airplane_timeleft = 13;
             var downloadTimer = setInterval(function() {
@@ -959,19 +1406,48 @@
     /********** Jet Resetting **********/
     function resetbtnjet() {
         /** Image **/
-        var element = document.getElementsByClassName("run_jet")[0];
-        element.classList.remove("run_jet");
+        if (jet_speed == 1){
+            var element = document.getElementsByClassName("run_jet")[0];
+            element.classList.remove("run_jet");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_jet");
+            element.classList.add("run_jet");
+        }
+        else if (jet_speed == 2){
+            var element = document.getElementsByClassName("run_jetx2")[0];
+            element.classList.remove("run_jetx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_jet");
+        }
+        else if (jet_speed == 3){
+            var element = document.getElementsByClassName("run_jetx3")[0];
+            element.classList.remove("run_jetx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_jet");
+        }
         /** Timer **/
+        jet_speed = 1;
+        document.getElementById("jet_acc").innerHTML = "x1";
         if (jet_timeleft == -1) {
             jet_timeleft = 10;
             var downloadTimer = setInterval(function() {
@@ -999,19 +1475,48 @@
     /********** Spacecraft Resetting **********/
     function resetbtnspacecraft() {
         /** Image **/
-        var element = document.getElementsByClassName("run_spacecraft")[0];
-        element.classList.remove("run_spacecraft");
+        if (spacecraft_speed == 1){
+            var element = document.getElementsByClassName("run_spacecraft")[0];
+            element.classList.remove("run_spacecraft");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("reset");
-        element.classList.remove("reset");
+            element.classList.add("reset");
+            element.classList.remove("reset");
 
-        void element.offsetWidth;
+            void element.offsetWidth;
 
-        element.classList.add("run_spacecraft");
+            element.classList.add("run_spacecraft");
+        }
+        else if (spacecraft_speed == 2){
+            var element = document.getElementsByClassName("run_spacecraftx2")[0];
+            element.classList.remove("run_spacecraftx2");
 
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_spacecraft");
+        }
+        else if (spacecraft_speed == 3){
+            var element = document.getElementsByClassName("run_spacecraftx3")[0];
+            element.classList.remove("run_spacecraftx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_spacecraft");
+        }
         /** Timer **/
+        spacecraft_speed = 1;
+        document.getElementById("spacecraft_acc").innerHTML = "x1";
         if (spacecraft_timeleft == -1) {
             spacecraft_timeleft = 1;
             var downloadTimer = setInterval(function() {
@@ -1019,7 +1524,7 @@
                     clearInterval(downloadTimer);
                     document.getElementById("spacecraft_countdown").innerHTML = "Finished";
                 } else {
-                    document.getElementById("spacecraft_countdown").innerHTML = spacecraft_timeleft + " seconds remaining";
+                    document.getElementById("spacecraft_countdown").innerHTML = "Finished";
                 }
                 spacecraft_timeleft -= 1;
             }, 1000);
@@ -1030,12 +1535,19 @@
                     clearInterval(downloadTimer);
                     document.getElementById("spacecraft_countdown").innerHTML = "Finished";
                 } else {
-                    document.getElementById("spacecraft_countdown").innerHTML = spacecraft_timeleft + " seconds remaining";
+                    document.getElementById("spacecraft_countdown").innerHTML = "Finished";
                 }
             }, 1000);
         }
     }
 
+    /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
+    /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
+    /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
+    /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
+    /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
+    /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
+    /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
     /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
     /* Intro Button */
     function next_intro() {
@@ -1407,10 +1919,1169 @@
                     clearInterval(downloadTimer);
                     document.getElementById("spacecraft_countdown").innerHTML = "Finished";
                 } else {
-                    document.getElementById("spacecraft_countdown").innerHTML = spacecraft_timeleft + " seconds remaining";
+                    document.getElementById("spacecraft_countdown").innerHTML = " seconds remaining";
                 }
                 spacecraft_timeleft -= 1;
             }, 1000);
+        }
+    }
+
+    /****************************************** SLOWER & FASTER FUNCTION ********************************************/
+    /****************************************** SLOWER & FASTER FUNCTION ********************************************/
+    /****************************************** SLOWER & FASTER FUNCTION ********************************************/
+    /****************************************** SLOWER & FASTER FUNCTION ********************************************/
+    /****************************************** SLOWER & FASTER FUNCTION ********************************************/
+    /****************************************** SLOWER & FASTER FUNCTION ********************************************/
+    /****************************************** SLOWER & FASTER FUNCTION ********************************************/
+    /****************************************** SLOWER & FASTER FUNCTION ********************************************/
+
+    /************************ Snail Speed ************************/
+    function slowersnailbtn(){
+        snail_speed -= 1;
+        if (snail_speed == 1){
+            document.getElementById("snail_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_snailx2")[0];
+            element.classList.remove("run_snailx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_snail");
+            snail_timeleft = 69445;
+        }
+        else if (snail_speed == 2){
+            document.getElementById("snail_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_snailx3")[0];
+            element.classList.remove("run_snailx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_snailx2");
+            snail_timeleft = 34723;
+        }
+        /* If Speed is out of Function */
+        else if (snail_speed == 0){
+            snail_speed = 1
+        }
+    }
+
+    function fastersnailbtn(){
+        snail_speed += 1;
+        if (snail_speed == 2){
+            document.getElementById("snail_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_snail")[0];
+            element.classList.remove("run_snail");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_snailx2");
+            snail_timeleft = 34723;
+        }
+        else if(snail_speed == 3){
+            document.getElementById("snail_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_snailx2")[0];
+            element.classList.remove("run_snailx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_snailx3");
+            snail_timeleft = 23149;
+        }
+        /* If Speed is out of Function */
+        if (snail_speed == 4){
+            snail_speed = 3;
+        }
+    }
+
+    /*********************** Human Speed ************************/
+    function slowerhumanbtn(){
+        human_speed -= 1;
+        if (human_speed == 1){
+            document.getElementById("human_acc").innerHTML = "x1"; 
+            var element = document.getElementsByClassName("run_humanx2")[0];
+            element.classList.remove("run_humanx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_human");
+            human_timeleft = 417;
+        }
+        else if (human_speed == 2){
+            document.getElementById("human_acc").innerHTML = "x2"; 
+            var element = document.getElementsByClassName("run_humanx3")[0];
+            element.classList.remove("run_humanx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_humanx2");
+            human_timeleft = 209;
+        }
+        /* If human_Speed is out of Function */
+        else if (human_speed == 0){
+            human_speed = 1
+        }
+    }
+
+    function fasterhumanbtn(){
+        human_speed += 1;
+        if (human_speed == 2){
+            document.getElementById("human_acc").innerHTML = "x2";
+            var element = document.getElementsByClassName("run_human")[0];
+            element.classList.remove("run_human");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_humanx2");
+            human_timeleft = 209;
+        }
+        else if(human_speed == 3){
+            document.getElementById("human_acc").innerHTML = "x3";
+            var element = document.getElementsByClassName("run_humanx2")[0];
+            element.classList.remove("run_humanx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_humanx3");
+            human_timeleft = 139;
+        }
+        /* If human_Speed is out of Function */
+        if (human_speed == 4){
+            human_speed = 3;
+        }
+    }
+
+    /**************************** Usian Bolt Speed *****************************/
+    function slowerusianboltbtn(){
+        usian_bolt_speed -= 1;
+        if (usian_bolt_speed == 1){
+            document.getElementById("usian_bolt_acc").innerHTML = "x1";
+            var element = document.getElementsByClassName("run_usian_boltx2")[0];
+            element.classList.remove("run_usian_boltx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_usian_bolt");
+            usian_bolt_timeleft = 225;
+        }
+        else if (usian_bolt_speed == 2){
+            document.getElementById("usian_bolt_acc").innerHTML = "x2";
+            var element = document.getElementsByClassName("run_usian_boltx3")[0];
+            element.classList.remove("run_usian_boltx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_usian_boltx2");
+            usian_bolt_timeleft = 113;
+        }
+        /* If usian_bolt_Speed is out of Function */
+        else if (usian_bolt_speed == 0){
+            usian_bolt_speed = 1
+        }
+    }
+
+    function fasterusianboltbtn(){
+        usian_bolt_speed += 1;
+        if (usian_bolt_speed == 2){
+            document.getElementById("usian_bolt_acc").innerHTML = "x2";
+            var element = document.getElementsByClassName("run_usian_bolt")[0];
+            element.classList.remove("run_usian_bolt");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_usian_boltx2");
+            usian_bolt_timeleft = 113;
+        }
+        else if(usian_bolt_speed == 3){
+            document.getElementById("usian_bolt_acc").innerHTML = "x3";
+            var element = document.getElementsByClassName("run_usian_boltx2")[0];
+            element.classList.remove("run_usian_boltx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_usian_boltx3");
+            usian_bolt_timeleft = 75;
+        }
+        /* If usian_bolt_Speed is out of Function */
+        if (usian_bolt_speed == 4){
+            usian_bolt_speed = 3;
+        }
+    }
+
+    /*********************** zebra Speed ************************/
+    function slowerzebrabtn(){
+        zebra_speed -= 1;
+        if (zebra_speed == 1){
+            document.getElementById("zebra_acc").innerHTML = "x1"; 
+            var element = document.getElementsByClassName("run_zebrax2")[0];
+            element.classList.remove("run_zebrax2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_zebra");
+            zebra_timeleft = 157;
+        }
+        else if (zebra_speed == 2){
+            document.getElementById("zebra_acc").innerHTML = "x2"; 
+            var element = document.getElementsByClassName("run_zebrax3")[0];
+            element.classList.remove("run_zebrax3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_zebrax2");
+            zebra_timeleft = 79;
+        }
+        /* If zebra_Speed is out of Function */
+        else if (zebra_speed == 0){
+            zebra_speed = 1
+        }
+    }
+
+    function fasterzebrabtn(){
+        zebra_speed += 1;
+        if (zebra_speed == 2){
+            document.getElementById("zebra_acc").innerHTML = "x2";
+            var element = document.getElementsByClassName("run_zebra")[0];
+            element.classList.remove("run_zebra");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_zebrax2");
+            zebra_timeleft = 79;
+        }
+        else if(zebra_speed == 3){
+            document.getElementById("zebra_acc").innerHTML = "x3";
+            var element = document.getElementsByClassName("run_zebrax2")[0];
+            element.classList.remove("run_zebrax2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_zebrax3");
+            zebra_timeleft = 53;
+        }
+        /* If zebra_Speed is out of Function */
+        if (zebra_speed == 4){
+            zebra_speed = 3;
+        }
+    }
+
+    /*********************** tank Speed ************************/
+    function slowertankbtn(){
+        tank_speed -= 1;
+        if (tank_speed == 1){
+            document.getElementById("tank_acc").innerHTML = "x1"; 
+            var element = document.getElementsByClassName("run_tankx2")[0];
+            element.classList.remove("run_tankx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_tank");
+            tank_timeleft = 139;
+        }
+        else if (tank_speed == 2){
+            document.getElementById("tank_acc").innerHTML = "x2"; 
+            var element = document.getElementsByClassName("run_tankx3")[0];
+            element.classList.remove("run_tankx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_tankx2");
+            tank_timeleft = 70;
+        }
+        /* If tank_Speed is out of Function */
+        else if (tank_speed == 0){
+            tank_speed = 1
+        }
+    }
+
+    function fastertankbtn(){
+        tank_speed += 1;
+        if (tank_speed == 2){
+            document.getElementById("tank_acc").innerHTML = "x2";
+            var element = document.getElementsByClassName("run_tank")[0];
+            element.classList.remove("run_tank");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_tankx2");
+            tank_timeleft = 70;
+        }
+        else if(tank_speed == 3){
+            document.getElementById("tank_acc").innerHTML = "x3";
+            var element = document.getElementsByClassName("run_tankx2")[0];
+            element.classList.remove("run_tankx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_tankx3");
+            tank_timeleft = 47;
+        }
+        /* If tank_Speed is out of Function */
+        if (tank_speed == 4){
+            tank_speed = 3;
+        }
+    }
+
+    /************************ skytrain Speed ************************/
+    function slowerskytrainbtn(){
+        skytrain_speed -= 1;
+        if (skytrain_speed == 1){
+            document.getElementById("skytrain_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_skytrainx2")[0];
+            element.classList.remove("run_skytrainx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_skytrain");
+            skytrain_timeleft = 125;
+        }
+        else if (skytrain_speed == 2){
+            document.getElementById("skytrain_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_skytrainx3")[0];
+            element.classList.remove("run_skytrainx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_skytrainx2");
+            skytrain_timeleft = 63;
+        }
+        /* If Speed is out of Function */
+        else if (skytrain_speed == 0){
+            skytrain_speed = 1
+        }
+    }
+
+    function fasterskytrainbtn(){
+        skytrain_speed += 1;
+        if (skytrain_speed == 2){
+            document.getElementById("skytrain_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_skytrain")[0];
+            element.classList.remove("run_skytrain");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_skytrainx2");
+            skytrain_timeleft = 63;
+        }
+        else if(skytrain_speed == 3){
+            document.getElementById("skytrain_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_skytrainx2")[0];
+            element.classList.remove("run_skytrainx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_skytrainx3");
+            skytrain_timeleft = 42;
+        }
+        /* If Speed is out of Function */
+        if (skytrain_speed == 4){
+            skytrain_speed = 3;
+        }
+    }
+
+    /************************ lion Speed ************************/
+    function slowerlionbtn(){
+        lion_speed -= 1;
+        if (lion_speed == 1){
+            document.getElementById("lion_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_lionx2")[0];
+            element.classList.remove("run_lionx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_lion");
+            lion_timeleft = 125;
+        }
+        else if (lion_speed == 2){
+            document.getElementById("lion_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_lionx3")[0];
+            element.classList.remove("run_lionx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_lionx2");
+            lion_timeleft = 63;
+        }
+        /* If Speed is out of Function */
+        else if (lion_speed == 0){
+            lion_speed = 1
+        }
+    }
+
+    function fasterlionbtn(){
+        lion_speed += 1;
+        if (lion_speed == 2){
+            document.getElementById("lion_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_lion")[0];
+            element.classList.remove("run_lion");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_lionx2");
+            lion_timeleft = 63;
+        }
+        else if(lion_speed == 3){
+            document.getElementById("lion_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_lionx2")[0];
+            element.classList.remove("run_lionx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_lionx3");
+            lion_timeleft = 42;
+        }
+        /* If Speed is out of Function */
+        if (lion_speed == 4){
+            lion_speed = 3;
+        }
+    }
+
+    /************************ motorcycle Speed ************************/
+    function slowermotorcyclebtn(){
+        motorcycle_speed -= 1;
+        if (motorcycle_speed == 1){
+            document.getElementById("motorcycle_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_motorcyclex2")[0];
+            element.classList.remove("run_motorcyclex2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_motorcycle");
+            motorcycle_timeleft = 100;
+        }
+        else if (motorcycle_speed == 2){
+            document.getElementById("motorcycle_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_motorcyclex3")[0];
+            element.classList.remove("run_motorcyclex3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_motorcyclex2");
+            motorcycle_timeleft = 50;
+        }
+        /* If Speed is out of Function */
+        else if (motorcycle_speed == 0){
+            motorcycle_speed = 1
+        }
+    }
+
+    function fastermotorcyclebtn(){
+        motorcycle_speed += 1;
+        if (motorcycle_speed == 2){
+            document.getElementById("motorcycle_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_motorcycle")[0];
+            element.classList.remove("run_motorcycle");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_motorcyclex2");
+            motorcycle_timeleft = 50;
+        }
+        else if(motorcycle_speed == 3){
+            document.getElementById("motorcycle_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_motorcyclex2")[0];
+            element.classList.remove("run_motorcyclex2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_motorcyclex3");
+            motorcycle_timeleft = 34;
+        }
+        /* If Speed is out of Function */
+        if (motorcycle_speed == 4){
+            motorcycle_speed = 3;
+        }
+    }
+    /************************ cheetah Speed ************************/
+    function slowercheetahbtn(){
+        cheetah_speed -= 1;
+        if (cheetah_speed == 1){
+            document.getElementById("cheetah_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_cheetahx2")[0];
+            element.classList.remove("run_cheetahx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_cheetah");
+            cheetah_timeleft = 84;
+        }
+        else if (cheetah_speed == 2){
+            document.getElementById("cheetah_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_cheetahx3")[0];
+            element.classList.remove("run_cheetahx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_cheetahx2");
+            cheetah_timeleft = 42;
+        }
+        /* If Speed is out of Function */
+        else if (cheetah_speed == 0){
+            cheetah_speed = 1
+        }
+    }
+
+    function fastercheetahbtn(){
+        cheetah_speed += 1;
+        if (cheetah_speed == 2){
+            document.getElementById("cheetah_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_cheetah")[0];
+            element.classList.remove("run_cheetah");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_cheetahx2");
+            cheetah_timeleft = 42;
+        }
+        else if(cheetah_speed == 3){
+            document.getElementById("cheetah_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_cheetahx2")[0];
+            element.classList.remove("run_cheetahx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_cheetahx3");
+            cheetah_timeleft = 28;
+        }
+        /* If Speed is out of Function */
+        if (cheetah_speed == 4){
+            cheetah_speed = 3;
+        }
+    }
+
+    /************************ eagle Speed ************************/
+    function slowereaglebtn(){
+        eagle_speed -= 1;
+        if (eagle_speed == 1){
+            document.getElementById("eagle_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_eaglex2")[0];
+            element.classList.remove("run_eaglex2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_eagle");
+            eagle_timeleft = 63;
+        }
+        else if (eagle_speed == 2){
+            document.getElementById("eagle_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_eaglex3")[0];
+            element.classList.remove("run_eaglex3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_eaglex2");
+            eagle_timeleft = 32;
+        }
+        /* If Speed is out of Function */
+        else if (eagle_speed == 0){
+            eagle_speed = 1
+        }
+    }
+
+    function fastereaglebtn(){
+        eagle_speed += 1;
+        if (eagle_speed == 2){
+            document.getElementById("eagle_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_eagle")[0];
+            element.classList.remove("run_eagle");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_eaglex2");
+            eagle_timeleft = 32;
+        }
+        else if(eagle_speed == 3){
+            document.getElementById("eagle_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_eaglex2")[0];
+            element.classList.remove("run_eaglex2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_eaglex3");
+            eagle_timeleft = 21;
+        }
+        /* If Speed is out of Function */
+        if (eagle_speed == 4){
+            eagle_speed = 3;
+        }
+    }
+    /************************ helicopter Speed ************************/
+    function slowerhelicopterbtn(){
+        helicopter_speed -= 1;
+        if (helicopter_speed == 1){
+            document.getElementById("helicopter_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_helicopterx2")[0];
+            element.classList.remove("run_helicopterx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_helicopter");
+            helicopter_timeleft = 40;
+        }
+        else if (helicopter_speed == 2){
+            document.getElementById("helicopter_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_helicopterx3")[0];
+            element.classList.remove("run_helicopterx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_helicopterx2");
+            helicopter_timeleft = 20;
+        }
+        /* If Speed is out of Function */
+        else if (helicopter_speed == 0){
+            helicopter_speed = 1
+        }
+    }
+
+    function fasterhelicopterbtn(){
+        helicopter_speed += 1;
+        if (helicopter_speed == 2){
+            document.getElementById("helicopter_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_helicopter")[0];
+            element.classList.remove("run_helicopter");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_helicopterx2");
+            helicopter_timeleft = 20;
+        }
+        else if(helicopter_speed == 3){
+            document.getElementById("helicopter_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_helicopterx2")[0];
+            element.classList.remove("run_helicopterx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_helicopterx3");
+            helicopter_timeleft = 14;
+        }
+        /* If Speed is out of Function */
+        if (helicopter_speed == 4){
+            helicopter_speed = 3;
+        }
+    }
+
+    /************************ car Speed ************************/
+    function slowercarbtn(){
+        car_speed -= 1;
+        if (car_speed == 1){
+            document.getElementById("car_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_carx2")[0];
+            element.classList.remove("run_carx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_car");
+            car_timeleft = 32;
+        }
+        else if (car_speed == 2){
+            document.getElementById("car_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_carx3")[0];
+            element.classList.remove("run_carx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_carx2");
+            car_timeleft = 16;
+        }
+        /* If Speed is out of Function */
+        else if (car_speed == 0){
+            car_speed = 1
+        }
+    }
+
+    function fastercarbtn(){
+        car_speed += 1;
+        if (car_speed == 2){
+            document.getElementById("car_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_car")[0];
+            element.classList.remove("run_car");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_carx2");
+            car_timeleft = 16;
+        }
+        else if(car_speed == 3){
+            document.getElementById("car_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_carx2")[0];
+            element.classList.remove("run_carx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_carx3");
+            car_timeleft = 11;
+        }
+        /* If Speed is out of Function */
+        if (car_speed == 4){
+            car_speed = 3;
+        }
+    }
+    /************************ airplane Speed ************************/
+    function slowerairplanebtn(){
+        airplane_speed -= 1;
+        if (airplane_speed == 1){
+            document.getElementById("airplane_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_airplanex2")[0];
+            element.classList.remove("run_airplanex2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_airplane");
+            airplane_timeleft = 14;
+        }
+        else if (airplane_speed == 2){
+            document.getElementById("airplane_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_airplanex3")[0];
+            element.classList.remove("run_airplanex3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_airplanex2");
+            airplane_timeleft = 7;
+        }
+        /* If Speed is out of Function */
+        else if (airplane_speed == 0){
+            airplane_speed = 1
+        }
+    }
+
+    function fasterairplanebtn(){
+        airplane_speed += 1;
+        if (airplane_speed == 2){
+            document.getElementById("airplane_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_airplane")[0];
+            element.classList.remove("run_airplane");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_airplanex2");
+            airplane_timeleft = 7;
+        }
+        else if(airplane_speed == 3){
+            document.getElementById("airplane_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_airplanex2")[0];
+            element.classList.remove("run_airplanex2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_airplanex3");
+            airplane_timeleft = 4;
+        }
+        /* If Speed is out of Function */
+        if (airplane_speed == 4){
+            airplane_speed = 3;
+        }
+    }
+    /************************ jet Speed ************************/
+    function slowerjetbtn(){
+        jet_speed -= 1;
+        if (jet_speed == 1){
+            document.getElementById("jet_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_jetx2")[0];
+            element.classList.remove("run_jetx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_jet");
+            jet_timeleft = 11;
+        }
+        else if (jet_speed == 2){
+            document.getElementById("jet_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_jetx3")[0];
+            element.classList.remove("run_jetx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_jetx2");
+            jet_timeleft = 6;
+        }
+        /* If Speed is out of Function */
+        else if (jet_speed == 0){
+            jet_speed = 1
+        }
+    }
+
+    function fasterjetbtn(){
+        jet_speed += 1;
+        if (jet_speed == 2){
+            document.getElementById("jet_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_jet")[0];
+            element.classList.remove("run_jet");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_jetx2");
+            jet_timeleft = 6;
+        }
+        else if(jet_speed == 3){
+            document.getElementById("jet_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_jetx2")[0];
+            element.classList.remove("run_jetx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_jetx3");
+            jet_timeleft = 3;
+        }
+        /* If Speed is out of Function */
+        if (jet_speed == 4){
+            jet_speed = 3;
+        }
+    }
+    /************************ spacecraft Speed ************************/
+    function slowerspacecraftbtn(){
+        spacecraft_speed -= 1;
+        if (spacecraft_speed == 1){
+            document.getElementById("spacecraft_acc").innerHTML = "x1"; // Receive x2 and convert to x1
+            var element = document.getElementsByClassName("run_spacecraftx2")[0];
+            element.classList.remove("run_spacecraftx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_spacecraft");
+            spacecraft_timeleft = 1;
+        }
+        else if (spacecraft_speed == 2){
+            document.getElementById("spacecraft_acc").innerHTML = "x2"; // Receive x3 and convert to x2
+            var element = document.getElementsByClassName("run_spacecraftx3")[0];
+            element.classList.remove("run_spacecraftx3");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_spacecraftx2");
+            spacecraft_timeleft = 0.5;
+        }
+        /* If Speed is out of Function */
+        else if (spacecraft_speed == 0){
+            spacecraft_speed = 1
+        }
+    }
+
+    function fasterspacecraftbtn(){
+        spacecraft_speed += 1;
+        if (spacecraft_speed == 2){
+            document.getElementById("spacecraft_acc").innerHTML = "x2"; // Receive x1 and convert to x2
+            var element = document.getElementsByClassName("run_spacecraft")[0];
+            element.classList.remove("run_spacecraft");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_spacecraftx2");
+            spacecraft_timeleft = 0.5;
+        }
+        else if(spacecraft_speed == 3){
+            document.getElementById("spacecraft_acc").innerHTML = "x3"; // Receive x2 and convert to x3
+            var element = document.getElementsByClassName("run_spacecraftx2")[0];
+            element.classList.remove("run_spacecraftx2");
+
+            void element.offsetWidth;
+
+            element.classList.add("reset");
+            element.classList.remove("reset");
+
+            void element.offsetWidth;
+
+            element.classList.add("run_spacecraftx3");
+            spacecraft_timeleft = 0.2;
+        }
+        /* If Speed is out of Function */
+        if (spacecraft_speed == 4){
+            spacecraft_speed = 3;
         }
     }
 </script>

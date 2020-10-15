@@ -200,7 +200,6 @@ a.intro_next {
     bottom: 0%;
 }
 
-
 /*
 .bottom_button {
     margin: auto;
@@ -221,14 +220,15 @@ a.intro_next {
     font-weight: bold;
 }
 
-#reset {
+
+#slower {
     /*Reset Button*/
     /*margin-top: 0;
     margin-left: 50%;*/
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 350px;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: #4CAF50;
@@ -237,6 +237,34 @@ a.intro_next {
     font-weight: bold;
 }
 
+#reset {
+    /*Reset Button*/
+    /*margin-top: 0;
+    margin-left: 50%;*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 125px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#faster {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
 .next {
     /*Next Button*/
     /*margin-top: 0;
@@ -251,8 +279,17 @@ a.intro_next {
 
 .timer {
     /*Countdown Timer Text*/
-    margin: 5px;
+    margin: 2px;
     font-size: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.accelerator {
+    /*Countdown Timer Text*/
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
     position: relative;
     text-align: center;
 }
@@ -288,6 +325,7 @@ a:hover {
 
 /************************* RUNNING IMAGE***************************/
 
+/***** Snail *****/
 .run_snail {
     position: relative;
     animation: mymove 69445s ease;
@@ -296,6 +334,23 @@ a:hover {
     top: 15%;
 }
 
+.run_snailx2 {
+    position: relative;
+    animation: mymove 34723s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_snailx3 {
+    position: relative;
+    animation: mymove 23149s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Human *****/
 .run_human {
     position: relative;
     animation: mymove 417s ease;
@@ -304,6 +359,23 @@ a:hover {
     top: 15%;
 }
 
+.run_humanx2 {
+    position: relative;
+    animation: mymove 209s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_humanx3 {
+    position: relative;
+    animation: mymove 139s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Usian Bolt *****/
 .run_usian_bolt {
     position: relative;
     animation: mymove 225s ease;
@@ -312,6 +384,23 @@ a:hover {
     top: 15%;
 }
 
+.run_usian_boltx2 {
+    position: relative;
+    animation: mymove 113s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_usian_boltx3 {
+    position: relative;
+    animation: mymove 75s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Zebra *****/
 .run_zebra {
     position: relative;
     animation: mymove 157s ease;
@@ -320,6 +409,23 @@ a:hover {
     top: 15%;
 }
 
+.run_zebrax2 {
+    position: relative;
+    animation: mymove 79s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_zebrax3 {
+    position: relative;
+    animation: mymove 53s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Tank *****/
 .run_tank {
     position: relative;
     animation: mymove 139s ease;
@@ -328,6 +434,23 @@ a:hover {
     top: 15%;
 }
 
+.run_tankx2 {
+    position: relative;
+    animation: mymove 70s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_tankx3 {
+    position: relative;
+    animation: mymove 47s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Skytrain *****/
 .run_skytrain {
     position: relative;
     animation: mymove 125s ease;
@@ -336,6 +459,23 @@ a:hover {
     top: 15%;
 }
 
+.run_skytrainx2 {
+    position: relative;
+    animation: mymove 63s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_skytrainx3 {
+    position: relative;
+    animation: mymove 42s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Lion *****/
 .run_lion {
     position: relative;
     animation: mymove 125s ease;
@@ -344,6 +484,23 @@ a:hover {
     top: 15%;
 }
 
+.run_lionx2 {
+    position: relative;
+    animation: mymove 63s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_lionx3 {
+    position: relative;
+    animation: mymove 42s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Motorcycle *****/
 .run_motorcycle {
     position: relative;
     animation: mymove 100s ease;
@@ -352,6 +509,23 @@ a:hover {
     top: 15%;
 }
 
+.run_motorcyclex2 {
+    position: relative;
+    animation: mymove 50s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_motorcyclex3 {
+    position: relative;
+    animation: mymove 34s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Cheetah *****/
 .run_cheetah {
     position: relative;
     animation: mymove 84s ease;
@@ -360,6 +534,23 @@ a:hover {
     top: 15%;
 }
 
+.run_cheetahx2 {
+    position: relative;
+    animation: mymove 42s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_cheetahx3 {
+    position: relative;
+    animation: mymove 28s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Eagle *****/
 .run_eagle {
     position: relative;
     animation: mymove 63s ease;
@@ -368,6 +559,23 @@ a:hover {
     top: 15%;
 }
 
+.run_eaglex2 {
+    position: relative;
+    animation: mymove 32s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_eaglex3 {
+    position: relative;
+    animation: mymove 21s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Helicopter *****/
 .run_helicopter {
     position: relative;
     animation: mymove 40s ease;
@@ -376,6 +584,25 @@ a:hover {
     top: 15%;
 }
 
+.run_helicopterx2 {
+    position: relative;
+    animation: mymove 20s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+
+.run_helicopterx3 {
+    position: relative;
+    animation: mymove 14s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+
+/***** Car *****/
 .run_car {
     position: relative;
     animation: mymove 32s ease;
@@ -384,6 +611,23 @@ a:hover {
     top: 15%;
 }
 
+.run_carx2 {
+    position: relative;
+    animation: mymove 16s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_carx3 {
+    position: relative;
+    animation: mymove 11s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Airplane *****/
 .run_airplane {
     position: relative;
     animation: mymove 14s ease;
@@ -392,6 +636,23 @@ a:hover {
     top: 15%;
 }
 
+.run_airplanex2 {
+    position: relative;
+    animation: mymove 7s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_airplanex3 {
+    position: relative;
+    animation: mymove 4s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+/***** Jet *****/
 .run_jet {
     position: relative;
     animation: mymove 11s ease;
@@ -400,6 +661,22 @@ a:hover {
     top: 15%;
 }
 
+.run_jetx2 {
+    position: relative;
+    animation: mymove 6s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_jetx3 {
+    position: relative;
+    animation: mymove 3s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+/***** Spacecraft *****/
 .run_spacecraft {
     position: relative;
     animation: mymove 1s ease;
@@ -408,6 +685,21 @@ a:hover {
     top: 15%;
 }
 
+.run_spacecraftx2 {
+    position: relative;
+    animation: mymove 0.5s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
+
+.run_spacecraftx3 {
+    position: relative;
+    animation: mymove 0.2s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+}
 .reset {
     animation: mymove 0s ease;
 }
