@@ -200,6 +200,7 @@ a.intro_next {
     bottom: 0%;
 }
 
+
 /*
 .bottom_button {
     margin: auto;
@@ -220,17 +221,17 @@ a.intro_next {
     font-weight: bold;
 }
 
-
 #slower {
     /*Reset Button*/
     /*margin-top: 0;
     margin-left: 50%;*/
     margin: 0;
     position: absolute;
-    top: 50%;
-    right: 350px;
+    bottom: -10%;
+    float: left;
+    /* right: 350px;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     background-color: #4CAF50;
     color: white;
     font-size: 20px;
@@ -243,10 +244,11 @@ a.intro_next {
     margin-left: 50%;*/
     margin: 0;
     position: absolute;
-    top: 50%;
-    right: 125px;
+    bottom: -10%;
+    left: 20%;
+    /* right: 125px;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     background-color: #4CAF50;
     color: white;
     font-size: 20px;
@@ -256,21 +258,22 @@ a.intro_next {
 #faster {
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 400px;
+    bottom: -10%;
+    /* left: 400px;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     background-color: #4CAF50;
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
+
 .next {
     /*Next Button*/
     /*margin-top: 0;
     margin-right: 0;*/
     margin: 0;
-    float: right;
+    /* float: right; */
     background-color: #f1f1f1;
     position: relative;
     color: black;
@@ -298,7 +301,63 @@ a.intro_next {
     animation-play-state: running;
 }
 
-#paused {
+#paused_snail {
+    animation-play-state: paused;
+}
+
+#paused_human {
+    animation-play-state: paused;
+}
+
+#paused_usian_bolt {
+    animation-play-state: paused;
+}
+
+#paused_zebra {
+    animation-play-state: paused;
+}
+
+#paused_tank {
+    animation-play-state: paused;
+}
+
+#paused_skytrain {
+    animation-play-state: paused;
+}
+
+#paused_lion {
+    animation-play-state: paused;
+}
+
+#paused_motorcycle {
+    animation-play-state: paused;
+}
+
+#paused_cheetah {
+    animation-play-state: paused;
+}
+
+#paused_eagle {
+    animation-play-state: paused;
+}
+
+#paused_helicopter {
+    animation-play-state: paused;
+}
+
+#paused_car {
+    animation-play-state: paused;
+}
+
+#paused_airplane {
+    animation-play-state: paused;
+}
+
+#paused_jet {
+    animation-play-state: paused;
+}
+
+#paused_spacecraft {
     animation-play-state: paused;
 }
 
@@ -325,7 +384,9 @@ a:hover {
 
 /************************* RUNNING IMAGE***************************/
 
+
 /***** Snail *****/
+
 .run_snail {
     position: relative;
     animation: mymove 69445s ease;
@@ -350,7 +411,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Human *****/
+
 .run_human {
     position: relative;
     animation: mymove 417s ease;
@@ -375,7 +438,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Usian Bolt *****/
+
 .run_usian_bolt {
     position: relative;
     animation: mymove 225s ease;
@@ -400,7 +465,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Zebra *****/
+
 .run_zebra {
     position: relative;
     animation: mymove 157s ease;
@@ -425,7 +492,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Tank *****/
+
 .run_tank {
     position: relative;
     animation: mymove 139s ease;
@@ -450,7 +519,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Skytrain *****/
+
 .run_skytrain {
     position: relative;
     animation: mymove 125s ease;
@@ -475,7 +546,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Lion *****/
+
 .run_lion {
     position: relative;
     animation: mymove 125s ease;
@@ -500,7 +573,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Motorcycle *****/
+
 .run_motorcycle {
     position: relative;
     animation: mymove 100s ease;
@@ -525,7 +600,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Cheetah *****/
+
 .run_cheetah {
     position: relative;
     animation: mymove 84s ease;
@@ -550,7 +627,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Eagle *****/
+
 .run_eagle {
     position: relative;
     animation: mymove 63s ease;
@@ -575,7 +654,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Helicopter *****/
+
 .run_helicopter {
     position: relative;
     animation: mymove 40s ease;
@@ -592,7 +673,6 @@ a:hover {
     top: 15%;
 }
 
-
 .run_helicopterx3 {
     position: relative;
     animation: mymove 14s ease;
@@ -603,6 +683,7 @@ a:hover {
 
 
 /***** Car *****/
+
 .run_car {
     position: relative;
     animation: mymove 32s ease;
@@ -627,7 +708,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Airplane *****/
+
 .run_airplane {
     position: relative;
     animation: mymove 14s ease;
@@ -652,7 +735,9 @@ a:hover {
     top: 15%;
 }
 
+
 /***** Jet *****/
+
 .run_jet {
     position: relative;
     animation: mymove 11s ease;
@@ -676,7 +761,10 @@ a:hover {
     animation-timing-function: linear;
     top: 15%;
 }
+
+
 /***** Spacecraft *****/
+
 .run_spacecraft {
     position: relative;
     animation: mymove 1s ease;
@@ -700,6 +788,7 @@ a:hover {
     animation-timing-function: linear;
     top: 15%;
 }
+
 .reset {
     animation: mymove 0s ease;
 }
