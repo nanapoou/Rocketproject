@@ -21,7 +21,6 @@ body {
     padding-right: 25px;
     text-align: center;
     font-size: 50px;
-    background: #00dfdf;
     margin: auto;
 }
 
@@ -42,83 +41,116 @@ body {
 
 .logo {
     display: block;
-    margin-left: 190px;
+    margin-left: 35%;
+    margin-top: 10%;
     margin-right: auto;
+    width: 30%;
 }
 
 .bg1 {
     /* Snail */
-    background: #efdefe;
+    background-image: url(Bg/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
 }
 
 .bg2 {
     /* Human */
-    background: #a3f3d3;
+    background-image: url(Bg/2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
 }
 
 .bg3 {
     /* Usian Bolt */
-    background: #0bbaa0;
+    background-image: url(Bg/3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .bg4 {
     /* Zebra */
-    background: #00dfdf;
+    background-image: url(Bg/4.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -600px;
 }
 
 .bg5 {
     /* Tank */
-    background: #00dfdf;
+    background-image: url(Bg/5.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -400px;
 }
 
 .bg6 {
     /* Skytrain */
-    background: #00dfdf;
+    background-image: url(Bg/6-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
 }
 
 .bg7 {
     /* Lion */
-    background: #00dfdf;
+    background-image: url(Bg/4.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -600px;
 }
 
 .bg8 {
     /* Motorcycle */
-    background: #00dfdf;
+    background-image: url(Bg/8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .bg9 {
     /* Cheetah */
-    background: #00dfdf;
+    background-image: url(Bg/9.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    background-size: 100% 100%;
 }
 
 .bg10 {
     /* Eagle */
-    background: #00dfdf;
+    background-image: url(Bg/10.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
 }
 
 .bg11 {
     /* Helicopter */
-    background: #00dfdf;
+    background-image: url(Bg/11.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    background-size:100% 900px;
 }
 
 .bg12 {
     /* Car */
-    background: #00dfdf;
+    background-image: url(Bg/12.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 75%;
 }
 
 .bg13 {
     /* Airplane */
-    background: #00dfdf;
+    background-image: url(Bg/13.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
 }
 
 .bg14 {
     /* Jet */
-    background: #00dfdf;
+    background-image: url(Bg/14.jpg);
+    background-position: 100% 100%;
 }
 
 .bg15 {
     /* Scecraft */
-    background: #00dfdf;
+    background-image: url(Bg/15.jpg);
+    background-repeat: no-repeat;
 }
 
 
@@ -174,21 +206,133 @@ body {
 
 /************************* Button Controller ***************************/
 
-a {
-    /*Tag Name*/
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-a.intro_next {
-    /*Tag Name for Intro Button*/
+/* a.intro_next {
     padding: 10px 20px;
     margin-left: 45vw;
     background: #00dfdf;
     text-decoration: none;
     font-size: 40px;
     font-weight: bold;
+    margin-top: 4%;
+    margin-left: 40%
+} */
+
+
+/* .button */
+
+.button {
+    display: inline-block;
+    position: relative;
+    margin: 1em;
+    padding: 0.67em;
+    border: 2px solid rgb(52, 34, 221);
+    border-radius: 25px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 29px;
+    outline: none;
+    color: #FFF;
+    background-color: rgb(35, 40, 59, 0.8);
+    margin-top: 3%;
+    margin-left: 39%;
+    width: 20%;
 }
+
+.button span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.button:before,
+.button:after {
+    content: '';
+    position: absolute;
+    top: 0.67em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+/* :before */
+
+.button:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+/* :after */
+
+.button:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%,0);
+    -moz-transform: translate(150%,0);
+    -ms-transform: translate(150%,0);
+    -o-transform: translate(150%,0);
+    transform: translate(150%,0);
+}
+
+/* Span on :hover and :active */
+
+.button:hover span,
+.button:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+.button:hover:before,
+.button:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+/* 
+  We hide :before pseudo-element on :active
+*/
+
+.button:active:before {
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
 
 .bottom_panel {
     /*Buttom Panel*/
@@ -221,21 +365,231 @@ a.intro_next {
     font-weight: bold;
 }
 
-#slower {
-    /*Reset Button*/
-    /*margin-top: 0;
-    margin-left: 50%;*/
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-12{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  border-radius: 5px;
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.btn-6 {
+  background: rgb(247,150,192);
+background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-6 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+ box-shadow:
+   -1px -1px 20px 0px rgba(255,255,255,1),
+   -4px -4px 5px 0px rgba(255,255,255,1),
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.btn-6:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+.btn-6:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+.btn-6:hover{
+  background: transparent;
+  color: #76aef1;
+  box-shadow: none;
+}
+.btn-6:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6 span:before,
+.btn-6 span:after {
+  position: absolute;
+  content: "";
+  box-shadow:
+   -1px -1px 20px 0px rgba(255,255,255,1),
+   -4px -4px 5px 0px rgba(255,255,255,1),
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.btn-6 span:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+.btn-6 span:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+.btn-6 span:hover:before {
+  width: 100%;
+}
+.btn-6 span:hover:after {
+  width: 100%;
+}
+
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+  color: #f0094a;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+/* .next {
     margin: 0;
-    position: absolute;
-    bottom: -10%;
-    float: left;
-    /* right: 350px;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
-    background-color: #4CAF50;
-    color: white;
-    font-size: 20px;
+    background-color: #f1f1f1;
+    position: relative;
+    color: black;
     font-weight: bold;
+} */
+
+#faster {
+    margin-top: 3%;
+    margin-left: 50%;
+}
+
+#slower {
+    margin-top: 3%;
+    margin-left: 50%;
 }
 
 #reset {
@@ -255,30 +609,7 @@ a.intro_next {
     font-weight: bold;
 }
 
-#faster {
-    margin: 0;
-    position: absolute;
-    bottom: -10%;
-    /* left: 400px;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
-    background-color: #4CAF50;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
 
-.next {
-    /*Next Button*/
-    /*margin-top: 0;
-    margin-right: 0;*/
-    margin: 0;
-    /* float: right; */
-    background-color: #f1f1f1;
-    position: relative;
-    color: black;
-    font-weight: bold;
-}
 
 .timer {
     /*Countdown Timer Text*/
@@ -392,7 +723,7 @@ a:hover {
     animation: mymove 69445s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
 }
 
 .run_snailx2 {
@@ -400,7 +731,7 @@ a:hover {
     animation: mymove 34723s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
 }
 
 .run_snailx3 {
@@ -408,7 +739,7 @@ a:hover {
     animation: mymove 23149s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
 }
 
 
@@ -419,7 +750,7 @@ a:hover {
     animation: mymove 417s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 18%;
 }
 
 .run_humanx2 {
@@ -527,7 +858,7 @@ a:hover {
     animation: mymove 125s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 110px;
 }
 
 .run_skytrainx2 {
@@ -535,7 +866,7 @@ a:hover {
     animation: mymove 63s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 110px;
 }
 
 .run_skytrainx3 {
@@ -543,7 +874,7 @@ a:hover {
     animation: mymove 42s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 110px;
 }
 
 
@@ -581,7 +912,7 @@ a:hover {
     animation: mymove 100s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 210px;
 }
 
 .run_motorcyclex2 {
@@ -589,7 +920,7 @@ a:hover {
     animation: mymove 50s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 210px;
 }
 
 .run_motorcyclex3 {
@@ -597,7 +928,7 @@ a:hover {
     animation: mymove 34s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 210px;
 }
 
 
@@ -608,7 +939,7 @@ a:hover {
     animation: mymove 84s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 190px;
 }
 
 .run_cheetahx2 {
@@ -616,7 +947,7 @@ a:hover {
     animation: mymove 42s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 190px;
 }
 
 .run_cheetahx3 {
@@ -624,7 +955,7 @@ a:hover {
     animation: mymove 28s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 190px;
 }
 
 
@@ -689,7 +1020,7 @@ a:hover {
     animation: mymove 32s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 180px;
 }
 
 .run_carx2 {
@@ -697,7 +1028,7 @@ a:hover {
     animation: mymove 16s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 180px;
 }
 
 .run_carx3 {
@@ -705,7 +1036,7 @@ a:hover {
     animation: mymove 11s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    margin-top: 180px;
 }
 
 

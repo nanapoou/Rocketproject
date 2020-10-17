@@ -17,14 +17,15 @@
             <!-- ************************* INTRO PAGE ************************* -->
             <div class="slide intro" id="slide intro">
                 <div class="a">
-                    <img src="Bg/How Fast.png" alt="how fast" class="logo" width="70%" height="70%">
-                    <a href="#slide bg1" class="intro_next" onclick="next_intro()">Start</a>
+                    <img src="Bg/How Fast2.png" alt="how fast" class="logo" width="70%" height="70%">
+                    <button class="button" type="button" onclick="next_intro()" data-hover="GET FAST!!!" data-active="I'M ACTIVE"><span>GET START</span></button>
+                    <!-- <a href="#slide bg1" class="custom-btn btn-3" onclick="next_intro()">Start</a> -->
                     <!-- href="#slide bg1"  -->
                 </div>
             </div>
             <!-- ************************* SNAIL PAGE ************************* -->
             <div class="slide bg1" id="slide bg1">
-                <dir class="header">Animals</dir>
+                <dir class="header"><u>Animals</u></dir>
                 <div class="sub_header">Snail</div>
                 <div class="boxshowspeed">
                     <div class="run_snail" id="paused_snail"><img src="Icon/snail.png" alt="" width="80px" height="80px"></img>
@@ -36,19 +37,22 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide intro" class="previous" onclick="prev_intro()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_intro()"><span><<<<</span><span>Previous</span></button>
+                                <!-- <a href="#slide intro" class="previous" onclick="prev_intro()">previous</a> -->
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowersnailbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowersnailbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnsnail()"><span>Reset</span></button>
+                                <!-- <button onclick="resetbtnsnail()" id="reset">reset</button> -->
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnsnail()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fastersnailbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fastersnailbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg2" class="next" onclick="next_human()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_human()"><span>>>>></span><span>Next</span></button>
+                                <!-- <a href="#slide bg2" class="next" onclick="next_human()">next</a> -->
                             </div>
 
                         </div>
@@ -57,7 +61,7 @@
             </div>
             <!-- ************************* HUMAN PAGE ************************* -->
             <div class="slide bg2" id="slide bg2">
-                <dir class="header">Animals</dir>
+                <dir class="header"><u>Animals</u></dir>
                 <div class="sub_header">Human</div>
                 <div class="boxshowspeed">
                     <div tag class="run_human" id="paused_human"><img src="Icon/human.png" alt="" width="80px" height="80px"></img>
@@ -69,19 +73,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg1" class="previous" onclick="prev_snail()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_snail()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerhumanbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerhumanbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnhuman()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnhuman()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fasterhumanbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fasterhumanbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg3" class="next" onclick="next_usian_bolt()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_usian_bolt()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -90,11 +94,11 @@
 
             <!-- ************************* USIAN BOLT PAGE ************************* -->
             <div class="slide bg3" id="slide bg3">
-                <dir class="header">Animals</dir>
+                <dir class="header"><u>Animals</u></dir>
                 <div class="sub_header">Usian Bolt</div>
                 <div class="boxshowspeed">
 
-                    <div class="run_usian_bolt" id="paused_usian_bolt"><img src="Icon/usianbolt.png" alt="" width="80px" height="80px"></img>
+                    <div class="run_usian_bolt" id="paused_usian_bolt"><img src="Icon/usianbolt.png" alt="" width="80px" height="150px"></img>
                     </div>
 
                 </div>
@@ -104,19 +108,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg2" class="previous" onclick="prev_human()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_human()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerusianboltbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerusianboltbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnusianbolt()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnusianbolt()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fasterusianboltbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fasterusianboltbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg4" class="next" onclick="next_zebra()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_zebra()"><span>>>>></span><span>Next</span></button>
                             </div>
 
                         </div>
@@ -125,7 +129,7 @@
             </div>
             <!-- ************************* ZEBRA PAGE ************************* -->
             <div class="slide bg4" id="slide bg4">
-                <dir class="header">Animals</dir>
+                <dir class="header"><u>Animal</u></dir>
                 <div class="sub_header">Zebra</div>
                 <div class="boxshowspeed">
                     <div class="run_zebra" id="paused_zebra"><img src="Icon/zebra.png" alt="" width="80px" height="80px"></img>
@@ -137,19 +141,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg3" class="previous" onclick="prev_usian_bolt()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_usian_bolt()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerzebrabtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerzebrabtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnzebra()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button class="reset" onclick="resetbtnzebra()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fasterzebrabtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fasterzebrabtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg5" class="next" onclick="next_tank()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_tank()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -157,7 +161,7 @@
             </div>
             <!-- ************************* TANK PAGE ************************* -->
             <div class="slide bg5" id="slide bg5">
-                <dir class="header">Vehicles</dir>
+                <dir class="header"><u>Vehicles</u></dir>
                 <div class="sub_header">Tank</div>
                 <div class="boxshowspeed">
 
@@ -171,19 +175,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg4" class="previous" onclick="prev_zebra()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_zebra()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowertankbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowertankbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtntank()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtntank()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fastertankbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fastertankbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg6" class="next" onclick="next_skytrain()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_skytrain()"><span>>>>></span><span>Next</span></button>
                             </div>
 
                         </div>
@@ -192,7 +196,7 @@
             </div>
             <!-- ************************* SKYTRAIN PAGE ************************* -->
             <div class="slide bg6" id="slide bg6">
-                <dir class="header">Vehicles</dir>
+                <dir class="header"><u>Vehicles</u></dir>
                 <div class="sub_header">Skytrain</div>
                 <div class="boxshowspeed">
                     <div tag class="run_skytrain" id="paused_skytrain"><img src="Icon/train.png" alt="" width="80px" height="80px"></img>
@@ -204,19 +208,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg5" class="previous" onclick="prev_tank()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_tank()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerskytrainbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerskytrainbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnskytrain()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnskytrain()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fasterskytrainbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fasterskytrainbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg7" class="next" onclick="next_lion()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_lion()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -224,7 +228,7 @@
             </div>
             <!-- ************************* LION PAGE ************************* -->
             <div class="slide bg7" id="slide bg7">
-                <dir class="header">Animals</dir>
+                <dir class="header"><u>Animals</u></dir>
                 <div class="sub_header">Lion</div>
                 <div class="boxshowspeed">
                     <div tag class="run_lion" id="paused_lion"><img src="Icon/lion.png" alt="" width="80px" height="80px"></img>
@@ -236,19 +240,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg6" class="previous" onclick="prev_skytrain()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_skytrain()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerlionbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerlionbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnlion()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnlion()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fasterlionbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fasterlionbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg8" class="next" onclick="next_motorcycle()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_motorcycle()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -256,7 +260,7 @@
             </div>
             <!-- ************************* MOTORCYCLE PAGE ************************* -->
             <div class="slide bg8" id="slide bg8">
-                <dir class="header">Vehicles</dir>
+                <dir class="header"><u>Vehicles</u></dir>
                 <div class="sub_header">Motorcycle</div>
                 <div class="boxshowspeed">
                     <div tag class="run_motorcycle" id="paused_motorcycle"><img src="Icon/motorcycle.png" alt="" width="80px" height="80px"></img>
@@ -268,19 +272,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg7" class="previous" onclick="prev_lion()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_lion()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowermotorcyclebtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowermotorcyclebtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnmotorcycle()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnmotorcycle()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fastermotorcyclebtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fastermotorcyclebtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg9" class="next" onclick="next_cheetah()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_cheetah()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -288,8 +292,8 @@
             </div>
             <!-- ************************* CHEETAH PAGE ************************* -->
             <div class="slide bg9" id="slide bg9">
-                <dir class="header">Animals</dir>
-                <div class="sub_header">Cheetah</div>
+                <dir class="header" style="color: white;"><u>Animals</u></dir>
+                <div class="sub_header" style="color: white;">Cheetah</div>
                 <div class="boxshowspeed">
                     <div tag class="run_cheetah" id="paused_cheetah"><img src="Icon/cheetah.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -300,19 +304,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg8" class="previous" onclick="prev_motorcycle()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_motorcycle()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowercheetahbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowercheetahbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtncheetah()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtncheetah()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fastercheetahbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fastercheetahbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg10" class="next" onclick="next_eagle()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_eagle()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -320,8 +324,8 @@
             </div>
             <!-- ************************* EAGLE PAGE ************************* -->
             <div class="slide bg10" id="slide bg10">
-                <dir class="header">Animals</dir>
-                <div class="sub_header">Eagle</div>
+                <dir class="header" style="color: white;"><u>Animals</u></dir>
+                <div class="sub_header" style="color: white;">Eagle</div>
                 <div class="boxshowspeed">
                     <div tag class="run_eagle" id="paused_eagle"><img src="Icon/eagle.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -332,19 +336,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg9" class="previous" onclick="prev_cheetah()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_cheetah()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowereaglebtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowereaglebtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtneagle()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtneagle()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fastereaglebtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fastereaglebtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg11" class="next" onclick="next_helicopter()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_helicopter()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -352,7 +356,7 @@
             </div>
             <!-- ************************* HELICOPTER PAGE ************************* -->
             <div class="slide bg11" id="slide bg11">
-                <dir class="header">Vehicles</dir>
+                <dir class="header"><u>Vehicles</u></dir>
                 <div class="sub_header">Helicopter</div>
                 <div class="boxshowspeed">
                     <div tag class="run_helicopter" id="paused_helicopter"><img src="Icon/helicopter.png" alt="" width="80px" height="80px"></img>
@@ -364,19 +368,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg10" class="previous" onclick="prev_eagle()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_eagle()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerhelicopterbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerhelicopterbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnhelicopter()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnhelicopter()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fasterhelicopterbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fasterhelicopterbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg12" class="next" onclick="next_car()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_car()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -384,7 +388,7 @@
             </div>
             <!-- ************************* CAR PAGE ************************* -->
             <div class="slide bg12" id="slide bg12">
-                <dir class="header">Vehicles</dir>
+                <dir class="header"><u>Vehicles</u></dir>
                 <div class="sub_header">Car</div>
                 <div class="boxshowspeed">
                     <div tag class="run_car" id="paused_car"><img src="Icon/car.png" alt="" width="80px" height="80px"></img>
@@ -396,19 +400,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg11" class="previous" onclick="prev_helicopter()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_helicopter()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowercarbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowercarbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtncar()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtncar()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fastercarbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fastercarbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg13" class="next" onclick="next_airplane()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_airplane()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -416,7 +420,7 @@
             </div>
             <!-- ************************* AIRPLANE PAGE ************************* -->
             <div class="slide bg13" id="slide bg13">
-                <dir class="header">Vehicles</dir>
+                <dir class="header"><u>Vehicles</u></dir>
                 <div class="sub_header">Airplane</div>
                 <div class="boxshowspeed">
                     <div tag class="run_airplane" id="paused_airplane"><img src="Icon/airplane.png" alt="" width="80px" height="80px"></img>
@@ -428,19 +432,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg12" class="previous" onclick="prev_car()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_car()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerairplanebtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerairplanebtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnairplane()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnairplane()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fasterairplanebtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fasterairplanebtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg14" class="next" onclick="next_jet()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_jet()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -448,7 +452,7 @@
             </div>
             <!-- ************************* JET PAGE ************************* -->
             <div class="slide bg14" id="slide bg14">
-                <dir class="header">Vehicles</dir>
+                <dir class="header"><u>Vehicles</u></dir>
                 <div class="sub_header">Jet</div>
                 <div class="boxshowspeed">
                     <div tag class="run_jet" id="paused_jet"><img src="Icon/jet.png" alt="" width="80px" height="80px"></img>
@@ -460,19 +464,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg13" class="previous" onclick="prev_airplane()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_airplane()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerjetbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerjetbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnjet()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnjet()" id="reset">reset</button>
-                            </div>
-                            <div class="col-1">
-                                <button onclick="fasterjetbtn()" id="faster">faster</button>
+                            <div class="col-2">
+                                <button onclick="fasterjetbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <a href="#slide bg15" class="next" onclick="next_spacecraft()">next</a>
+                                <button class="custom-btn btn-12" onclick="next_spacecraft()"><span>>>>></span><span>Next</span></button>
                             </div>
                         </div>
                     </div>
@@ -480,8 +484,8 @@
             </div>
             <!-- ************************* SPACECRAFT PAGE ************************* -->
             <div class="slide bg15" id="slide bg15">
-                <dir class="header">Vehicles</dir>
-                <div class="sub_header">Spacecraft</div>
+                <dir class="header" style="color: white;"><u>Vehicles</u></dir>
+                <div class="sub_header" style="color: white;">Spacecraft</div>
                 <div class="boxshowspeed">
                     <div tag class="run_spacecraft" id="paused_spacecraft"><img src="Icon/spacecraft.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -492,16 +496,19 @@
                     <div class="container-fluid">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <a href="#slide bg14" class="previous" onclick="prev_jet()">previous</a>
+                                <button class="custom-btn btn-12" onclick="prev_jet()"><span><<<<</span><span>Previous</span></button>
+                            </div>
+                            <div class="col-2">
+                                <button onclick="slowerspacecraftbtn()" id="slower">⏪</button>
                             </div>
                             <div class="col-1">
-                                <button onclick="slowerspacecraftbtn()" id="slower">slower</button>
+                                <button class="custom-btn btn-6" onclick="resetbtnspacecraft()"><span>Reset</span></button>
                             </div>
-                            <div class="col-1">
-                                <button onclick="resetbtnspacecraft()" id="reset">reset</button>
+                            <div class="col-2">
+                                <button onclick="fasterspacecraftbtn()" id="faster">⏩</button>
                             </div>
                             <div class="col-auto">
-                                <button onclick="fasterspacecraftbtn()" id="faster">faster</button>
+                                <button class="custom-btn btn-12" onclick="prev_intro()"><span>Go fast!!</span><span>Home</span></button>
                             </div>
                         </div>
                     </div>
