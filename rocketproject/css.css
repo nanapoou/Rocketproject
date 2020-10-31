@@ -24,6 +24,13 @@ body {
     margin: auto;
 }
 
+.clock {
+    padding-right: 0px;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+}
+
 .sub_header {
     padding-left: 10px;
     text-align: center;
@@ -221,7 +228,7 @@ body {
     margin-left: 40%
 } */
 
-#belowtext{
+/* #belowtext{
     margin: 10 px;
     text-decoration: blink;
 	animation-name: blinker;
@@ -236,7 +243,7 @@ body {
     5% {opacity: 1.0;}
     95% {opacity: 1.0;}
     100% {opacity: 0.0;}
-  }
+  } */
 
 /* .button */
 
@@ -743,6 +750,7 @@ a:hover {
     animation: mymove 69445s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 25%;
 }
 
@@ -751,6 +759,7 @@ a:hover {
     animation: mymove 34723s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 25%;
 }
 
@@ -759,6 +768,7 @@ a:hover {
     animation: mymove 23149s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 25%;
 }
 
@@ -770,6 +780,7 @@ a:hover {
     animation: mymove 417s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 25%;
 }
 
@@ -778,6 +789,7 @@ a:hover {
     animation: mymove 209s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 25%;
 }
 
@@ -786,6 +798,7 @@ a:hover {
     animation: mymove 139s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 25%;
 }
 
@@ -797,7 +810,9 @@ a:hover {
     animation: mymove 225s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_usian_boltx2 {
@@ -805,7 +820,9 @@ a:hover {
     animation: mymove 113s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_usian_boltx3 {
@@ -813,7 +830,9 @@ a:hover {
     animation: mymove 75s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 
@@ -825,6 +844,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_zebrax2 {
@@ -833,6 +853,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_zebrax3 {
@@ -841,6 +862,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 
@@ -852,6 +874,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_tankx2 {
@@ -860,6 +883,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_tankx3 {
@@ -868,6 +892,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 
@@ -879,6 +904,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 120px;
+    animation-iteration-count: infinite;
 }
 
 .run_skytrainx2 {
@@ -887,6 +913,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 120px;
+    animation-iteration-count: infinite;
 }
 
 .run_skytrainx3 {
@@ -895,6 +922,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 120px;
+    animation-iteration-count: infinite;
 }
 
 
@@ -906,6 +934,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_lionx2 {
@@ -914,6 +943,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_lionx3 {
@@ -922,6 +952,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 
@@ -933,6 +964,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 210px;
+    animation-iteration-count: infinite;
 }
 
 .run_motorcyclex2 {
@@ -941,6 +973,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 210px;
+    animation-iteration-count: infinite;
 }
 
 .run_motorcyclex3 {
@@ -949,6 +982,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 210px;
+    animation-iteration-count: infinite;
 }
 
 
@@ -960,6 +994,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 190px;
+    animation-iteration-count: infinite;
 }
 
 .run_cheetahx2 {
@@ -968,6 +1003,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 190px;
+    animation-iteration-count: infinite;
 }
 
 .run_cheetahx3 {
@@ -976,6 +1012,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 190px;
+    animation-iteration-count: infinite;
 }
 
 
@@ -987,6 +1024,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_eaglex2 {
@@ -995,6 +1033,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_eaglex3 {
@@ -1003,6 +1042,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 
@@ -1014,6 +1054,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_helicopterx2 {
@@ -1022,6 +1063,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_helicopterx3 {
@@ -1030,6 +1072,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 
@@ -1041,6 +1084,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 180px;
+    animation-iteration-count: infinite;
 }
 
 .run_carx2 {
@@ -1049,6 +1093,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 180px;
+    animation-iteration-count: infinite;
 }
 
 .run_carx3 {
@@ -1057,6 +1102,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 180px;
+    animation-iteration-count: infinite;
 }
 
 
@@ -1068,6 +1114,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_airplanex2 {
@@ -1076,6 +1123,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_airplanex3 {
@@ -1084,6 +1132,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 
@@ -1095,6 +1144,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_jetx2 {
@@ -1103,6 +1153,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_jetx3 {
@@ -1111,6 +1162,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 
@@ -1122,6 +1174,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_spacecraftx2 {
@@ -1130,6 +1183,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .run_spacecraftx3 {
@@ -1138,6 +1192,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     top: 15%;
+    animation-iteration-count: infinite;
 }
 
 .reset {
