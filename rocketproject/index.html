@@ -59,7 +59,7 @@
                                 <button class="custom-btn btn-16" onclick="next_human()">Next</button>
         
                             </div>
-                            <div class="row justify-content-center" id="snail_loop">
+                            <div class="row justify-content-center" id="snail_loop" style="color: white;">
                                 0 Loop Elapsed
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                                 <button class="custom-btn btn-16" onclick="next_usian_bolt()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="human_loop">
+                        <div class="row justify-content-center" id="human_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -135,7 +135,7 @@
                             </div>
 
                         </div>
-                        <div class="row justify-content-center" id="usian_bolt_loop">
+                        <div class="row justify-content-center" id="usian_bolt_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -171,7 +171,7 @@
                                 <button class="custom-btn btn-16" onclick="next_tank()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="zebra_loop">
+                        <div class="row justify-content-center" id="zebra_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -210,7 +210,7 @@
                             </div>
 
                         </div>
-                        <div class="row justify-content-center" id="tank_loop">
+                        <div class="row justify-content-center" id="tank_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -246,7 +246,7 @@
                                 <button class="custom-btn btn-16" onclick="next_lion()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="skytrain_loop">
+                        <div class="row justify-content-center" id="skytrain_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                                 <button class="custom-btn btn-16" onclick="next_motorcycle()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="lion_loop">
+                        <div class="row justify-content-center" id="lion_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -318,7 +318,7 @@
                                 <button class="custom-btn btn-16" onclick="next_cheetah()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="motorcycle_loop">
+                        <div class="row justify-content-center" id="motorcycle_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -354,7 +354,7 @@
                                 <button class="custom-btn btn-16" onclick="next_eagle()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="cheetah_loop">
+                        <div class="row justify-content-center" id="cheetah_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -390,7 +390,7 @@
                                 <button class="custom-btn btn-16" onclick="next_helicopter()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="eagle_loop">
+                        <div class="row justify-content-center" id="eagle_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -426,7 +426,7 @@
                                 <button class="custom-btn btn-16" onclick="next_car()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="helicopter_loop">
+                        <div class="row justify-content-center" id="helicopter_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -462,7 +462,7 @@
                                 <button class="custom-btn btn-16" onclick="next_airplane()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="car_loop">
+                        <div class="row justify-content-center" id="car_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -498,7 +498,7 @@
                                 <button class="custom-btn btn-16" onclick="next_jet()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="airplane_loop">
+                        <div class="row justify-content-center" id="airplane_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -534,7 +534,7 @@
                                 <button class="custom-btn btn-16" onclick="next_spacecraft()"><span>Next</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="jet_loop">
+                        <div class="row justify-content-center" id="jet_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -570,7 +570,7 @@
                                 <button class="custom-btn btn-16" onclick="prev_intro_jet()"><span>Home</span></button>
                             </div>
                         </div>
-                        <div class="row justify-content-center" id="spacecraft_loop">
+                        <div class="row justify-content-center" id="spacecraft_loop" style="color: white;">
                             0 Loop Elapsed
                         </div>
                     </div>
@@ -1654,7 +1654,6 @@
     function resetbtnjet() {
         /** Image **/
         jet_loop = 0;
-        document.getElementById("jet_loop").innerHTML = jet_loop + " Loop Elapsed";
         if (jet_speed == 1) {
             var element = document.getElementsByClassName("run_jet")[0];
             element.classList.remove("run_jet");
