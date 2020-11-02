@@ -22,6 +22,7 @@ body {
     text-align: center;
     font-size: 50px;
     margin: auto;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .clock {
@@ -29,6 +30,7 @@ body {
     text-align: center;
     font-size: 50px;
     margin: auto;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .sub_header {
@@ -36,9 +38,22 @@ body {
     text-align: center;
     font-size: 35px;
     font-weight: bold;
-    -webkit-text-stroke-width: 1px;
+    /* -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: white; */
+    font-family: 'Sarabun', sans-serif;
+    text-shadow: 1px 1px 3px #FFF;
+}
+
+.non-shadow{
+    padding-left: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white; */
+    font-family: 'Sarabun', sans-serif;
 }
 
 
@@ -585,6 +600,7 @@ body {
     position: relative;
     text-align: center;
     color: white;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .accelerator {
@@ -845,7 +861,7 @@ a:hover {
     animation: mymove 125s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 120px;
+    margin-top: 126px;
     animation-iteration-count: infinite;
 }
 
@@ -854,7 +870,7 @@ a:hover {
     animation: mymove 63s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 120px;
+    margin-top: 126px;
     animation-iteration-count: infinite;
 }
 
@@ -863,7 +879,7 @@ a:hover {
     animation: mymove 42s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 120px;
+    margin-top: 126px;
     animation-iteration-count: infinite;
 }
 
@@ -905,7 +921,7 @@ a:hover {
     animation: mymove 100s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 210px;
+    margin-top: 230px;
     animation-iteration-count: infinite;
 }
 
@@ -914,7 +930,7 @@ a:hover {
     animation: mymove 50s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 210px;
+    margin-top: 230px;
     animation-iteration-count: infinite;
 }
 
@@ -923,7 +939,7 @@ a:hover {
     animation: mymove 34s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 210px;
+    margin-top: 230px;
     animation-iteration-count: infinite;
 }
 
