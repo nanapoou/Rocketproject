@@ -126,9 +126,9 @@ body {
 
 .bg9 {
     /* Cheetah */
-    background-image: url(Bg/9.jpg);
+    background-image: url(Bg/4.jpg);
     background-repeat: no-repeat;
-    background-position: 0px -100px;
+    background-position: 0px -200px;
     background-size: 100% 100%;
 }
 
@@ -149,9 +149,10 @@ body {
 
 .bg12 {
     /* Car */
-    background-image: url(Bg/12.jpg);
+    background-image: url(Bg/12.png);
     background-repeat: no-repeat;
-    background-position: 0px 75%;
+    background-size: 100vw 100%;
+    background-position: 0px -30vh
 }
 
 .bg13 {
@@ -814,7 +815,7 @@ a:hover {
     animation: mymove 139s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
@@ -823,7 +824,7 @@ a:hover {
     animation: mymove 70s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
@@ -832,7 +833,7 @@ a:hover {
     animation: mymove 47s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
@@ -1024,7 +1025,7 @@ a:hover {
     animation: mymove 32s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 180px;
+    margin-top: 230px;
     animation-iteration-count: infinite;
 }
 
@@ -1033,7 +1034,7 @@ a:hover {
     animation: mymove 16s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 180px;
+    margin-top: 230px;
     animation-iteration-count: infinite;
 }
 
@@ -1042,7 +1043,7 @@ a:hover {
     animation: mymove 11s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    margin-top: 180px;
+    margin-top: 230px;
     animation-iteration-count: infinite;
 }
 
