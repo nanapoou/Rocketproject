@@ -58,6 +58,13 @@ body {
     width: 30%;
 }
 
+.ruler {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: 30%;
+}
+
 .bg1 {
     /* Snail */
     background-image: url(Bg/wood.jpg);
@@ -106,7 +113,8 @@ body {
     /* Lion */
     background-image: url(Bg/4.jpg);
     background-repeat: no-repeat;
-    background-position: 0px -600px;
+    background-size: 100% 100%;
+    background-position: 0px -200px;
 }
 
 .bg8 {
