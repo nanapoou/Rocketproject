@@ -5,9 +5,11 @@
     <title>
         How fast thing can move
     </title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="preload" href="css.css" as="style">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
@@ -324,8 +326,8 @@
             </div>
             <!-- ************************* CHEETAH PAGE ************************* -->
             <div class="slide bg9" id="slide bg9" tabindex="-1">
-                <dir class="header" style="color: white;">Time Elapsed 00 : 00 : 00</dir>
-                <div class="sub_header" style="color: white;" id="changeTextCheetah">Cheetah</div>
+                <dir class="header">Time Elapsed 00 : 00 : 00</dir>
+                <div class="sub_header" id="changeTextCheetah">Cheetah</div>
                 <div class="boxshowspeed">
                     <div tag class="run_cheetah" id="paused_cheetah"><img src="Icon/cheetah.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -361,7 +363,7 @@
             <!-- ************************* EAGLE PAGE ************************* -->
             <div class="slide bg10" id="slide bg10" tabindex="-1">
                 <dir class="header" style="color: white;">Time Elapsed 00 : 00 : 00</dir>
-                <div class="sub_header" style="color: white;" id="changeTextEagle">Bald Eagle</div>
+                <div class="non-shadow" style="color: white;" id="changeTextEagle">Bald Eagle</div>
                 <div class="boxshowspeed">
                     <div tag class="run_eagle" id="paused_eagle"><img src="Icon/eagle.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -541,7 +543,7 @@
             <!-- ************************* SPACECRAFT PAGE ************************* -->
             <div class="slide bg15" id="slide bg15" tabindex="-1">
                 <dir class="header" style="color: white;">Time Elapsed 00 : 00 : 00</dir>
-                <div class="sub_header" style="color: white;" id="changeTextSpacecraft">Spacecraft</div>
+                <div class="non-shadow" style="color: white;" id="changeTextSpacecraft">Spacecraft</div>
                 <div class="boxshowspeed">
                     <div tag class="run_spacecraft" id="paused_spacecraft"><img src="Icon/spacecraft.png" alt="" width="80px" height="80px"></img>
                     </div>
@@ -2315,7 +2317,7 @@
 
         /*change text function*/
         var textUsian = ["Usian Bolt คือมนุษย์ที่วิ่งเร็วที่สุดในโลก","Usain Bolt สามารถทำความเร็วอยู่ที่ 44.72(~45) kmph","จะใช้เวลา 224 ชม. หรือประมาณ 9 วัน ในการเดินทาง 10,000 กม.","ซึ่งถ้าเป็นความเร็วเฉลี่ยของ Usian Bolt จะอยู่ที่ 37.58 kmph", "นั้นก็ถือว่าเร็วกว่าความเร็วเฉลี่ยโดยทั่วของมนุษย์เกือบเท่าตัว", "จบ", "Usian Bolt"];
-        var timetextUsian = [3000, 4000, 6000, 5000, 5000, 6000, 3000, 3000];
+        var timetextUsian = [3000, 5000, 6000, 5000, 5000, 6000, 3000, 3000];
         var i = 0;
         function myloop(){
             setTimeout(function(){
@@ -2631,8 +2633,8 @@
         }, 1000);      
 
         /*change text function*/
-        var textCar = ["รถยนต์เฉลี่ยแล้วสามารถทำความเร็วสูงสุดได้ถึง 322 km/h","ซึ่งใช้เวลาเพียง 32 ชม. ในการเดินทางระยะ 10,000 กม.","หากไม่โดนกฎหมายคุมหล่ะนะ","แต่หากคิดว่านั้นช้าไปละก็ยังมีที่เร็วกว่านั้นอีก","Bugatti Chiron Super Sprot 300 ซึ่งจะขอเรียกสั้น ๆว่า Bugatti","อ่าว...ยังเล่า fact ไม่ทันไรรถวิ่งถึงซะละ","Bugatti สามารถเร่งความเร็วได้ถึง 490.48 km/h","ซึ่งจะใช้เวลาเพียง 20.4 ชม. ในการเดินทาง 10,000 กม.","จบ","Car"];
-        var timetextCar = [3000,6000,6000,4000,5000,5000,3000,5000,5000,3000,3000];
+        var textCar = ["รถยนต์เฉลี่ยแล้วสามารถทำความเร็วสูงสุดได้ถึง 322 km/h","ซึ่งใช้เวลาเพียง 32 ชม. ในการเดินทางระยะ 10,000 กม.","หากไม่โดนกฎหมายคุมหล่ะนะ","แต่หากคิดว่านั้นช้าไปละก็ยังมีที่เร็วกว่านั้นอีก","Bugatti Chiron Super Sprot 300 ซึ่งจะขอเรียกสั้น ๆว่า Bugatti","Bugatti สามารถเร่งความเร็วได้ถึง 490.48 km/h","ซึ่งจะใช้เวลาเพียง 20.4 ชม. ในการเดินทาง 10,000 กม.","จบ","Car"];
+        var timetextCar = [3000,6000,6000,4000,5000,5000,5000,5000,3000,3000];
         var i = 0;
         function myloop(){
             setTimeout(function(){
