@@ -83,7 +83,8 @@ body {
     /* Zebra */
     background-image: url(Bg/4.jpg);
     background-repeat: no-repeat;
-    background-position: 0px -600px;
+    background-size: 100% 100%;
+    background-position: 0px -200px;
 }
 
 .bg5 {
@@ -775,7 +776,7 @@ a:hover {
     animation: mymove 157s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
@@ -784,7 +785,7 @@ a:hover {
     animation: mymove 79s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
@@ -793,7 +794,7 @@ a:hover {
     animation: mymove 53s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
