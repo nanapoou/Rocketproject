@@ -1,0 +1,1160 @@
+/*********************** MAIN BODY *******************/
+
+body {
+    margin: 0;
+}
+
+.slide {
+    /** เลื่อนด้านข้าง **/
+    width: 100vw;
+    height: 100vh;
+}
+
+.boxshowspeed {
+    height: 75vw;
+}
+
+
+/*********************** HEADER & SUBHEADER *******************/
+
+.header {
+    padding-right: 25px;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clock {
+    padding-right: 0px;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sub_header {
+    padding-left: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white; */
+    font-family: 'Sarabun', sans-serif;
+    text-shadow: 1px 1px 3px #FFF;
+}
+
+.non-shadow{
+    padding-left: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    /* -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white; */
+    font-family: 'Sarabun', sans-serif;
+}
+
+
+
+
+/*********************** BACKGROUND IMAGE *******************/
+
+.intro {
+    background-image: url(Bg/light-burst-texture-free-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.logo {
+    display: block;
+    margin-left: 35%;
+    margin-top: 10%;
+    margin-right: auto;
+    width: 30%;
+}
+
+.ruler {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: 30%;
+}
+
+.bg1 {
+    /* Snail */
+    background-image: url(Bg/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+}
+
+.bg2 {
+    /* Human */
+    background-image: url(Bg/2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+}
+
+.bg3 {
+    /* Usian Bolt */
+    background-image: url(Bg/3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg4 {
+    /* Zebra */
+    background-image: url(Bg/4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0px -200px;
+}
+
+.bg5 {
+    /* Tank */
+    background-image: url(Bg/5.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -400px;
+}
+
+.bg6 {
+    /* Skytrain */
+    background-image: url(Bg/6-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.bg7 {
+    /* Lion */
+    background-image: url(Bg/4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0px -200px;
+}
+
+.bg8 {
+    /* Motorcycle */
+    background-image: url(Bg/8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg9 {
+    /* Cheetah */
+    background-image: url(Bg/4.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+    background-size: 100% 100%;
+}
+
+.bg10 {
+    /* Eagle */
+    background-image: url(Bg/10.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+
+.bg11 {
+    /* Helicopter */
+    background-image: url(Bg/11.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    background-size:100% 900px;
+}
+
+.bg12 {
+    /* Car */
+    background-image: url(Bg/12.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+    background-position: 0px -30vh
+}
+
+.bg13 {
+    /* Airplane */
+    background-image: url(Bg/13.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.bg14 {
+    /* Jet */
+    background-image: url(Bg/14.jpg);
+    background-position: 100% 100%;
+}
+
+.bg15 {
+    /* Scecraft */
+    background-image: url(Bg/15.jpg);
+    background-repeat: no-repeat;
+}
+
+
+/*********************** WRAPPER *******************/
+
+.wrapper {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    display: flex;
+    flex-direction: row;
+    width: 1600vw;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    /*lock page*/
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.outer-wrapper {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+}
+
+
+/*********************** SCROLL BAR *******************/
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+
+/************************* Button Controller ***************************/
+
+/* a.intro_next {
+    padding: 10px 20px;
+    margin-left: 45vw;
+    background: #00dfdf;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-left: 40%
+} */
+
+/* #belowtext{
+    margin: 10 px;
+    text-decoration: blink;
+	animation-name: blinker;
+	animation-duration: 7s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+
+@keyframes blinker {
+    0% {opacity: 0.0;}
+    5% {opacity: 1.0;}
+    95% {opacity: 1.0;}
+    100% {opacity: 0.0;}
+  } */
+
+/* .button */
+
+.button {
+    display: inline-block;
+    position: relative;
+    margin: 1em;
+    padding: 0.67em;
+    border: 2px solid white;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: bold;
+    outline: none;
+    color: #FFF;
+    margin-top: 3%;
+    margin-left: 39%;
+    width: 20%;
+    border-radius: inherit;
+    box-shadow: 0px 0px 22px #39f8;
+    background: #0006;
+    transform: skewX(-40deg);
+}
+
+.button span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.button:before,
+.button:after {
+    content: '';
+    position: absolute;
+    top: 0.67em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+/* :before */
+
+.button:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+/* :after */
+
+.button:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%,0);
+    -moz-transform: translate(150%,0);
+    -ms-transform: translate(150%,0);
+    -o-transform: translate(150%,0);
+    transform: translate(150%,0);
+}
+
+/* Span on :hover and :active */
+
+.button:hover span,
+.button:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+.button:hover:before,
+.button:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+/* 
+  We hide :before pseudo-element on :active
+*/
+
+.button:active:before {
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+.bottom_panel {
+    /*Buttom Panel*/
+    background: rgb(41, 41, 41);
+    position: absolute;
+    /*important*/
+    width: 6.25%;
+    height: 30%;
+    bottom: 0%;
+}
+
+
+/*
+.bottom_button {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+*/
+
+.previous {
+    /*Previous Button*/
+    /*margin-left: 0;
+    margin-top: 0;*/
+    margin: 0;
+    background-color: #f1f1f1;
+    position: relative;
+    color: black;
+    font-weight: bold;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+.btn-15 {
+  background: #f7f7f7;
+  border: none;
+  z-index: 1;
+  transform: skewX(19deg);
+  color: black;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgb(43, 43, 43);
+  transition: all 0.3s ease;
+}
+.btn-15:hover {
+  color: #fff;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
+.btn-16 {
+  border: none;
+  background: #f7f7f7;
+  z-index: 1;
+  color: black;
+  transform: skewX(-19deg);
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(43, 43, 43);
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #fff;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
+.btn-7 {
+    background-color: white;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  color: black;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background:rgb(248, 248, 248);
+  transition: all 0.3s ease;
+}
+.btn-7:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover{
+  color: rgb(248, 248, 248);
+  background-color: rgb(255, 0, 0);
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background:rgb(248, 248, 248);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+
+/* .next {
+    margin: 0;
+    background-color: #f1f1f1;
+    position: relative;
+    color: black;
+    font-weight: bold;
+} */
+
+#faster {
+    margin-top: 3%;
+    margin-left: 50%;
+}
+
+#slower {
+    margin-top: 3%;
+    margin-left: 50%;
+}
+
+#reset {
+    /*Reset Button*/
+    /*margin-top: 0;
+    margin-left: 50%;*/
+    margin: 0;
+    position: absolute;
+    bottom: -10%;
+    left: 20%;
+    /* right: 125px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.timer {
+    /*Countdown Timer Text*/
+    margin: 2px;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.accelerator {
+    /*Countdown Timer Text*/
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#play {
+    animation-play-state: running;
+}
+
+#paused_snail {
+    animation-play-state: paused;
+}
+
+#paused_human {
+    animation-play-state: paused;
+}
+
+#paused_usian_bolt {
+    animation-play-state: paused;
+}
+
+#paused_zebra {
+    animation-play-state: paused;
+}
+
+#paused_tank {
+    animation-play-state: paused;
+}
+
+#paused_skytrain {
+    animation-play-state: paused;
+}
+
+#paused_lion {
+    animation-play-state: paused;
+}
+
+#paused_motorcycle {
+    animation-play-state: paused;
+}
+
+#paused_cheetah {
+    animation-play-state: paused;
+}
+
+#paused_eagle {
+    animation-play-state: paused;
+}
+
+#paused_helicopter {
+    animation-play-state: paused;
+}
+
+#paused_car {
+    animation-play-state: paused;
+}
+
+#paused_airplane {
+    animation-play-state: paused;
+}
+
+#paused_jet {
+    animation-play-state: paused;
+}
+
+#paused_spacecraft {
+    animation-play-state: paused;
+}
+
+
+/************************* HOVER *************************/
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/************************* ANIMATION KEYFRAMES *************************/
+
+@keyframes mymove {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 90%;
+    }
+}
+
+
+/************************* RUNNING IMAGE***************************/
+
+
+/***** Snail *****/
+
+.run_snail {
+    position: relative;
+    animation: mymove 69445s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 25%;
+}
+
+.run_snailx2 {
+    position: relative;
+    animation: mymove 34723s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 25%;
+}
+
+.run_snailx3 {
+    position: relative;
+    animation: mymove 23149s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 25%;
+}
+
+
+/***** Human *****/
+
+.run_human {
+    position: relative;
+    animation: mymove 417s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 25%;
+}
+
+.run_humanx2 {
+    position: relative;
+    animation: mymove 209s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 25%;
+}
+
+.run_humanx3 {
+    position: relative;
+    animation: mymove 139s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 25%;
+}
+
+
+/***** Usian Bolt *****/
+
+.run_usian_bolt {
+    position: relative;
+    animation: mymove 225s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_usian_boltx2 {
+    position: relative;
+    animation: mymove 113s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_usian_boltx3 {
+    position: relative;
+    animation: mymove 75s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Zebra *****/
+
+.run_zebra {
+    position: relative;
+    animation: mymove 157s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 20%;
+    animation-iteration-count: infinite;
+}
+
+.run_zebrax2 {
+    position: relative;
+    animation: mymove 79s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 20%;
+    animation-iteration-count: infinite;
+}
+
+.run_zebrax3 {
+    position: relative;
+    animation: mymove 53s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 20%;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Tank *****/
+
+.run_tank {
+    position: relative;
+    animation: mymove 139s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 20%;
+    animation-iteration-count: infinite;
+}
+
+.run_tankx2 {
+    position: relative;
+    animation: mymove 70s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 20%;
+    animation-iteration-count: infinite;
+}
+
+.run_tankx3 {
+    position: relative;
+    animation: mymove 47s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 20%;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Skytrain *****/
+
+.run_skytrain {
+    position: relative;
+    animation: mymove 125s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 126px;
+    animation-iteration-count: infinite;
+}
+
+.run_skytrainx2 {
+    position: relative;
+    animation: mymove 63s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 126px;
+    animation-iteration-count: infinite;
+}
+
+.run_skytrainx3 {
+    position: relative;
+    animation: mymove 42s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 126px;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Lion *****/
+
+.run_lion {
+    position: relative;
+    animation: mymove 125s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_lionx2 {
+    position: relative;
+    animation: mymove 63s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_lionx3 {
+    position: relative;
+    animation: mymove 42s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Motorcycle *****/
+
+.run_motorcycle {
+    position: relative;
+    animation: mymove 100s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 230px;
+    animation-iteration-count: infinite;
+}
+
+.run_motorcyclex2 {
+    position: relative;
+    animation: mymove 50s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 230px;
+    animation-iteration-count: infinite;
+}
+
+.run_motorcyclex3 {
+    position: relative;
+    animation: mymove 34s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 230px;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Cheetah *****/
+
+.run_cheetah {
+    position: relative;
+    animation: mymove 84s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 190px;
+    animation-iteration-count: infinite;
+}
+
+.run_cheetahx2 {
+    position: relative;
+    animation: mymove 42s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 190px;
+    animation-iteration-count: infinite;
+}
+
+.run_cheetahx3 {
+    position: relative;
+    animation: mymove 28s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 190px;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Eagle *****/
+
+.run_eagle {
+    position: relative;
+    animation: mymove 63s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_eaglex2 {
+    position: relative;
+    animation: mymove 32s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_eaglex3 {
+    position: relative;
+    animation: mymove 21s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Helicopter *****/
+
+.run_helicopter {
+    position: relative;
+    animation: mymove 40s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_helicopterx2 {
+    position: relative;
+    animation: mymove 20s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_helicopterx3 {
+    position: relative;
+    animation: mymove 14s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Car *****/
+
+.run_car {
+    position: relative;
+    animation: mymove 32s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 230px;
+    animation-iteration-count: infinite;
+}
+
+.run_carx2 {
+    position: relative;
+    animation: mymove 16s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 230px;
+    animation-iteration-count: infinite;
+}
+
+.run_carx3 {
+    position: relative;
+    animation: mymove 11s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    margin-top: 230px;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Airplane *****/
+
+.run_airplane {
+    position: relative;
+    animation: mymove 14s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_airplanex2 {
+    position: relative;
+    animation: mymove 7s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_airplanex3 {
+    position: relative;
+    animation: mymove 4s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Jet *****/
+
+.run_jet {
+    position: relative;
+    animation: mymove 11s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_jetx2 {
+    position: relative;
+    animation: mymove 6s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_jetx3 {
+    position: relative;
+    animation: mymove 3s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+
+/***** Spacecraft *****/
+
+.run_spacecraft {
+    position: relative;
+    animation: mymove 1s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_spacecraftx2 {
+    position: relative;
+    animation: mymove 0.5s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.run_spacecraftx3 {
+    position: relative;
+    animation: mymove 0.2s ease;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    top: 15%;
+    animation-iteration-count: infinite;
+}
+
+.reset {
+    animation: mymove 0s ease;
+}
