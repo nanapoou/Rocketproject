@@ -18,11 +18,13 @@ body {
 /*********************** HEADER & SUBHEADER *******************/
 
 .header {
+    padding-top: 2vh;
     padding-right: 25px;
     text-align: center;
     font-size: 30px;
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
+    height: 10vh;
 }
 
 .clock {
@@ -103,6 +105,8 @@ body {
 
 .bg4 {
     /* Zebra */
+    padding: 0;
+    margin: 0;
     background-image: url(Bg/4.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -594,13 +598,13 @@ body {
 } */
 
 #faster {
-    margin-top: 3%;
-    margin-left: 50%;
+    margin-top: 1vh;
+    /* margin-left: 50%; */
 }
 
 #slower {
-    margin-top: 3%;
-    margin-left: 50%;
+    margin-top: 1vh;
+    /* margin-left: 50%; */
 }
 
 #reset {
@@ -622,12 +626,17 @@ body {
 
 .timer {
     /*Countdown Timer Text*/
+    padding-top: 2vh;
     margin: 2px;
     font-size: 30px;
     position: relative;
     text-align: center;
     color: white;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.row{
+    padding-top: 0.5vh;
 }
 
 .accelerator {
@@ -889,6 +898,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 126px;
+    /* top: 15%; */
     animation-iteration-count: infinite;
 }
 
@@ -898,6 +908,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 126px;
+    /* top: 15%; */
     animation-iteration-count: infinite;
 }
 
@@ -907,6 +918,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     margin-top: 126px;
+    /* top: 15%; */
     animation-iteration-count: infinite;
 }
 
