@@ -58,6 +58,14 @@ body {
     font-family: 'Sarabun', sans-serif;
 }
 
+.tips_bar {
+    bottom: -9%;
+    color: white;
+    position: relative;
+    text-align: right;
+    margin-right: 1%;
+}
+
 
 /*********************** BACKGROUND IMAGE *******************/
 
