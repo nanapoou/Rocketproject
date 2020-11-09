@@ -762,7 +762,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 25%;
+    top: 23%;
 }
 
 .run_snailx3 {
@@ -771,7 +771,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 25%;
+    top: 23%;
 }
 
 
@@ -792,7 +792,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 25%;
+    top: 23%;
 }
 
 .run_humanx3 {
@@ -801,7 +801,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 25%;
+    top: 23%;
 }
 
 
@@ -947,7 +947,7 @@ a:hover {
     animation: mymove 63s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
@@ -956,7 +956,7 @@ a:hover {
     animation: mymove 42s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
