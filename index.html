@@ -828,32 +828,6 @@
             snail_timeleft = snail_connecter;
         }
 
-        /** Timer **/
-        speed = 1;
-        document.getElementById("snail_acc").innerHTML = "ความเร็ว x1";
-        if (snail_timeleft == -1) {
-            snail_timeleft = 69444;
-            var downloadTimer = setInterval(function() {
-                if (snail_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("snail_countdown").innerHTML = "เหลือเวลาอีก " + snail_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + snail_loop + " รอบ )";
-                } else {
-                    document.getElementById("snail_countdown").innerHTML = "เหลือเวลาอีก " + snail_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + snail_loop + " รอบ )";
-                }
-                snail_timeleft -= 1;
-            }, 1000);
-        } else {
-            snail_timeleft = 69445;
-            var downloadTimer = setInterval(function() {
-                if (snail_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("snail_countdown").innerHTML = "เหลือเวลาอีก " + snail_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + snail_loop + " รอบ )";
-                } else {
-                    document.getElementById("snail_countdown").innerHTML = "เหลือเวลาอีก " + snail_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + snail_loop + " รอบ )";
-                }
-            }, 1000);
-        }
-
         /********** Human Resetting **********/
         if (speed == 1) {
             var element = document.getElementsByClassName("run_human")[0];
@@ -898,32 +872,6 @@
             human_connecter = 417;
             human_timeleft = human_connecter;
         }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("human_acc").innerHTML = "ความเร็ว x1";
-        if (human_timeleft == -1) {
-            human_timeleft = 416;
-            var downloadTimer = setInterval(function() {
-                if (human_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("human_countdown").innerHTML = "เหลือเวลาอีก " + human_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + human_loop + " รอบ )";
-                } else {
-                    document.getElementById("human_countdown").innerHTML = "เหลือเวลาอีก " + human_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + human_loop + " รอบ )";
-                }
-                human_timeleft -= 1;
-            }, 1000);
-        } else {
-            human_timeleft = 417;
-            var downloadTimer = setInterval(function() {
-                if (human_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("human_countdown").innerHTML = "เหลือเวลาอีก " + human_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + human_loop + " รอบ )";
-                } else {
-                    document.getElementById("human_countdown").innerHTML = "เหลือเวลาอีก " + human_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + human_loop + " รอบ )";
-                }
-            }, 1000);
-        }
-
 
         /********** Usian Bolt Resetting **********/
         /** Image **/
@@ -970,31 +918,6 @@
             element.classList.add("run_usian_bolt");
             usian_bolt_connecter = 225;
             usian_bolt_timeleft = usian_bolt_connecter;
-        }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("usian_bolt_acc").innerHTML = "ความเร็ว x1";
-        if (usian_bolt_timeleft == -1) {
-            usian_bolt_timeleft = 224;
-            var downloadTimer = setInterval(function() {
-                if (usian_bolt_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("usian_bolt_countdown").innerHTML = "เหลือเวลาอีก " + usian_bolt_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + usian_bolt_loop + " รอบ )";
-                } else {
-                    document.getElementById("usian_bolt_countdown").innerHTML = "เหลือเวลาอีก " + usian_bolt_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + usian_bolt_loop + " รอบ )";
-                }
-                usian_bolt_timeleft -= 1;
-            }, 1000);
-        } else {
-            usian_bolt_timeleft = 225;
-            var downloadTimer = setInterval(function() {
-                if (usian_bolt_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("usian_bolt_countdown").innerHTML = "เหลือเวลาอีก " + usian_bolt_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + usian_bolt_loop + " รอบ )";
-                } else {
-                    document.getElementById("usian_bolt_countdown").innerHTML = "เหลือเวลาอีก " + usian_bolt_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + usian_bolt_loop + " รอบ )";
-                }
-            }, 1000);
         }
 
         /********** Zebra Resetting **********/
@@ -1043,31 +966,6 @@
             zebra_connecter = 157;
             zebra_timeleft = zebra_connecter;
         }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("zebra_acc").innerHTML = "ความเร็ว x1";
-        if (zebra_timeleft == -1) {
-            zebra_timeleft = 156;
-            var downloadTimer = setInterval(function() {
-                if (zebra_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("zebra_countdown").innerHTML = "เหลือเวลาอีก " + zebra_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + zebra_loop + " รอบ )";
-                } else {
-                    document.getElementById("zebra_countdown").innerHTML = "เหลือเวลาอีก " + zebra_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + zebra_loop + " รอบ )";
-                }
-                zebra_timeleft -= 1;
-            }, 1000);
-        } else {
-            zebra_timeleft = 157;
-            var downloadTimer = setInterval(function() {
-                if (zebra_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("zebra_countdown").innerHTML = "เหลือเวลาอีก " + zebra_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + zebra_loop + " รอบ )";
-                } else {
-                    document.getElementById("zebra_countdown").innerHTML = "เหลือเวลาอีก " + zebra_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + zebra_loop + " รอบ )";
-                }
-            }, 1000);
-        }
 
         /********** Tank Resetting **********/
         /** Image **/
@@ -1114,31 +1012,6 @@
             element.classList.add("run_tank");
             tank_connecter = 139;
             tank_timeleft = tank_connecter;
-        }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("tank_acc").innerHTML = "ความเร็ว x1";
-        if (tank_timeleft == -1) {
-            tank_timeleft = 138;
-            var downloadTimer = setInterval(function() {
-                if (tank_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("tank_countdown").innerHTML = "เหลือเวลาอีก " + tank_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + tank_loop + " รอบ )";
-                } else {
-                    document.getElementById("tank_countdown").innerHTML = "เหลือเวลาอีก " + tank_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + tank_loop + " รอบ )";
-                }
-                tank_timeleft -= 1;
-            }, 1000);
-        } else {
-            tank_timeleft = 139;
-            var downloadTimer = setInterval(function() {
-                if (tank_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("tank_countdown").innerHTML = "เหลือเวลาอีก " + tank_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + tank_loop + " รอบ )";
-                } else {
-                    document.getElementById("tank_countdown").innerHTML = "เหลือเวลาอีก " + tank_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + tank_loop + " รอบ )";
-                }
-            }, 1000);
         }
 
         /********** Skytrain Resetting **********/
@@ -1187,31 +1060,6 @@
             skytrain_connecter = 125;
             skytrain_timeleft = skytrain_connecter;
         }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("skytrain_acc").innerHTML = "ความเร็ว x1";
-        if (skytrain_timeleft == -1) {
-            skytrain_timeleft = 124;
-            var downloadTimer = setInterval(function() {
-                if (skytrain_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("skytrain_countdown").innerHTML = "เหลือเวลาอีก " + skytrain_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + skytrain_loop + " รอบ )";
-                } else {
-                    document.getElementById("skytrain_countdown").innerHTML = "เหลือเวลาอีก " + skytrain_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + skytrain_loop + " รอบ )";
-                }
-                skytrain_timeleft -= 1;
-            }, 1000);
-        } else {
-            skytrain_timeleft = 125;
-            var downloadTimer = setInterval(function() {
-                if (skytrain_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("skytrain_countdown").innerHTML = "เหลือเวลาอีก " + skytrain_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + skytrain_loop + " รอบ )";
-                } else {
-                    document.getElementById("skytrain_countdown").innerHTML = "เหลือเวลาอีก " + skytrain_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + skytrain_loop + " รอบ )";
-                }
-            }, 1000);
-        }
 
         /********** Lion Resetting **********/
         /** Image **/
@@ -1259,32 +1107,6 @@
             lion_connecter = 125;
             lion_timeleft = lion_connecter;
         }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("lion_acc").innerHTML = "ความเร็ว x1";
-        if (lion_timeleft == -1) {
-            lion_timeleft = 124;
-            var downloadTimer = setInterval(function() {
-                if (lion_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("lion_countdown").innerHTML = "เหลือเวลาอีก " + lion_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + lion_loop + " รอบ )";
-                } else {
-                    document.getElementById("lion_countdown").innerHTML = "เหลือเวลาอีก " + lion_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + lion_loop + " รอบ )";
-                }
-                lion_timeleft -= 1;
-            }, 1000);
-        } else {
-            lion_timeleft = 125;
-            var downloadTimer = setInterval(function() {
-                if (lion_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("lion_countdown").innerHTML = "เหลือเวลาอีก " + lion_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + lion_loop + " รอบ )";
-                } else {
-                    document.getElementById("lion_countdown").innerHTML = "เหลือเวลาอีก " + lion_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + lion_loop + " รอบ )";
-                }
-            }, 1000);
-        }
-
 
         /********** Motorcycle Resetting **********/
         /** Image **/
@@ -1331,31 +1153,6 @@
             element.classList.add("run_motorcycle");
             motorcycle_connecter = 100;
             motorcycle_timeleft = motorcycle_connecter;
-        }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("motorcycle_acc").innerHTML = "ความเร็ว x1";
-        if (motorcycle_timeleft == -1) {
-            motorcycle_timeleft = 99;
-            var downloadTimer = setInterval(function() {
-                if (motorcycle_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("motorcycle_countdown").innerHTML = "เหลือเวลาอีก " + motorcycle_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + motorcycle_loop + " รอบ )";
-                } else {
-                    document.getElementById("motorcycle_countdown").innerHTML = "เหลือเวลาอีก " + motorcycle_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + motorcycle_loop + " รอบ )";
-                }
-                motorcycle_timeleft -= 1;
-            }, 1000);
-        } else {
-            motorcycle_timeleft = 100;
-            var downloadTimer = setInterval(function() {
-                if (motorcycle_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("motorcycle_countdown").innerHTML = "เหลือเวลาอีก " + motorcycle_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + motorcycle_loop + " รอบ )";
-                } else {
-                    document.getElementById("motorcycle_countdown").innerHTML = "เหลือเวลาอีก " + motorcycle_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + motorcycle_loop + " รอบ )";
-                }
-            }, 1000);
         }
 
         /********** Cheetah Resetting **********/
@@ -1404,32 +1201,6 @@
             cheetah_connecter = 84;
             cheetah_timeleft = cheetah_connecter;
         }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("cheetah_acc").innerHTML = "ความเร็ว x1";
-        if (cheetah_timeleft == -1) {
-            cheetah_timeleft = 83;
-            var downloadTimer = setInterval(function() {
-                if (cheetah_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("cheetah_countdown").innerHTML = "เหลือเวลาอีก " + cheetah_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + cheetah_loop + " รอบ )";
-                } else {
-                    document.getElementById("cheetah_countdown").innerHTML = "เหลือเวลาอีก " + cheetah_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + cheetah_loop + " รอบ )";
-                }
-                cheetah_timeleft -= 1;
-            }, 1000);
-        } else {
-            cheetah_timeleft = 84;
-            var downloadTimer = setInterval(function() {
-                if (cheetah_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("cheetah_countdown").innerHTML = "เหลือเวลาอีก " + cheetah_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + cheetah_loop + " รอบ )";
-                } else {
-                    document.getElementById("cheetah_countdown").innerHTML = "เหลือเวลาอีก " + cheetah_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + cheetah_loop + " รอบ )";
-                }
-            }, 1000);
-        }
-
         /********** Eagle Resetting **********/
         /** Image **/
         eagle_loop = 0;
@@ -1475,31 +1246,6 @@
             element.classList.add("run_eagle");
             eagle_connecter = 63;
             eagle_timeleft = eagle_connecter;
-        }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("eagle_acc").innerHTML = "ความเร็ว x1";
-        if (eagle_timeleft == -1) {
-            eagle_timeleft = 62;
-            var downloadTimer = setInterval(function() {
-                if (eagle_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("eagle_countdown").innerHTML = "เหลือเวลาอีก " + eagle_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + eagle_loop + " รอบ )";
-                } else {
-                    document.getElementById("eagle_countdown").innerHTML = "เหลือเวลาอีก " + eagle_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + eagle_loop + " รอบ )";
-                }
-                eagle_timeleft -= 1;
-            }, 1000);
-        } else {
-            eagle_timeleft = 63;
-            var downloadTimer = setInterval(function() {
-                if (eagle_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("eagle_countdown").innerHTML = "เหลือเวลาอีก " + eagle_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + eagle_loop + " รอบ )";
-                } else {
-                    document.getElementById("eagle_countdown").innerHTML = "เหลือเวลาอีก " + eagle_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + eagle_loop + " รอบ )";
-                }
-            }, 1000);
         }
 
         /********** Helicopter Resetting **********/
@@ -1548,31 +1294,6 @@
             helicopter_connecter = 40;
             helicopter_timeleft = helicopter_connecter;
         }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("helicopter_acc").innerHTML = "ความเร็ว x1";
-        if (helicopter_timeleft == -1) {
-            helicopter_timeleft = 39;
-            var downloadTimer = setInterval(function() {
-                if (helicopter_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("helicopter_countdown").innerHTML = "เหลือเวลาอีก " + helicopter_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + helicopter_loop + " รอบ )";
-                } else {
-                    document.getElementById("helicopter_countdown").innerHTML = "เหลือเวลาอีก " + helicopter_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + helicopter_loop + " รอบ )";
-                }
-                helicopter_timeleft -= 1;
-            }, 1000);
-        } else {
-            helicopter_timeleft = 40;
-            var downloadTimer = setInterval(function() {
-                if (helicopter_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("helicopter_countdown").innerHTML = "เหลือเวลาอีก " + helicopter_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + helicopter_loop + " รอบ )";
-                } else {
-                    document.getElementById("helicopter_countdown").innerHTML = "เหลือเวลาอีก " + helicopter_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + helicopter_loop + " รอบ )";
-                }
-            }, 1000);
-        }
 
         /********** Car Resetting **********/
         /** Image **/
@@ -1619,31 +1340,6 @@
             element.classList.add("run_car");
             car_connecter = 32;
             car_timeleft = car_connecter;
-        }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("car_acc").innerHTML = "ความเร็ว x1";
-        if (car_timeleft == -1) {
-            car_timeleft = 31;
-            var downloadTimer = setInterval(function() {
-                if (car_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("car_countdown").innerHTML = "เหลือเวลาอีก " + car_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + car_loop + " รอบ )";
-                } else {
-                    document.getElementById("car_countdown").innerHTML = "เหลือเวลาอีก " + car_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + car_loop + " รอบ )";
-                }
-                car_timeleft -= 1;
-            }, 1000);
-        } else {
-            car_timeleft = 32;
-            var downloadTimer = setInterval(function() {
-                if (car_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("car_countdown").innerHTML = "เหลือเวลาอีก " + car_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + car_loop + " รอบ )";
-                } else {
-                    document.getElementById("car_countdown").innerHTML = "เหลือเวลาอีก " + car_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + car_loop + " รอบ )";
-                }
-            }, 1000);
         }
 
         /********** Airplane Resetting **********/
@@ -1692,31 +1388,6 @@
             airplane_connecter = 14;
             airplane_timeleft = airplane_connecter;
         }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("airplane_acc").innerHTML = "ความเร็ว x1";
-        if (airplane_timeleft == -1) {
-            airplane_timeleft = 13;
-            var downloadTimer = setInterval(function() {
-                if (airplane_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("airplane_countdown").innerHTML = "เหลือเวลาอีก " + airplane_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + airplane_loop + " รอบ )";
-                } else {
-                    document.getElementById("airplane_countdown").innerHTML = "เหลือเวลาอีก " + airplane_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + airplane_loop + " รอบ )";
-                }
-                airplane_timeleft -= 1;
-            }, 1000);
-        } else {
-            airplane_timeleft = 12;
-            var downloadTimer = setInterval(function() {
-                if (airplane_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("airplane_countdown").innerHTML = "เหลือเวลาอีก " + airplane_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + airplane_loop + " รอบ )";
-                } else {
-                    document.getElementById("airplane_countdown").innerHTML = "เหลือเวลาอีก " + airplane_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + airplane_loop + " รอบ )";
-                }
-            }, 1000);
-        }
 
         /********** Jet Resetting **********/
         /** Image **/
@@ -1762,31 +1433,6 @@
             element.classList.add("run_jet");
             jet_connecter = 11;
             jet_timeleft = jet_connecter;
-        }
-        /** Timer **/
-        speed = 1;
-        document.getElementById("jet_acc").innerHTML = "ความเร็ว x1";
-        if (jet_timeleft == -1) {
-            jet_timeleft = 10;
-            var downloadTimer = setInterval(function() {
-                if (jet_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("jet_countdown").innerHTML = "เหลือเวลาอีก " + jet_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + jet_loop + " รอบ )";
-                } else {
-                    document.getElementById("jet_countdown").innerHTML = "เหลือเวลาอีก " + jet_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + jet_loop + " รอบ )";
-                }
-                jet_timeleft -= 1;
-            }, 1000);
-        } else {
-            jet_timeleft = 11;
-            var downloadTimer = setInterval(function() {
-                if (jet_timeleft <= 0) {
-                    clearInterval(downloadTimer);
-                    document.getElementById("jet_countdown").innerHTML = "เหลือเวลาอีก " + jet_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + jet_loop + " รอบ )";
-                } else {
-                    document.getElementById("jet_countdown").innerHTML = "เหลือเวลาอีก " + jet_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + jet_loop + " รอบ )";
-                }
-            }, 1000);
         }
 
         /********** Spacecraft Resetting **********/
@@ -1834,6 +1480,344 @@
             element.classList.add("run_spacecraft");
             spacecraft_connecter = 1;
             spacecraft_timeleft = spacecraft_connecter;
+        }
+        /** Timer **/
+        speed = 1;
+        document.getElementById("snail_acc").innerHTML = "ความเร็ว x1";
+        if (snail_timeleft == -1) {
+            snail_timeleft = 69444;
+            var downloadTimer = setInterval(function() {
+                if (snail_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("snail_countdown").innerHTML = "เหลือเวลาอีก " + snail_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + snail_loop + " รอบ )";
+                } else {
+                    document.getElementById("snail_countdown").innerHTML = "เหลือเวลาอีก " + snail_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + snail_loop + " รอบ )";
+                }
+                snail_timeleft -= 1;
+            }, 1000);
+        } else {
+            snail_timeleft = 69445;
+            var downloadTimer = setInterval(function() {
+                if (snail_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("snail_countdown").innerHTML = "เหลือเวลาอีก " + snail_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + snail_loop + " รอบ )";
+                } else {
+                    document.getElementById("snail_countdown").innerHTML = "เหลือเวลาอีก " + snail_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + snail_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+
+        /** Timer **/
+        document.getElementById("human_acc").innerHTML = "ความเร็ว x1";
+        if (human_timeleft == -1) {
+            human_timeleft = 416;
+            var downloadTimer = setInterval(function() {
+                if (human_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("human_countdown").innerHTML = "เหลือเวลาอีก " + human_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + human_loop + " รอบ )";
+                } else {
+                    document.getElementById("human_countdown").innerHTML = "เหลือเวลาอีก " + human_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + human_loop + " รอบ )";
+                }
+                human_timeleft -= 1;
+            }, 1000);
+        } else {
+            human_timeleft = 417;
+            var downloadTimer = setInterval(function() {
+                if (human_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("human_countdown").innerHTML = "เหลือเวลาอีก " + human_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + human_loop + " รอบ )";
+                } else {
+                    document.getElementById("human_countdown").innerHTML = "เหลือเวลาอีก " + human_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + human_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("usian_bolt_acc").innerHTML = "ความเร็ว x1";
+        if (usian_bolt_timeleft == -1) {
+            usian_bolt_timeleft = 224;
+            var downloadTimer = setInterval(function() {
+                if (usian_bolt_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("usian_bolt_countdown").innerHTML = "เหลือเวลาอีก " + usian_bolt_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + usian_bolt_loop + " รอบ )";
+                } else {
+                    document.getElementById("usian_bolt_countdown").innerHTML = "เหลือเวลาอีก " + usian_bolt_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + usian_bolt_loop + " รอบ )";
+                }
+                usian_bolt_timeleft -= 1;
+            }, 1000);
+        } else {
+            usian_bolt_timeleft = 225;
+            var downloadTimer = setInterval(function() {
+                if (usian_bolt_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("usian_bolt_countdown").innerHTML = "เหลือเวลาอีก " + usian_bolt_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + usian_bolt_loop + " รอบ )";
+                } else {
+                    document.getElementById("usian_bolt_countdown").innerHTML = "เหลือเวลาอีก " + usian_bolt_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + usian_bolt_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("zebra_acc").innerHTML = "ความเร็ว x1";
+        if (zebra_timeleft == -1) {
+            zebra_timeleft = 156;
+            var downloadTimer = setInterval(function() {
+                if (zebra_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("zebra_countdown").innerHTML = "เหลือเวลาอีก " + zebra_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + zebra_loop + " รอบ )";
+                } else {
+                    document.getElementById("zebra_countdown").innerHTML = "เหลือเวลาอีก " + zebra_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + zebra_loop + " รอบ )";
+                }
+                zebra_timeleft -= 1;
+            }, 1000);
+        } else {
+            zebra_timeleft = 157;
+            var downloadTimer = setInterval(function() {
+                if (zebra_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("zebra_countdown").innerHTML = "เหลือเวลาอีก " + zebra_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + zebra_loop + " รอบ )";
+                } else {
+                    document.getElementById("zebra_countdown").innerHTML = "เหลือเวลาอีก " + zebra_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + zebra_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("tank_acc").innerHTML = "ความเร็ว x1";
+        if (tank_timeleft == -1) {
+            tank_timeleft = 138;
+            var downloadTimer = setInterval(function() {
+                if (tank_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("tank_countdown").innerHTML = "เหลือเวลาอีก " + tank_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + tank_loop + " รอบ )";
+                } else {
+                    document.getElementById("tank_countdown").innerHTML = "เหลือเวลาอีก " + tank_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + tank_loop + " รอบ )";
+                }
+                tank_timeleft -= 1;
+            }, 1000);
+        } else {
+            tank_timeleft = 139;
+            var downloadTimer = setInterval(function() {
+                if (tank_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("tank_countdown").innerHTML = "เหลือเวลาอีก " + tank_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + tank_loop + " รอบ )";
+                } else {
+                    document.getElementById("tank_countdown").innerHTML = "เหลือเวลาอีก " + tank_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + tank_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("skytrain_acc").innerHTML = "ความเร็ว x1";
+        if (skytrain_timeleft == -1) {
+            skytrain_timeleft = 124;
+            var downloadTimer = setInterval(function() {
+                if (skytrain_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("skytrain_countdown").innerHTML = "เหลือเวลาอีก " + skytrain_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + skytrain_loop + " รอบ )";
+                } else {
+                    document.getElementById("skytrain_countdown").innerHTML = "เหลือเวลาอีก " + skytrain_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + skytrain_loop + " รอบ )";
+                }
+                skytrain_timeleft -= 1;
+            }, 1000);
+        } else {
+            skytrain_timeleft = 125;
+            var downloadTimer = setInterval(function() {
+                if (skytrain_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("skytrain_countdown").innerHTML = "เหลือเวลาอีก " + skytrain_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + skytrain_loop + " รอบ )";
+                } else {
+                    document.getElementById("skytrain_countdown").innerHTML = "เหลือเวลาอีก " + skytrain_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + skytrain_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("lion_acc").innerHTML = "ความเร็ว x1";
+        if (lion_timeleft == -1) {
+            lion_timeleft = 124;
+            var downloadTimer = setInterval(function() {
+                if (lion_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("lion_countdown").innerHTML = "เหลือเวลาอีก " + lion_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + lion_loop + " รอบ )";
+                } else {
+                    document.getElementById("lion_countdown").innerHTML = "เหลือเวลาอีก " + lion_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + lion_loop + " รอบ )";
+                }
+                lion_timeleft -= 1;
+            }, 1000);
+        } else {
+            lion_timeleft = 125;
+            var downloadTimer = setInterval(function() {
+                if (lion_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("lion_countdown").innerHTML = "เหลือเวลาอีก " + lion_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + lion_loop + " รอบ )";
+                } else {
+                    document.getElementById("lion_countdown").innerHTML = "เหลือเวลาอีก " + lion_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + lion_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("motorcycle_acc").innerHTML = "ความเร็ว x1";
+        if (motorcycle_timeleft == -1) {
+            motorcycle_timeleft = 99;
+            var downloadTimer = setInterval(function() {
+                if (motorcycle_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("motorcycle_countdown").innerHTML = "เหลือเวลาอีก " + motorcycle_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + motorcycle_loop + " รอบ )";
+                } else {
+                    document.getElementById("motorcycle_countdown").innerHTML = "เหลือเวลาอีก " + motorcycle_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + motorcycle_loop + " รอบ )";
+                }
+                motorcycle_timeleft -= 1;
+            }, 1000);
+        } else {
+            motorcycle_timeleft = 100;
+            var downloadTimer = setInterval(function() {
+                if (motorcycle_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("motorcycle_countdown").innerHTML = "เหลือเวลาอีก " + motorcycle_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + motorcycle_loop + " รอบ )";
+                } else {
+                    document.getElementById("motorcycle_countdown").innerHTML = "เหลือเวลาอีก " + motorcycle_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + motorcycle_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("cheetah_acc").innerHTML = "ความเร็ว x1";
+        if (cheetah_timeleft == -1) {
+            cheetah_timeleft = 83;
+            var downloadTimer = setInterval(function() {
+                if (cheetah_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("cheetah_countdown").innerHTML = "เหลือเวลาอีก " + cheetah_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + cheetah_loop + " รอบ )";
+                } else {
+                    document.getElementById("cheetah_countdown").innerHTML = "เหลือเวลาอีก " + cheetah_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + cheetah_loop + " รอบ )";
+                }
+                cheetah_timeleft -= 1;
+            }, 1000);
+        } else {
+            cheetah_timeleft = 84;
+            var downloadTimer = setInterval(function() {
+                if (cheetah_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("cheetah_countdown").innerHTML = "เหลือเวลาอีก " + cheetah_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + cheetah_loop + " รอบ )";
+                } else {
+                    document.getElementById("cheetah_countdown").innerHTML = "เหลือเวลาอีก " + cheetah_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + cheetah_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("eagle_acc").innerHTML = "ความเร็ว x1";
+        if (eagle_timeleft == -1) {
+            eagle_timeleft = 62;
+            var downloadTimer = setInterval(function() {
+                if (eagle_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("eagle_countdown").innerHTML = "เหลือเวลาอีก " + eagle_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + eagle_loop + " รอบ )";
+                } else {
+                    document.getElementById("eagle_countdown").innerHTML = "เหลือเวลาอีก " + eagle_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + eagle_loop + " รอบ )";
+                }
+                eagle_timeleft -= 1;
+            }, 1000);
+        } else {
+            eagle_timeleft = 63;
+            var downloadTimer = setInterval(function() {
+                if (eagle_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("eagle_countdown").innerHTML = "เหลือเวลาอีก " + eagle_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + eagle_loop + " รอบ )";
+                } else {
+                    document.getElementById("eagle_countdown").innerHTML = "เหลือเวลาอีก " + eagle_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + eagle_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("helicopter_acc").innerHTML = "ความเร็ว x1";
+        if (helicopter_timeleft == -1) {
+            helicopter_timeleft = 39;
+            var downloadTimer = setInterval(function() {
+                if (helicopter_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("helicopter_countdown").innerHTML = "เหลือเวลาอีก " + helicopter_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + helicopter_loop + " รอบ )";
+                } else {
+                    document.getElementById("helicopter_countdown").innerHTML = "เหลือเวลาอีก " + helicopter_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + helicopter_loop + " รอบ )";
+                }
+                helicopter_timeleft -= 1;
+            }, 1000);
+        } else {
+            helicopter_timeleft = 40;
+            var downloadTimer = setInterval(function() {
+                if (helicopter_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("helicopter_countdown").innerHTML = "เหลือเวลาอีก " + helicopter_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + helicopter_loop + " รอบ )";
+                } else {
+                    document.getElementById("helicopter_countdown").innerHTML = "เหลือเวลาอีก " + helicopter_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + helicopter_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("car_acc").innerHTML = "ความเร็ว x1";
+        if (car_timeleft == -1) {
+            car_timeleft = 31;
+            var downloadTimer = setInterval(function() {
+                if (car_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("car_countdown").innerHTML = "เหลือเวลาอีก " + car_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + car_loop + " รอบ )";
+                } else {
+                    document.getElementById("car_countdown").innerHTML = "เหลือเวลาอีก " + car_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + car_loop + " รอบ )";
+                }
+                car_timeleft -= 1;
+            }, 1000);
+        } else {
+            car_timeleft = 32;
+            var downloadTimer = setInterval(function() {
+                if (car_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("car_countdown").innerHTML = "เหลือเวลาอีก " + car_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + car_loop + " รอบ )";
+                } else {
+                    document.getElementById("car_countdown").innerHTML = "เหลือเวลาอีก " + car_timeleft + " ชั่วโมงจึงจะวิ่งครบ 10,000 กิโลเมตร ( วิ่งไปแล้ว " + car_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("airplane_acc").innerHTML = "ความเร็ว x1";
+        if (airplane_timeleft == -1) {
+            airplane_timeleft = 13;
+            var downloadTimer = setInterval(function() {
+                if (airplane_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("airplane_countdown").innerHTML = "เหลือเวลาอีก " + airplane_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + airplane_loop + " รอบ )";
+                } else {
+                    document.getElementById("airplane_countdown").innerHTML = "เหลือเวลาอีก " + airplane_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + airplane_loop + " รอบ )";
+                }
+                airplane_timeleft -= 1;
+            }, 1000);
+        } else {
+            airplane_timeleft = 12;
+            var downloadTimer = setInterval(function() {
+                if (airplane_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("airplane_countdown").innerHTML = "เหลือเวลาอีก " + airplane_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + airplane_loop + " รอบ )";
+                } else {
+                    document.getElementById("airplane_countdown").innerHTML = "เหลือเวลาอีก " + airplane_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + airplane_loop + " รอบ )";
+                }
+            }, 1000);
+        }
+        /** Timer **/
+        document.getElementById("jet_acc").innerHTML = "ความเร็ว x1";
+        if (jet_timeleft == -1) {
+            jet_timeleft = 10;
+            var downloadTimer = setInterval(function() {
+                if (jet_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("jet_countdown").innerHTML = "เหลือเวลาอีก " + jet_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + jet_loop + " รอบ )";
+                } else {
+                    document.getElementById("jet_countdown").innerHTML = "เหลือเวลาอีก " + jet_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + jet_loop + " รอบ )";
+                }
+                jet_timeleft -= 1;
+            }, 1000);
+        } else {
+            jet_timeleft = 11;
+            var downloadTimer = setInterval(function() {
+                if (jet_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("jet_countdown").innerHTML = "เหลือเวลาอีก " + jet_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + jet_loop + " รอบ )";
+                } else {
+                    document.getElementById("jet_countdown").innerHTML = "เหลือเวลาอีก " + jet_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + jet_loop + " รอบ )";
+                }
+            }, 1000);
         }
     }
 
@@ -3658,6 +3642,10 @@
 
     function fasterbtn() {
         speed += 1;
+        /* If Speed is out of Function */
+        if (speed == 4) {
+            speed = 3;
+        }
         if (speed == 2) {
             document.getElementById("snail_acc").innerHTML = "ความเร็ว x2"; // Receive ความเร็ว x1 and convert to ความเร็ว x2
             var element = document.getElementsByClassName("run_snail")[0];
@@ -3688,10 +3676,6 @@
             element.classList.add("run_snailx3");
             snail_connecter = 23149;
             snail_timeleft = snail_connecter;
-        }
-        /* If Speed is out of Function */
-        if (speed == 4) {
-            speed = 3;
         }
         if (speed == 2) {
             document.getElementById("human_acc").innerHTML = "ความเร็ว x2";
