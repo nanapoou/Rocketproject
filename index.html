@@ -750,6 +750,11 @@
     var jet_connecter = 11;
     var spacecraft_connecter = 1;
 
+    /***** Define Variable for Website Timer*****/
+    var hours = 0;
+    var days = 0;
+    var months = 0;
+    
     /**********************************************/
 
     function playbtn() {
@@ -783,6 +788,9 @@
         this.airplane_loop = 0;
         this.jet_loop = 0;
         this.spacecraft_loop = 0;
+        this.hours = 0;
+        this.days = 0;
+        this.months = 0;
 
         if (speed == 1) {
             var element = document.getElementsByClassName("run_snail")[0];
@@ -1819,6 +1827,30 @@
                 }
             }, 1000);
         }
+        /** Timer **/
+        document.getElementById("spacecraft_acc").innerHTML = "ความเร็ว x1";
+        if (spacecraft_timeleft == -1) {
+            spacecraft_timeleft = 1;
+            var downloadTimer = setInterval(function() {
+                if (spacecraft_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("spacecraft_countdown").innerHTML = "เหลือเวลาอีก " + spacecraft_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + spacecraft_loop + " รอบ )";
+                } else {
+                    document.getElementById("spacecraft_countdown").innerHTML = "เหลือเวลาอีก " + spacecraft_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + spacecraft_loop + " รอบ )";
+                }
+                spacecraft_timeleft -= 1;
+            }, 1000);
+        } else {
+            spacecraft_timeleft = 2;
+            var downloadTimer = setInterval(function() {
+                if (spacecraft_timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("spacecraft_countdown").innerHTML = "เหลือเวลาอีก " + spacecraft_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + spacecraft_loop + " รอบ )";
+                } else {
+                    document.getElementById("spacecraft_countdown").innerHTML = "เหลือเวลาอีก " + spacecraft_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + spacecraft_loop + " รอบ )";
+                }
+            }, 1000);
+        }
     }
 
     /****************************************** CLICK BUTTON TO MOVE & COUNTDOWN TIMER ********************************************/
@@ -1924,9 +1956,6 @@
         /**************************************** CLOCK FUNCTION *******************************************/
         /**************************************** CLOCK FUNCTION *******************************************/
 
-        var hours = 0;
-        var days = 0;
-        var months = 0;
         var downloadTimer = setInterval(function() {
             hours += 1;
             if (hours > 23) {
@@ -2307,6 +2336,7 @@
                     // document.getElementById("spacecraft_loop").innerHTML = "เหลือเวลาอีก " + spacecraft_loop + " รอบ";
                     document.getElementById("spacecraft_countdown").innerHTML = "เหลือเวลาอีก " + spacecraft_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + spacecraft_loop + " รอบ )";
                 } else {
+                    this.spacecraft_loop += 1
                     document.getElementById("spacecraft_countdown").innerHTML = "เหลือเวลาอีก " + spacecraft_timeleft + " ชั่วโมงจึงจะบินครบ 10,000 กิโลเมตร ( บินไปแล้ว " + spacecraft_loop + " รอบ )";
                 }
                 spacecraft_timeleft -= 1;
