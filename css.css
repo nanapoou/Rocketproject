@@ -19,7 +19,7 @@ body {
 
 .header {
     padding-top: 2vh;
-    padding-right: 25px;
+    f padding-right: 25px;
     text-align: center;
     font-size: 30px;
     margin: auto;
@@ -643,7 +643,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.row{
+.row {
     padding-top: 0.5vh;
 }
 
@@ -753,7 +753,7 @@ a:hover {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 25%;
+    top: 20.5%;
 }
 
 .run_snailx2 {
@@ -938,7 +938,7 @@ a:hover {
     animation: mymove 125s ease;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    top: 15%;
+    top: 20%;
     animation-iteration-count: infinite;
 }
 
